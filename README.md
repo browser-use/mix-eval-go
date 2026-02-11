@@ -151,7 +151,9 @@ mix-eval-go/
 │   └── providers/              # Browser provider implementations
 │       └── browsers.go         # Browserbase, Brightdata, etc.
 ├── test/
-│   └── testdata/
+│   └── e2e/                    # End-to-end tests
+│       ├── simple_task_test.go
+│       └── browser_automation_test.go
 └── bin/                        # Built binaries (runtime)
 ```
 

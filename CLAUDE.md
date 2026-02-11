@@ -66,7 +66,7 @@ mix-eval-go/
 │   ├── providers/             # Browser provider implementations
 │   └── convex/                # Convex database client
 ├── test/
-│   └── testdata/
+│   └── e2e/                   # End-to-end tests
 └── bin/                       # Built binaries (runtime)
 ```
 
