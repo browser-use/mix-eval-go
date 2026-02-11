@@ -84,12 +84,56 @@ source .env
 task dev                 # Development hot reload
 task build               # Build the binary
 task test                # Run tests with race detection
+task test-e2e            # Run end-to-end tests (requires Mix Agent)
+task test-all            # Run all tests including e2e
 task tail-dev-log        # View dev server logs
 task clean               # Clean build artifacts
 task lint                # Run linters
 task fmt                 # Format code
 task --list-all          # Show all available tasks
 ```
+
+### Testing
+
+**Unit Tests** (no external dependencies):
+```bash
+task test
+```
+
+**End-to-End Tests** (requires Mix Agent running):
+```bash
+# 1. Start Mix Agent server in separate terminal
+cd ../mix/mix_agent
+mix --http-port 8088
+
+# 2. Run E2E tests
+task test-e2e
+```
+
+**End-to-End Test Coverage**:
+
+1. **Simple Task Test** (`TestEndToEndSimpleTask`)
+   - Basic math: "What is 2+2?"
+   - Verifies SDK integration and streaming
+   - Runtime: ~3 seconds
+
+2. **Browser Automation Test** (`TestEndToEndBrowserAutomation`)
+   - Sanity check: Simple math problem
+   - Wikipedia extraction: Navigate to cats page, extract intro paragraph
+   - Keyword verification: Checks for "Felis catus" in extracted content
+   - Real browser automation with tool execution
+   - Runtime: ~30 seconds
+
+**Test Characteristics**:
+- Real browser automation via Mix Agent
+- Real HTTP requests to external sites (Wikipedia)
+- SSE event streaming with manual HTTP (SDK streaming bug workaround)
+- Tool call execution tracking
+- Session management lifecycle
+- Content extraction and verification
+- **Zero mocking** - all real HTTP/SSE communication
+
+E2E tests are marked with `//go:build e2e` tag and skip by default. They verify the complete workflow from session creation through browser automation to content extraction and validation.
 
 ### Project Structure
 
@@ -135,6 +179,53 @@ Supports multiple cloud browser providers:
 - **Brightdata** - Global proxy network with browsers
 - **Hyperbrowser** - Stealth browsing capabilities
 - **Anchor Browser** - Mobile and desktop with captcha solving
+
+## Relationship to Other Evaluation Repositories
+
+Mix-Eval-Go is part of a unified evaluation ecosystem with multiple specialized runners sharing a common backend.
+
+### Ecosystem Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  evaluation-platform                        │
+│                  (Convex Backend + UI)                      │
+│  - Shared test cases database                               │
+│  - Results storage                                          │
+│  - REST API endpoints                                       │
+│  - Screenshot storage                                       │
+└────────┬──────────────┬──────────────┬─────────────────────┘
+         │              │              │
+         │ REST API     │ REST API     │ REST API
+         │              │              │
+    ┌────┴───┐     ┌────┴───┐     ┌───┴──────┐
+    │        │     │        │     │          │
+    ▼        ▼     ▼        ▼     ▼          ▼
+┌─────────────┐ ┌─────────────┐ ┌──────────────────┐
+│ manus-eval  │ │ mix-eval-go │ │ evaluations-     │
+│ (Python)    │ │ (Go)        │ │ internal         │
+│             │ │             │ │ (Python)         │
+│ Targets:    │ │ Targets:    │ │ Targets:         │
+│ Manus Agent │ │ Mix Agent   │ │ browser-use      │
+│ (tool-based)│ │ (new agent) │ │ (DOM-based)      │
+└─────────────┘ └─────────────┘ └──────────────────┘
+```
+
+### Repository Roles
+
+**evaluation-platform** - Central hub providing shared infrastructure for all evaluation runners. Built with React + Convex, it stores test cases, manages runs, hosts judge evaluations, and provides REST API endpoints used by all runners.
+
+**manus-eval** (Python) - Evaluates the Manus agent, which uses explicit tool calls (browser_*, bash, python, read, write) for task execution. Tracks detailed tool calls with arguments, results, and sandbox files. Included as a git submodule in the manus-use repository.
+
+**mix-eval-go** (Go, this repository) - Newest evaluation runner built in Go for the Mix Agent. Uses the Mix Go SDK and communicates via HTTP + SSE. Architecturally inspired by manus-eval but rewritten for performance and type safety.
+
+**evaluations-internal** (Python) - Original evaluation framework targeting the browser-use agent with DOM-based automation. Predecessor to both manus-eval and mix-eval-go, maintaining similar structure but focused on traditional browser automation patterns.
+
+### Key Characteristics
+
+All runners share the same evaluation-platform backend, enabling consistent task definitions and result comparison across different agents. Each runner specializes in its target agent's execution model while following similar architectural patterns: fetch tasks, execute with agent, evaluate with Claude judge, submit results.
+
+Mix-Eval-Go distinguishes itself through Go's performance benefits, compile-time type safety, and single-binary deployment, making it ideal for production environments requiring high concurrency and minimal operational overhead.
 
 ## Implementation Status
 

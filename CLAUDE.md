@@ -26,11 +26,10 @@ task --list-all          # Show all available tasks
 ### Test Naming Conventions
 
 - `*_test.go` - Unit tests (no external dependencies)
-- `*_integration_test.go` - Integration tests (external services, browser)
-- `*_e2e_test.go` - End-to-end workflow tests
+- `*_e2e_test.go` - End-to-end tests (requires Mix Agent, real browser, zero mocking)
 - `*_bench_test.go` - Benchmark tests
 
-Integration and e2e tests skip via `SKIP_INTEGRATION_TESTS` env var.
+E2E tests use `//go:build e2e` tag and skip by default. Run with `-tags=e2e`.
 
 ### Running Tests
 

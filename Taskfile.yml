@@ -36,6 +36,22 @@ tasks:
       - go test -v -race ./...
       - echo "Tests passed!"
 
+  test-e2e:
+    desc: Run end-to-end tests (requires Mix Agent at localhost 8088)
+    cmds:
+      - echo "Running end-to-end tests..."
+      - echo "NOTE - Ensure Mix Agent is running at localhost:8088"
+      - go test -v -race -tags=e2e ./...
+      - echo "E2E tests passed!"
+
+  test-all:
+    desc: Run all tests including e2e tests
+    cmds:
+      - echo "Running all tests (unit + e2e)..."
+      - echo "NOTE - Ensure Mix Agent is running at localhost:8088"
+      - go test -v -race -tags=e2e ./...
+      - echo "All tests passed!"
+
   coverage:
     desc: Run tests with coverage report
     cmds:
