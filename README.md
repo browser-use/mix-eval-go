@@ -2,17 +2,6 @@
 
 Go-based evaluation orchestrator for running Mix Eval tasks using browser automation agents.
 
-## Features
-
-- 🚀 **Fast & Concurrent** - Run multiple evaluation tasks in parallel
-- 🔧 **Type-Safe** - Built with Go and the Mix Go SDK for compile-time guarantees
-- 🌐 **Cloud Browser Support** - Integrates with Browserbase, Brightdata, Hyperbrowser, and Anchor Browser
-- 📊 **Judge Evaluation** - Uses Claude to evaluate task completion
-- 📡 **Real-time Streaming** - SSE event streaming for live progress updates
-- 🎯 **Production-Ready** - Single binary deployment with no dependencies
-
-## Overview
-
 Mix-Eval-Go orchestrates agent evaluations by:
 1. Fetching tasks from Convex evaluation platform
 2. Creating browser sessions with cloud providers (optional)
@@ -25,16 +14,9 @@ Mix-Eval-Go orchestrates agent evaluations by:
 
 ### Prerequisites
 
-1. **Mix Agent** running locally or remotely
-   - Default: `http://localhost:8088`
-   - See [Mix Agent Setup](https://github.com/recreate-run/mix)
-
-2. **Convex Database** with evaluation API
-   - Convex deployment URL
-   - API secret key
-
-3. **(Optional) Cloud Browser Providers**
-   - Browserbase, Brightdata, Hyperbrowser, or Anchor Browser API keys
+- **Mix Agent** running at `http://localhost:8088` (see [Mix Agent Setup](https://github.com/recreate-run/mix))
+- **Convex Database** with evaluation API (deployment URL + secret key)
+- **(Optional)** Cloud browser provider API keys (Browserbase, Brightdata, Hyperbrowser, Anchor)
 
 ### Installation
 
@@ -42,138 +24,59 @@ Mix-Eval-Go orchestrates agent evaluations by:
 # Install dependencies
 task install
 
-# Build
-task build
+# Install CLI globally
+task install-cli
 ```
 
 ### Configuration
 
-Copy and configure environment variables:
+Create `.env` file (auto-loads on startup):
 
 ```bash
 cp .env.example .env
-# Edit .env with your credentials
 ```
 
-Required:
-- `CONVEX_URL` - Your Convex deployment URL
+Required variables:
+- `CONVEX_URL` - Convex deployment URL
 - `CONVEX_SECRET_KEY` - Convex API secret key
 
 Optional:
 - `MIX_AGENT_URL` - Mix Agent URL (default: `http://localhost:8088`)
-- `BROWSERBASE_API_KEY`, `BRIGHTDATA_USER`, etc. - Cloud browser provider credentials
+- `BROWSERBASE_API_KEY`, `BRIGHTDATA_USER`, etc. - Cloud browser credentials
 
 ### Running Evaluations
 
 ```bash
-# Load environment variables
-source .env
+# Run single task by ID
+mix-eval-go --dataset PostHog_Cleaned_020226 --task-id 93046
 
-# Run evaluation (all tasks)
-./bin/mix-eval-go \
-  --test-case "your_test_case_name" \
-  --run-id "unique_run_id" \
-  --parallel 3
+# Run task range by index
+mix-eval-go --dataset PostHog_Cleaned_020226 --start-index 0 --end-index 9 --parallel 3
 
-# Run specific task range (e.g., tasks 0-9)
-./bin/mix-eval-go \
-  --test-case "your_test_case_name" \
-  --run-id "unique_run_id" \
-  --start-index 0 \
-  --end-index 9 \
-  --parallel 3
-
-# Run with browser provider
-./bin/mix-eval-go \
-  --test-case "your_test_case_name" \
-  --run-id "unique_run_id" \
-  --browser-provider browserbase \
-  --parallel 3
+# Run with cloud browser provider
+mix-eval-go --dataset PostHog_Cleaned_020226 --task-id 93046 --browser-provider browserbase
 ```
 
-### GitHub Actions Integration
-
-Mix-Eval-Go includes a GitHub Actions workflow that integrates with the evaluation-platform for automated, distributed evaluations.
-
-**How it works:**
-
-1. **Evaluation-platform** triggers evaluation via GitHub API dispatch
-2. **GitHub Actions** spawns runner jobs with parameters
-3. **mix-eval-go** executes tasks and posts results back to Convex
-4. **Platform UI** displays real-time results
-
-**Setup:**
-
-1. Add repository secrets in GitHub Settings → Secrets:
-   ```
-   CONVEX_URL
-   CONVEX_SECRET_KEY
-   ANTHROPIC_API_KEY
-   BROWSERBASE_API_KEY
-   BROWSERBASE_PROJECT_ID
-   # ... other API keys
-   ```
-
-2. The evaluation-platform will automatically dispatch workflows when you start a run
-
-3. Monitor progress in:
-   - GitHub Actions: `https://github.com/your-org/mix-eval-go/actions`
-   - Evaluation Platform UI: Real-time task results
-
-**Manual trigger (for testing):**
-
-```bash
-gh api repos/your-org/mix-eval-go/dispatches \
-  -X POST \
-  -F event_type=run-eval \
-  -F client_payload='{"ref":"main","script_args":{"test_case":"WEBBENCH_READ_V5","run_id":"test-123","start_index":0,"end_index":9}}'
-```
-
-## Authentication System
-
-The evaluation platform handles authenticated tasks (social media, paywalls) using a centralized credential pool stored in Convex. Tasks reference credentials via `auth_keys` or include pre-populated `loginCookie` strings. Runners fetch credentials from `/api/getAuthDistribution`, inject them as browser cookies, and the browser starts already authenticated.
-
-**Credential Pool** (`authDistribution` table):
-- Shared credentials across all runners (Google, GitHub, LinkedIn, NYT, etc.)
-- Lifecycle management: `isCycledOut`, `isOnHold` flags for rotation
-- Access tracking: `accessCount`, `lastAccessedAt` for monitoring
-
-**Authentication Flow:**
-
-```
-Task Definition → Runner Fetches Credentials → Inject Cookies → Authenticated Browser
-     ↓                      ↓                         ↓                    ↓
-auth_keys:          GET /api/getAuth          storage_state.json    Site sees logged-in
-["nytimes"]         Distribution               with session          user, no paywall
-                    Returns loginInfo          cookies loaded
-```
-
-**Sample Task Definition (Convex):**
-
-```json
-{
-  "task_id": "1284368",
-  "confirmed_task": "Find DataRobot pricing on their enterprise page",
-  "website": "datarobot.com",
-  "auth_keys": ["datarobot"],
-  "login_cookie": "session=abc123; auth_token=xyz789",
-  "category": "pricing_research",
-  "outputSchema": {"price": "string", "tier": "string"}
-}
-```
-
-**Note**: mix-eval-go currently defines the `LoginCookie` field but delegates authentication to Mix Agent. Future versions may implement direct credential injection.
+**Options:**
+- `--dataset` - Dataset name (required)
+- `--task-id` - Run specific task by ID
+- `--start-index`, `--end-index` - Run task range
+- `--parallel` - Number of parallel tasks (default: 3)
+- `--browser-provider` - Cloud browser (browserbase, brightdata, hyperbrowser, anchor)
+- `--run-id` - Custom run identifier
+- `--model` - Override LLM model
+- `--max-steps` - Maximum steps per task
 
 ## Development
 
-### Development Commands
+### Commands
 
 ```bash
 task dev                 # Development hot reload
 task build               # Build the binary
+task install-cli         # Install CLI to ~/go/bin
 task test                # Run tests with race detection
 task test-e2e            # Run end-to-end tests (requires Mix Agent)
-task test-all            # Run all tests including e2e
 task tail-dev-log        # View dev server logs
 task clean               # Clean build artifacts
 task lint                # Run linters
@@ -181,161 +84,72 @@ task fmt                 # Format code
 task --list-all          # Show all available tasks
 ```
 
-### Testing
-
-**Unit Tests** (no external dependencies):
-```bash
-task test
-```
-
-**End-to-End Tests** (requires Mix Agent running):
-```bash
-# 1. Start Mix Agent server in separate terminal
-cd ../mix/mix_agent
-mix --http-port 8088
-
-# 2. Run E2E tests
-task test-e2e
-```
-
-**End-to-End Test Coverage**:
-
-1. **Simple Task Test** (`TestEndToEndSimpleTask`)
-   - Basic math: "What is 2+2?"
-   - Verifies SDK integration and streaming
-   - Runtime: ~3 seconds
-
-2. **Browser Automation Test** (`TestEndToEndBrowserAutomation`)
-   - Sanity check: Simple math problem
-   - Wikipedia extraction: Navigate to cats page, extract intro paragraph
-   - Keyword verification: Checks for "Felis catus" in extracted content
-   - Real browser automation with tool execution
-   - Runtime: ~30 seconds
-
-**Test Characteristics**:
-- Real browser automation via Mix Agent
-- Real HTTP requests to external sites (Wikipedia)
-- SSE event streaming with manual HTTP (SDK streaming bug workaround)
-- Tool call execution tracking
-- Session management lifecycle
-- Content extraction and verification
-- **Zero mocking** - all real HTTP/SSE communication
-
-E2E tests are marked with `//go:build e2e` tag and skip by default. They verify the complete workflow from session creation through browser automation to content extraction and validation.
-
 ### Project Structure
 
 ```
 mix-eval-go/
-├── cmd/
-│   └── main.go                 # CLI entry point
+├── cmd/mix-eval-go/           # CLI entry point
 ├── pkg/
-│   ├── orchestrator/           # Task orchestration & coordination
-│   │   ├── orchestrator.go     # Main pipeline with SSE streaming
-│   │   ├── extractor.go        # History extraction
-│   │   └── judge.go            # Claude evaluation
-│   ├── convex/                 # Convex database client
-│   │   └── client.go
-│   └── providers/              # Browser provider implementations
-│       └── browsers.go         # Browserbase, Brightdata, etc.
-├── test/
-│   └── e2e/                    # End-to-end tests
-│       ├── simple_task_test.go
-│       └── browser_automation_test.go
-└── bin/                        # Built binaries (runtime)
+│   ├── orchestrator/          # Task orchestration & SSE streaming
+│   ├── convex/                # Convex database client
+│   └── providers/             # Browser provider implementations
+└── test/e2e/                  # End-to-end tests
 ```
+
+### Testing
+
+E2E tests require Mix Agent running at `localhost:8088`:
+
+```bash
+# Run all tests
+task test-all
+
+# Run only e2e tests
+task test-e2e
+```
+
+Tests use `//go:build e2e` tag and verify the complete workflow with zero mocking.
 
 ## Architecture
 
 ### Evaluation Flow
 
-```
 1. Fetch tasks from Convex
 2. Create browser session (if cloud provider specified)
 3. Create Mix Agent session
-4. Stream SSE events in background
+4. Stream SSE events in background (manual HTTP due to SDK bug)
 5. Send task to Mix Agent
 6. Collect tool calls and screenshots
 7. Extract execution history
 8. Judge evaluates completion
 9. Upload screenshots to Convex
 10. Submit results to Convex
-```
 
 ### Browser Providers
 
-Supports multiple cloud browser providers:
 - **Browserbase** - High-quality managed browsers
 - **Brightdata** - Global proxy network with browsers
 - **Hyperbrowser** - Stealth browsing capabilities
 - **Anchor Browser** - Mobile and desktop with captcha solving
 
-## Relationship to Other Evaluation Repositories
+## Ecosystem
 
-Mix-Eval-Go is part of a unified evaluation ecosystem with multiple specialized runners sharing a common backend.
+Mix-Eval-Go is part of a unified evaluation platform with multiple runners:
 
-### Ecosystem Architecture
+- **evaluation-platform** - Shared Convex backend + UI for all runners
+- **manus-eval** (Python) - Evaluates Manus agent (tool-based execution)
+- **mix-eval-go** (Go) - This repository, evaluates Mix Agent
+- **evaluations-internal** (Python) - Original framework for browser-use agent
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                  evaluation-platform                        │
-│                  (Convex Backend + UI)                      │
-│  - Shared test cases database                               │
-│  - Results storage                                          │
-│  - REST API endpoints                                       │
-│  - Screenshot storage                                       │
-└────────┬──────────────┬──────────────┬─────────────────────┘
-         │              │              │
-         │ REST API     │ REST API     │ REST API
-         │              │              │
-    ┌────┴───┐     ┌────┴───┐     ┌───┴──────┐
-    │        │     │        │     │          │
-    ▼        ▼     ▼        ▼     ▼          ▼
-┌─────────────┐ ┌─────────────┐ ┌──────────────────┐
-│ manus-eval  │ │ mix-eval-go │ │ evaluations-     │
-│ (Python)    │ │ (Go)        │ │ internal         │
-│             │ │             │ │ (Python)         │
-│ Targets:    │ │ Targets:    │ │ Targets:         │
-│ Manus Agent │ │ Mix Agent   │ │ browser-use      │
-│ (tool-based)│ │ (new agent) │ │ (DOM-based)      │
-└─────────────┘ └─────────────┘ └──────────────────┘
-```
+All runners share task definitions and submit results to the same platform for comparison.
 
-### Repository Roles
-
-**evaluation-platform** - Central hub providing shared infrastructure for all evaluation runners. Built with React + Convex, it stores test cases, manages runs, hosts judge evaluations, and provides REST API endpoints used by all runners.
-
-**manus-eval** (Python) - Evaluates the Manus agent, which uses explicit tool calls (browser_*, bash, python, read, write) for task execution. Tracks detailed tool calls with arguments, results, and sandbox files. Included as a git submodule in the manus-use repository.
-
-**mix-eval-go** (Go, this repository) - Newest evaluation runner built in Go for the Mix Agent. Uses the Mix Go SDK and communicates via HTTP + SSE. Architecturally inspired by manus-eval but rewritten for performance and type safety.
-
-**evaluations-internal** (Python) - Original evaluation framework targeting the browser-use agent with DOM-based automation. Predecessor to both manus-eval and mix-eval-go, maintaining similar structure but focused on traditional browser automation patterns.
-
-### Key Characteristics
-
-All runners share the same evaluation-platform backend, enabling consistent task definitions and result comparison across different agents. Each runner specializes in its target agent's execution model while following similar architectural patterns: fetch tasks, execute with agent, evaluate with Claude judge, submit results.
-
-Mix-Eval-Go distinguishes itself through Go's performance benefits, compile-time type safety, and single-binary deployment, making it ideal for production environments requiring high concurrency and minimal operational overhead.
-
-## Implementation Status
-
-See [IMPLEMENTATION_STATUS.md](./IMPLEMENTATION_STATUS.md) for detailed status.
-
-**Current Status:** Phase 2-4 complete (Go-Eval Orchestrator)
-**Known Limitation:** Mix Agent CDP support (Phase 1) not yet implemented - currently uses local browser mode
-
-## Code Quality
-
-- ✅ Follows Go conventions (gofmt, effective Go)
-- ✅ Proper error handling with error wrapping
-- ✅ Context propagation for cancellation
-- ✅ Type-safe SDK integration
-- ✅ Concurrent execution with proper synchronization
+See `docs/` for detailed documentation on authentication, GitHub Actions integration, and architecture.
 
 ## Dependencies
 
 - `github.com/recreate-run/mix-go-sdk v0.2.1` - Mix SDK client
-- Standard library only (no other dependencies)
+- `github.com/joho/godotenv v1.5.1` - Environment variable loading
+- Go standard library
 
 ## License
 

@@ -26,7 +26,7 @@ tasks:
     desc: Build the binary
     cmds:
       - echo "Building mix-eval-go binary..."
-      - go build -o bin/mix-eval-go ./cmd
+      - go build -o bin/mix-eval-go ./cmd/mix-eval-go
       - echo "Build complete! Binary at bin/mix-eval-go"
 
   test:
@@ -100,3 +100,11 @@ tasks:
       - go mod download
       - go mod tidy
       - echo "Dependencies installed!"
+
+  install-cli:
+    desc: Install CLI binary to $GOPATH/bin
+    cmds:
+      - echo "Installing mix-eval-go to $GOPATH/bin..."
+      - go install ./cmd/mix-eval-go
+      - echo "✅ Installed! Run 'mix-eval-go --help' from anywhere"
+      - echo "Note - Ensure $HOME/go/bin is in your PATH"

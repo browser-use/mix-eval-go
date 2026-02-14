@@ -28,14 +28,14 @@ func NewJudge(mixURL string) *Judge {
 func (j *Judge) Evaluate(ctx context.Context, task convex.Task, history ExecutionHistory) (*convex.Evaluation, error) {
 	// Create temporary judge session
 	sessionResp, err := j.mixClient.Sessions.CreateSession(ctx, operations.CreateSessionRequest{
-		Title: "Judge Session",
+		Title:       "Judge Session",
+		BrowserMode: operations.BrowserModeLocalBrowserService,
 	})
 	if err != nil {
 		return nil, err
 	}
 
 	sessionID := sessionResp.SessionData.ID
-	defer j.mixClient.Sessions.DeleteSession(ctx, sessionID)
 
 	// Build evaluation prompt
 	prompt := j.buildEvaluationPrompt(task, history)

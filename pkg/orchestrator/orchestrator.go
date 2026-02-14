@@ -1,13 +1,16 @@
 package orchestrator
 
 import (
+	"bufio"
 	"context"
+	"encoding/json"
 	"fmt"
+	"net/http"
+	"strings"
 	"sync"
 	"time"
 
 	"github.com/recreate-run/mix-go-sdk"
-	"github.com/recreate-run/mix-go-sdk/models/components"
 	"github.com/recreate-run/mix-go-sdk/models/operations"
 
 	"mix-eval-go/pkg/convex"
@@ -49,6 +52,12 @@ func (o *Orchestrator) FetchTasks(ctx context.Context, testCaseName string) ([]c
 
 // RunTask executes a single evaluation task
 func (o *Orchestrator) RunTask(ctx context.Context, task convex.Task) (*convex.TaskResult, error) {
+	// Auto-generate runID if not provided
+	if task.RunID == "" {
+		task.RunID = fmt.Sprintf("run-%d", time.Now().Unix())
+		fmt.Printf("Auto-generated run ID: %s\n", task.RunID)
+	}
+
 	fmt.Printf("Starting task: %s\n", task.ID)
 
 	// 1. Create browser session if needed
@@ -85,12 +94,11 @@ func (o *Orchestrator) RunTask(ctx context.Context, task convex.Task) (*convex.T
 	}
 
 	sessionID := sessionResp.SessionData.ID
-	defer o.mixClient.Sessions.DeleteSession(ctx, sessionID)
 
-	fmt.Printf("Created Mix session: %s\n", sessionID)
+	fmt.Printf("Created Mix session: %s (preserved for file access)\n", sessionID)
 
-	// 3. Start SSE event stream
-	eventsChan := make(chan *components.SSEEventStream, 100)
+	// 3. Start SSE event stream (manual HTTP, SDK has bug)
+	eventsChan := make(chan map[string]interface{}, 100)
 	var streamWg sync.WaitGroup
 	streamWg.Add(1)
 
@@ -99,8 +107,8 @@ func (o *Orchestrator) RunTask(ctx context.Context, task convex.Task) (*convex.T
 		o.streamEvents(ctx, sessionID, eventsChan)
 	}()
 
-	// Brief delay to ensure stream is connected
-	time.Sleep(500 * time.Millisecond)
+	// Wait for stream to connect
+	time.Sleep(1 * time.Second)
 
 	// 4. Send task message
 	_, err = o.mixClient.Messages.SendMessage(ctx, sessionID, operations.SendMessageRequestBody{
@@ -150,60 +158,90 @@ func (o *Orchestrator) RunTask(ctx context.Context, task convex.Task) (*convex.T
 	return result, nil
 }
 
-// streamEvents handles SSE event streaming
-func (o *Orchestrator) streamEvents(ctx context.Context, sessionID string, ch chan *components.SSEEventStream) {
+// streamEvents handles SSE event streaming using manual HTTP (SDK has bug)
+func (o *Orchestrator) streamEvents(ctx context.Context, sessionID string, ch chan map[string]interface{}) {
 	defer close(ch)
 
-	streamResp, err := o.mixClient.Streaming.StreamEvents(ctx, sessionID, nil)
+	streamURL := fmt.Sprintf("%s/stream?sessionId=%s", o.config.MixURL, sessionID)
+
+	req, err := http.NewRequestWithContext(ctx, "GET", streamURL, nil)
 	if err != nil {
-		fmt.Printf("Stream error: %v\n", err)
+		fmt.Printf("Stream request creation failed: %v\n", err)
 		return
 	}
-	defer streamResp.SSEEventStream.Close()
+	req.Header.Set("Accept", "text/event-stream")
 
-	for streamResp.SSEEventStream.Next() {
-		event := streamResp.SSEEventStream.Value()
-		if event == nil {
-			continue
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		fmt.Printf("Stream request failed: %v\n", err)
+		return
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		fmt.Printf("Stream returned status %d\n", resp.StatusCode)
+		return
+	}
+
+	scanner := bufio.NewScanner(resp.Body)
+	for scanner.Scan() {
+		line := scanner.Text()
+
+		// SSE format: data: {...}
+		if strings.HasPrefix(line, "data: ") {
+			data := strings.TrimPrefix(line, "data: ")
+
+			var event map[string]interface{}
+			if err := json.Unmarshal([]byte(data), &event); err != nil {
+				continue
+			}
+
+			ch <- event
+
+			// Check for completion event
+			if eventType, ok := event["type"].(string); ok && eventType == "complete" {
+				return
+			}
 		}
+	}
 
-		ch <- event
-
-		// Check for completion event
-		if event.Type == components.SSEEventStreamTypeSSECompleteEvent {
-			return
-		}
+	if err := scanner.Err(); err != nil {
+		fmt.Printf("Scanner error: %v\n", err)
 	}
 }
 
 // collectEvents processes SSE events
-func (o *Orchestrator) collectEvents(eventsChan chan *components.SSEEventStream) ([]convex.ToolCall, [][]byte) {
+func (o *Orchestrator) collectEvents(eventsChan chan map[string]interface{}) ([]convex.ToolCall, [][]byte) {
 	var toolCalls []convex.ToolCall
 	var screenshots [][]byte
 
 	for event := range eventsChan {
-		switch event.Type {
-		case components.SSEEventStreamTypeSSEToolExecutionCompleteEvent:
-			if event.SSEToolExecutionCompleteEvent != nil {
+		eventType, _ := event["type"].(string)
+
+		switch eventType {
+		case "tool_execution_complete":
+			if toolName, ok := event["toolName"].(string); ok {
+				success, _ := event["success"].(bool)
+				progress, _ := event["progress"].(string)
 				toolCalls = append(toolCalls, convex.ToolCall{
-					ToolName: extractToolName(event.SSEToolExecutionCompleteEvent.Data.ToolName),
-					Result:   event.SSEToolExecutionCompleteEvent.Data.Progress,
-					IsError:  !event.SSEToolExecutionCompleteEvent.Data.Success,
+					ToolName: toolName,
+					Result:   progress,
+					IsError:  !success,
 				})
 			}
-		case components.SSEEventStreamTypeSSEThinkingEvent:
+		case "tool_execution_start":
+			if toolName, ok := event["toolName"].(string); ok {
+				fmt.Printf("🔧 Tool: %s\n", toolName)
+			}
+		case "thinking":
 			fmt.Println("💭 Agent thinking...")
-		case components.SSEEventStreamTypeSSEContentEvent:
-			if event.SSEContentEvent != nil {
-				fmt.Printf("💬 %s\n", event.SSEContentEvent.Data.Content)
+		case "content":
+			if content, ok := event["content"].(string); ok {
+				fmt.Printf("💬 %s\n", content)
 			}
-		case components.SSEEventStreamTypeSSEToolExecutionStartEvent:
-			if event.SSEToolExecutionStartEvent != nil {
-				fmt.Printf("🔧 Tool: %s\n", extractToolName(event.SSEToolExecutionStartEvent.Data.ToolName))
-			}
-		case components.SSEEventStreamTypeSSEErrorEvent:
-			if event.SSEErrorEvent != nil {
-				fmt.Printf("❌ Error: %s\n", event.SSEErrorEvent.Data.Error)
+		case "error":
+			if errMsg, ok := event["error"].(string); ok {
+				fmt.Printf("❌ Error: %s\n", errMsg)
 			}
 		}
 	}
