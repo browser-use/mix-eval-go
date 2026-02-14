@@ -62,10 +62,14 @@ type ToolCall struct {
 
 // Evaluation represents judge evaluation
 type Evaluation struct {
-	Passed    bool     `json:"passed"`
-	Score     float64  `json:"score"`
-	Reasoning string   `json:"reasoning"`
-	Errors    []string `json:"error_categories,omitempty"`
+	Passed          bool     `json:"passed"`
+	Score           float64  `json:"score"`
+	Reasoning       string   `json:"reasoning"`
+	Errors          []string `json:"error_categories,omitempty"`
+	ImpossibleTask  bool     `json:"impossible_task"`
+	ReachedCaptcha  bool     `json:"reached_captcha"`
+	JudgeTraceID    string   `json:"judge_trace_id,omitempty"`
+	ComprehensiveEval map[string]interface{} `json:"comprehensive_evaluation,omitempty"`
 }
 
 // FetchTestCase fetches tasks from Convex

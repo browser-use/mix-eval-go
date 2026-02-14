@@ -3,6 +3,7 @@ package orchestrator
 import (
 	"bufio"
 	"context"
+	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -10,6 +11,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/anthropics/anthropic-sdk-go"
 	"github.com/recreate-run/mix-go-sdk"
 	"github.com/recreate-run/mix-go-sdk/models/operations"
 
@@ -21,7 +23,7 @@ import (
 type Orchestrator struct {
 	mixClient    *mix.Mix
 	convexClient *convex.Client
-	judge        *Judge
+	judge        *JudgeAnthropic
 	config       Config
 }
 
@@ -33,6 +35,8 @@ type Config struct {
 	BrowserbaseKey  string
 	BrightdataUser  string
 	BrightdataPass  string
+	AnthropicAPIKey string
+	AnthropicModel  anthropic.Model
 }
 
 // New creates a new orchestrator instance
@@ -40,7 +44,7 @@ func New(config Config) *Orchestrator {
 	return &Orchestrator{
 		mixClient:    mix.New(config.MixURL, mix.WithTimeout(30*time.Second)),
 		convexClient: convex.NewClient(config.ConvexURL, config.ConvexSecretKey),
-		judge:        NewJudge(config.MixURL),
+		judge:        NewJudgeAnthropic(config.AnthropicAPIKey, config.AnthropicModel),
 		config:       config,
 	}
 }
@@ -133,18 +137,35 @@ func (o *Orchestrator) RunTask(ctx context.Context, task convex.Task) (*convex.T
 	// 7. Extract and format history
 	history := extractHistory(messagesResp.BackendMessages)
 
-	// 8. Judge evaluation
-	evaluation, err := o.judge.Evaluate(ctx, task, history)
+	// 8. Convert data for new judge format
+	judgeToolCalls := convertToJudgeToolCalls(history.ToolCalls)
+	screenshotsB64 := convertScreenshotsToBase64(screenshots)
+	var intermediateReasoning []string
+	if history.Reasoning != "" {
+		intermediateReasoning = []string{history.Reasoning}
+	}
+
+	// 9. Judge evaluation
+	evaluation, err := o.judge.Evaluate(
+		ctx,
+		task,
+		judgeToolCalls,
+		[]SandboxFile{}, // No sandbox files from Mix yet
+		history.FinalResponse,
+		intermediateReasoning,
+		nil, // No screenshot file paths
+		screenshotsB64,
+	)
 	if err != nil {
 		return nil, fmt.Errorf("evaluation failed: %w", err)
 	}
 
 	fmt.Printf("Evaluation: Score=%.2f, Passed=%v\n", evaluation.Score, evaluation.Passed)
 
-	// 9. Upload screenshots
+	// 10. Upload screenshots
 	storageIDs, _ := o.convexClient.UploadScreenshots(ctx, screenshots)
 
-	// 10. Build result
+	// 11. Build result
 	result := &convex.TaskResult{
 		RunID:                task.RunID,
 		TaskID:               task.ID,
@@ -298,4 +319,36 @@ func (o *Orchestrator) RunMultipleTasks(ctx context.Context, tasks []convex.Task
 
 	wg.Wait()
 	return nil
+}
+
+// convertToJudgeToolCalls converts ToolCallDetail to ToolCall for the judge
+func convertToJudgeToolCalls(details []ToolCallDetail) []ToolCall {
+	toolCalls := make([]ToolCall, len(details))
+	for i, detail := range details {
+		// Parse input as arguments
+		var args map[string]interface{}
+		if err := json.Unmarshal([]byte(detail.Input), &args); err != nil {
+			// If input is not JSON, store as raw string
+			args = map[string]interface{}{"input": detail.Input}
+		}
+
+		toolCalls[i] = ToolCall{
+			ToolName:  detail.Name,
+			Arguments: args,
+			Result:    detail.Result,
+			IsError:   detail.IsError,
+		}
+	}
+	return toolCalls
+}
+
+// convertScreenshotsToBase64 converts screenshot bytes to base64 strings
+func convertScreenshotsToBase64(screenshots [][]byte) []string {
+	b64Strings := make([]string, len(screenshots))
+	for i, screenshot := range screenshots {
+		// Encode as base64 (screenshots are typically PNG format from browser)
+		b64 := base64.StdEncoding.EncodeToString(screenshot)
+		b64Strings[i] = b64
+	}
+	return b64Strings
 }

@@ -9,13 +9,19 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"os"
 	"strings"
 	"sync"
 	"testing"
 	"time"
 
+	"github.com/anthropics/anthropic-sdk-go"
 	"github.com/recreate-run/mix-go-sdk"
+	"github.com/recreate-run/mix-go-sdk/models/components"
 	"github.com/recreate-run/mix-go-sdk/models/operations"
+
+	"mix-eval-go/pkg/convex"
+	"mix-eval-go/pkg/orchestrator"
 )
 
 // TestEndToEndSimpleTask tests simple task execution with SDK streaming
@@ -177,10 +183,117 @@ func TestEndToEndSimpleTask(t *testing.T) {
 		t.Logf("Content received: %v", strings.Join(contentEvents, ""))
 	}
 
+	// 8. Test Judge Evaluation
+	t.Log("\n=== Testing Judge Evaluation ===")
+
+	// Extract execution data from BackendMessages
+	var toolCalls []orchestrator.ToolCall
+	var finalResponse string
+
+	for _, msg := range messagesResp.BackendMessages {
+		// Extract tool calls
+		for _, tc := range msg.ToolCalls {
+			toolCall := orchestrator.ToolCall{
+				ToolName:  extractToolName(tc.Name),
+				Arguments: parseArguments(tc.Input),
+				Result:    "",
+				IsError:   false,
+			}
+			if tc.Result != nil {
+				toolCall.Result = *tc.Result
+			}
+			if tc.IsError != nil {
+				toolCall.IsError = *tc.IsError
+			}
+			toolCalls = append(toolCalls, toolCall)
+		}
+
+		// Extract final assistant response
+		if msg.AssistantResponse != nil {
+			finalResponse = *msg.AssistantResponse
+		}
+	}
+
+	t.Logf("Extracted %d tool calls for judge evaluation", len(toolCalls))
+	t.Logf("Final response for judge: %s", finalResponse)
+
+	// Initialize judge
+	apiKey := os.Getenv("ANTHROPIC_API_KEY")
+	if apiKey == "" {
+		t.Skip("ANTHROPIC_API_KEY not set, skipping judge evaluation")
+	}
+
+	judge := orchestrator.NewJudgeAnthropic(apiKey, anthropic.ModelClaudeSonnet4_5_20250929)
+
+	// Create task for judge
+	task := convex.Task{
+		Text: taskMessage,
+	}
+
+	// Evaluate with judge
+	t.Log("Calling judge to evaluate agent execution...")
+	eval, err := judge.Evaluate(
+		ctx,
+		task,
+		toolCalls,
+		[]orchestrator.SandboxFile{}, // No files for simple math task
+		finalResponse,
+		[]string{}, // No intermediate reasoning captured
+		nil,        // No screenshot paths
+		nil,        // No screenshot base64
+	)
+
+	if err != nil {
+		t.Fatalf("Judge evaluation failed: %v", err)
+	}
+
+	// Assert judge verdict
+	t.Logf("Judge verdict: passed=%v, score=%.2f", eval.Passed, eval.Score)
+	t.Logf("Judge reasoning: %s", eval.Reasoning)
+
+	if !eval.Passed {
+		t.Errorf("Judge marked task as failed. Reasoning: %s", eval.Reasoning)
+	}
+
+	if eval.Score != 1.0 {
+		t.Errorf("Expected judge score 1.0, got %.2f", eval.Score)
+	}
+
+	if eval.ImpossibleTask {
+		t.Error("Judge incorrectly marked task as impossible")
+	}
+
+	if eval.ReachedCaptcha {
+		t.Error("Judge incorrectly marked task as hitting CAPTCHA")
+	}
+
 	// Print summary
 	t.Logf("\n=== Test Summary ===")
 	t.Logf("Session ID: %s", sessionID)
-	t.Logf("Content: %s", strings.Join(contentEvents, ""))
+	t.Logf("Agent Content: %s", strings.Join(contentEvents, ""))
 	t.Logf("Messages in history: %d", len(messagesResp.BackendMessages))
 	t.Logf("Completion received: %v", completionReceived)
+	t.Logf("Judge Passed: %v (score: %.2f)", eval.Passed, eval.Score)
+	t.Logf("✓ Full E2E test passed: Agent execution + Judge evaluation")
+}
+
+// Helper: extractToolName extracts string from ToolName union type
+func extractToolName(toolName components.ToolName) string {
+	if toolName.CoreToolName != nil {
+		return string(*toolName.CoreToolName)
+	}
+	if toolName.Str != nil {
+		return *toolName.Str
+	}
+	return "unknown"
+}
+
+// Helper: parseArguments parses JSON input string to map
+func parseArguments(input string) map[string]interface{} {
+	var args map[string]interface{}
+	if err := json.Unmarshal([]byte(input), &args); err != nil {
+		// If parsing fails, return empty map
+		return map[string]interface{}{}
+	}
+	return args
 }

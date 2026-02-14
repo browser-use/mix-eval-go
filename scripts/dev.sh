@@ -67,6 +67,6 @@ CompileDaemon \
   -exclude-dir=vendor \
   -exclude-dir=test/testdata \
   -graceful-kill=true \
-  -build="go build -o bin/mix-eval-go ./cmd" \
+  -build="go build -o bin/mix-eval-go ./cmd/mix-eval-go" \
   -command="bin/mix-eval-go $@" \
   2>&1 | log_output
