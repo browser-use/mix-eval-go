@@ -122,6 +122,25 @@ Out of **18-22 auth-required tasks**, only **7 were found** in the Evals Export 
 - All passed via direct access to legally public data
 - **Pass rate: 100%**
 
+### No-Auth Tasks Evaluation (181 tasks)
+
+Out of **183 no-auth tasks** (public data), **181 were found** in the Evals Export dataset (98.9% coverage) and **176 have judge verdicts**.
+
+**Judge Verdicts:**
+- ✅ **PASS: 62 tasks (35.2%)**
+- ❌ **FAIL: 20 tasks (11.4%)**
+- ❔ **UNCLEAR: 94 tasks (53.4%)**
+
+**Verdict Context:**
+
+**PASS (62 tasks):** Successfully extracted public data - government filings, e-commerce products, documentation, tenders, business directories
+
+**FAIL (20 tasks):** Blocked by bot detection/CAPTCHAs (Cloudflare, anti-scraping), incorrect selectors, or platform substitution (used wrong source)
+
+**UNCLEAR (94 tasks):** Partial success, incomplete extraction, or nuanced judge verdicts without explicit pass/fail determination
+
+Overall, agents successfully accessed public data in ~35% of evaluated cases, with technical barriers (not authentication) being the primary challenge.
+
 ---
 
 ## Authentication Bypass Strategies

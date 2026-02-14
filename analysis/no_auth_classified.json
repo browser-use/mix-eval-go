@@ -1,0 +1,720 @@
+{
+  "summary": {
+    "PASS": 62,
+    "FAIL": 20,
+    "UNCLEAR": 94,
+    "NO_JUDGE": 5
+  },
+  "details": {
+    "PASS": [
+      {
+        "task_id": "1377055",
+        "judge_snippet": "The agent provided a concrete list of Vogue Singapore articles (titles and URLs) that mention openings of international luxury retail brands in Singap"
+      },
+      {
+        "task_id": "1356330",
+        "judge_snippet": "The agent completed the core objective. It filtered the WCA directory for the specified four networks and Hong Kong, set Order By to Company Name, and"
+      },
+      {
+        "task_id": "887205",
+        "judge_snippet": "The agent provided a concise list of the first three currently open ADB consulting tenders, each with the requested details: title, reference number, "
+      },
+      {
+        "task_id": "917119",
+        "judge_snippet": "[Used 1 step inspection(s)] The user requested all reviews from the specified Google Maps listing. The agent extracted and delivered only 548 reviews "
+      },
+      {
+        "task_id": "93046",
+        "judge_snippet": "The agent successfully extracted and organized the GitHub Copilot documentation. Evidence: it discovered 281 unique links, created structured indexes "
+      },
+      {
+        "task_id": "2271368",
+        "judge_snippet": "The agent navigated the site, enumerated categories, scraped the full product catalog, and extracted detailed information. Tool outputs show it pagina"
+      },
+      {
+        "task_id": "325376",
+        "judge_snippet": "The agent delivered a file (vendors.json) containing 10 bicycle tire repair vendors near Uppsala with name, website, email, contact number, address, r"
+      },
+      {
+        "task_id": "1136410",
+        "judge_snippet": "The agent navigated to ycombinator.com, filtered for Winter 2025 and B2B, and extracted company data. It produced a JSON file (yc_w25_b2b_companies.js"
+      },
+      {
+        "task_id": "1130803",
+        "judge_snippet": "[Used 1 step inspection(s)] The delivered table (canon_system_cameras.md) is low quality and does not fulfill the request. The Beschreibung column con"
+      },
+      {
+        "task_id": "122404",
+        "judge_snippet": "The agent navigated to Amazon, searched for laptops, collected product links from the first two results pages, visited each product page, and extracte"
+      },
+      {
+        "task_id": "944335",
+        "judge_snippet": "[Used 3 step inspection(s)] Verified via inspect_step that the agent extracted and output JSON objects for matching listings on multiple pages. Step 1"
+      },
+      {
+        "task_id": "121347",
+        "judge_snippet": "The agent provided a clear, detailed list of Canada's official February 2025 economic releases, primarily from Statistics Canada, including dates and "
+      },
+      {
+        "task_id": "1133145",
+        "judge_snippet": "[Used 2 step inspection(s)] The agent navigated the UNGM site and extracted a list of tenders. The final file tenders.json (verified via inspect_step "
+      },
+      {
+        "task_id": "1609021",
+        "judge_snippet": "The agent delivered a substantive set of Burleson, TX rental listings with key details (name, address, price, beds/sqft) after applying a price filter"
+      },
+      {
+        "task_id": "2125188",
+        "judge_snippet": "The agent navigated to the specified S-1/A filing on sec.gov and extracted the requested financial statements. It produced three CSV files in the sand"
+      },
+      {
+        "task_id": "1122929",
+        "judge_snippet": "The agent navigated to the requested page, dismissed the cookie banner, expanded ticket sections, and extracted detailed ticket data. It produced stru"
+      },
+      {
+        "task_id": "2329850",
+        "judge_snippet": "The agent delivered what the user asked for: links and summaries to Google Cloud's DPA, Service Specific Terms (including AI/ML terms), data residency"
+      },
+      {
+        "task_id": "2099475",
+        "judge_snippet": "The agent delivered a concise list of specific Ghent (9000) rental properties in the 120\u2013140 m\u00b2 range, with addresses, prices, sizes, features, and no"
+      },
+      {
+        "task_id": "1757675",
+        "judge_snippet": "The agent navigated vals.ai/benchmarks, opened the MMLU Pro page, and extracted benchmark data for the requested models. It reported concrete scores f"
+      },
+      {
+        "task_id": "205360",
+        "judge_snippet": "The agent successfully located Visa\u2019s Q4 FY2024 materials on the official IR site and related authoritative sources. It accessed and saved the earning"
+      },
+      {
+        "task_id": "1327246",
+        "judge_snippet": "The agent delivered a detailed analysis of both the authentication implementation and the server initialization, aligned with the user\u2019s goal and expe"
+      },
+      {
+        "task_id": "649583",
+        "judge_snippet": "The agent produced a structured JSON file named consulting_methodologies.json and reported its location. Reviewing the recorded read step indicates th"
+      },
+      {
+        "task_id": "1145398",
+        "judge_snippet": "The agent successfully scraped the NATO ACT contracting page and produced a JSON array containing tenders with the requested fields: title, reference "
+      },
+      {
+        "task_id": "1672827",
+        "judge_snippet": "The agent provided a concrete list of models that match 'RTX 3060 Ti' with Intel Core i7 and extracted the requested fields where available. It produc"
+      },
+      {
+        "task_id": "885584",
+        "judge_snippet": "[Used 2 step inspection(s)] The agent navigated to taobao.com, stayed on the homepage, scrolled through the product tiles, and extracted 100 items wit"
+      },
+      {
+        "task_id": "2357258",
+        "judge_snippet": "The agent delivered a clear validation report confirming the issue: the page\u2019s official specs show Read 6700 MB/s and Write 5300 MB/s, while a highlig"
+      },
+      {
+        "task_id": "225377",
+        "judge_snippet": "The agent delivered the requested optionGroups (Colours and Sizes) with option names and image URLs. Despite adidas.jp blocking access (403), the agen"
+      },
+      {
+        "task_id": "124347",
+        "judge_snippet": "The agent successfully scraped the specified Skymint White Cloud categories (Flower, Pre-rolls, Vaporizers, Edibles, Concentrates), handled the age ga"
+      },
+      {
+        "task_id": "1570984",
+        "judge_snippet": "The agent navigated to U-Haul, entered the specified ZIPs, and reached the truck rates page. From there, it extracted prices and availability for the "
+      },
+      {
+        "task_id": "265470",
+        "judge_snippet": "The agent navigated to the specified NSE page, entered and selected 'Tata Consultancy Services Limited', executed the search, and extracted the popula"
+      },
+      {
+        "task_id": "1873462",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent navigated to the site\u2019s About/Team section and extracted named contacts with their job titles. Using inspect_ste"
+      },
+      {
+        "task_id": "1624674",
+        "judge_snippet": "The agent delivered what the user asked for: (1) It extracted the freetype module\u2019s dependency handling from the OpenCV 4.10.0 opencv_contrib CMakeLis"
+      },
+      {
+        "task_id": "246025",
+        "judge_snippet": "The agent navigated Zolo.ca, applied a max price of $1,600,000 and a 4+ bedrooms filter, and searched around Scott Road & 80 Ave. It extracted listing"
+      },
+      {
+        "task_id": "2140824",
+        "judge_snippet": "The agent fulfilled the user\u2019s request by analyzing spitexcare.ch for local SEO elements and providing documented findings. The execution trace shows "
+      },
+      {
+        "task_id": "1007520",
+        "judge_snippet": "The agent navigated from wisconsinsurplus.com to the auction listing pages and extracted item-level data. Its Python extraction steps show it located "
+      },
+      {
+        "task_id": "1485252",
+        "judge_snippet": "The agent navigated to daraz.pk, searched for 'wireless headphones', scraped the first two pages, and extracted product name, price, and number sold. "
+      },
+      {
+        "task_id": "2304432",
+        "judge_snippet": "[Used 3 step inspection(s)] The agent completed the technical SEO audit after the site redirected to emeralddrift.com. Its key claims are supported by"
+      },
+      {
+        "task_id": "2214895",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent navigated to B-Stock\u2019s Amazon Liquidation Auctions and provided a list of currently available pallets relevant t"
+      },
+      {
+        "task_id": "1528795",
+        "judge_snippet": "The agent navigated to the Amazon product page for the ZOTAC Gaming GeForce RTX 5080 Solid OC White Edition and extracted detailed information. Final "
+      },
+      {
+        "task_id": "1195938",
+        "judge_snippet": "The agent visited all candidate URLs (NVD pages for each CVE and the GitHub advisory) and produced a consolidated report file (cve_details.md) contain"
+      },
+      {
+        "task_id": "2110707",
+        "judge_snippet": "The agent successfully collected approximately 40 products from Flipkart across the requested categories and provided the required details. The execut"
+      },
+      {
+        "task_id": "1062848",
+        "judge_snippet": "The agent delivered a detailed report addressing all requested points. It handled the cookie consent popup (Step 3 found the 'Accept All' button and S"
+      },
+      {
+        "task_id": "2307496",
+        "judge_snippet": "The agent successfully navigated from the ICIS chemicals page to the Data as a Service page and then to the ICIS Developer portal and API Quick Start "
+      },
+      {
+        "task_id": "1797096",
+        "judge_snippet": "The agent successfully navigated to the BscScan code page for the MCC token and produced a detailed analysis file 'mcc_bsc_contract_code_analysis.md'."
+      },
+      {
+        "task_id": "1999011",
+        "judge_snippet": "The agent navigated to the IMF WEO October 2024 database, selected countries and subjects, set a date range, generated a report, and extracted data. I"
+      },
+      {
+        "task_id": "1748573",
+        "judge_snippet": "The agent delivered what the user requested: it found and cited specific provisions from China\u2019s National Intelligence Law that require organizations/"
+      },
+      {
+        "task_id": "2252317",
+        "judge_snippet": "The agent delivered the requested extraction and analysis. It navigated multiple sections of the site (Home, About, Blog, Contact, Services pages like"
+      },
+      {
+        "task_id": "1624560",
+        "judge_snippet": "The agent delivered what the user requested: a detailed Ubuntu 22.04 (Jammy) libfreetype6 version history, the exact version/date where CVE-2025-27363"
+      },
+      {
+        "task_id": "2143378",
+        "judge_snippet": "The agent navigated to the Amazon Best Sellers in Books page and extracted data for all visible book listings. The final response provides a structure"
+      },
+      {
+        "task_id": "2225648",
+        "judge_snippet": "The agent delivered a structured analysis covering all items requested: services, target market/industries, value proposition, case studies/portfolio,"
+      },
+      {
+        "task_id": "2118996",
+        "judge_snippet": "The agent delivered a comprehensive website analysis covering all requested aspects: layout/structure, section hierarchy, design elements (colors, fon"
+      },
+      {
+        "task_id": "1297694",
+        "judge_snippet": "The agent delivered a substantive, technically detailed summary of the SRP flow as implemented in alexrudd/cognito-srp, including: parameters (N, g, k"
+      },
+      {
+        "task_id": "2003613",
+        "judge_snippet": "The agent navigated to the Uniswap pools page and extracted detailed data for ETH/USDC (USDC/ETH) across multiple fee tiers and protocols, as well as "
+      },
+      {
+        "task_id": "2216354",
+        "judge_snippet": "The agent delivered a comprehensive SEO competitive analysis of derma-solution.com, including page title/meta/heading extraction, site structure, prod"
+      },
+      {
+        "task_id": "1704522",
+        "judge_snippet": "The agent delivered what the user asked for: technical details of the qs vulnerability from GitHub, including the original PR and a technical explanat"
+      },
+      {
+        "task_id": "1081387",
+        "judge_snippet": "The agent navigated to the specified directory, iterated through result ranges 1-50, 51-100, and 101-150, extracted name, company, phone, email, and w"
+      },
+      {
+        "task_id": "2068140",
+        "judge_snippet": "The agent navigated to the specified BiggerPockets forum thread and extracted the discussion content. They parsed posts (extracting 14 posts) and gene"
+      },
+      {
+        "task_id": "1093228",
+        "judge_snippet": "The agent delivered a concise, accurate summary of the most recent critical Next.js vulnerability (Authorization Bypass in Next.js Middleware). Using "
+      },
+      {
+        "task_id": "2277898",
+        "judge_snippet": "The agent delivered a concise technical analysis covering all requested areas: site speed, mobile optimization (viewport tag), crawlability (robots.tx"
+      },
+      {
+        "task_id": "1681243",
+        "judge_snippet": "The agent delivered a structured SEO analysis of karpathy.ai that matches the user\u2019s requested criteria: it identified primary keywords, discussed key"
+      },
+      {
+        "task_id": "1664550",
+        "judge_snippet": "The agent navigated to the SEC filing\u2019s interactive data viewer and extracted the Consolidated Balance Sheets table. The python extraction steps show "
+      },
+      {
+        "task_id": "2282208",
+        "judge_snippet": "The agent navigated to the specified URL and extracted the page's content. It produced specific, plausible details (location: Bloomington, MN; ICF ACC"
+      }
+    ],
+    "FAIL": [
+      {
+        "task_id": "1092722",
+        "judge_snippet": "[Used 5 step inspection(s)] Using inspect_step on key steps confirms the agent did not find or extract the requested specifics. Step 149 shows Google "
+      },
+      {
+        "task_id": "453534",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent did not solve the captcha and therefore could not access or return the verification table as JSON. The final res"
+      },
+      {
+        "task_id": "1762101",
+        "judge_snippet": "[Used 5 step inspection(s)] inspect_step confirms the agent\u2019s key selectors are incorrect. Step 6 shows the homepage search UI but no data-testid attr"
+      },
+      {
+        "task_id": "1067771",
+        "judge_snippet": "[Used 5 step inspection(s)] The agent did not deliver the requested output: a list of up to 5 properties with addresses, prices, and beds. The final m"
+      },
+      {
+        "task_id": "1716501",
+        "judge_snippet": "[Used 2 step inspection(s)] The agent did not successfully fulfill the user\u2019s request. Inspecting the actual outputs shows several issues: (1) Relevan"
+      },
+      {
+        "task_id": "2357186",
+        "judge_snippet": "[Used 4 step inspection(s)] I inspected the agent\u2019s tool results with inspect_step. For the key steps where verification should have occurred, all B&H"
+      },
+      {
+        "task_id": "1291834",
+        "judge_snippet": "[Used 6 step inspection(s)] The agent claimed to extract Core Roofing LLC\u2019s registered agent, officers, status, business type, and formation date and "
+      },
+      {
+        "task_id": "959157",
+        "judge_snippet": "[Used 1 step inspection(s)] inspect_step confirms the agent generated a valid JSON with jobs in step 30. However, the agent\u2019s final chat response did "
+      },
+      {
+        "task_id": "2253155",
+        "judge_snippet": "[Used 2 step inspection(s)] Verified via inspect_step: The agent extracted listings from Moody\u2019s CRE (Steps 83 and 87), not LoopNet. All extracted lis"
+      },
+      {
+        "task_id": "1219357",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent did not fulfill the core request. Problems: (1) It did not return the JSON array in the final answer as requeste"
+      },
+      {
+        "task_id": "702654",
+        "judge_snippet": "[Used 3 step inspection(s)] Inspect_step confirms the agent did not find or report any listings for September 27, 2025. Step 59 shows only May 9 and A"
+      },
+      {
+        "task_id": "503786",
+        "judge_snippet": "[Used 2 step inspection(s)] The agent produced a working scraper and a JSON output, but it did not fulfill the requirement to scrape across all availa"
+      },
+      {
+        "task_id": "185981",
+        "judge_snippet": "The agent attempted to access the Wan Hai tracking site as requested but was consistently blocked by Imperva/hCaptcha (Access Denied - Error 15). It d"
+      },
+      {
+        "task_id": "759493",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent did not return the requested JSON in the final response. Instead, it stated that it compiled the results and cre"
+      },
+      {
+        "task_id": "21962",
+        "judge_snippet": "[Used 5 step inspection(s)] Verified via inspect_step that the agent did not complete the core request. Step 20 shows the Trulia 'for-rent-by-owner' p"
+      },
+      {
+        "task_id": "1251782",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent did not successfully complete the user\u2019s task. It did not find or cite any actual Kentucky Court of Justice civi"
+      },
+      {
+        "task_id": "426639",
+        "judge_snippet": "The agent navigated to comparefirst.sg, selected Term Life (Non-DPI), set DOB 01/01/1990, Male, Non-Smoker, Sum Assured S$1,000,000, CI No, and filter"
+      },
+      {
+        "task_id": "221599",
+        "judge_snippet": "[Used 2 step inspection(s)] The user requested a well-formatted JSON with specific fields. The agent\u2019s final message was a narrative summary and did n"
+      },
+      {
+        "task_id": "885451",
+        "judge_snippet": "The agent successfully navigated to an equivalent working booking engine (res.harrtravel.com) after the specified URL did not resolve, selected the Oc"
+      },
+      {
+        "task_id": "1568496",
+        "judge_snippet": "The agent navigated to the specified BSE India announcements page, clicked Submit, waited for the table, and then opened XBRL links from the first pag"
+      }
+    ],
+    "UNCLEAR": [
+      {
+        "task_id": "1220939",
+        "judge_snippet": "[Used 4 step inspection(s)] The task required searching the GSCCCA UCC index by debtor name ('1 OAK Roofing') and extracting debtor/secured party deta"
+      },
+      {
+        "task_id": "2179094",
+        "judge_snippet": "The agent accessed the IDX-linked document and proceeded to locate and download the Kalbe Farma 2023 Annual Report and related FY23 presentation. It e"
+      },
+      {
+        "task_id": "191902",
+        "judge_snippet": "The agent visited https://celltrader.co.za/shop/, paginated through all product pages (1\u20136) and confirmed page 7 is a 404. It extracted product detail"
+      },
+      {
+        "task_id": "265277",
+        "judge_snippet": "[Used 1 step inspection(s)] inspect_step for step 79 confirms a human verification (captcha) overlay on GoodRx with no accessible prices, dosage detai"
+      },
+      {
+        "task_id": "1077220",
+        "judge_snippet": "[Used 7 step inspection(s)] Using inspect_step, the saved report (chrome_vulnerabilities_2024_2025.md) lists 11 CVEs mapped to the requested APIs and "
+      },
+      {
+        "task_id": "451705",
+        "judge_snippet": "[Used 3 step inspection(s)] inspect_step confirms the agent primarily used Trulia and Google, not Redfin, to gather listings. Step 170 shows a Trulia "
+      },
+      {
+        "task_id": "1360102",
+        "judge_snippet": "[Used 1 step inspection(s)] The task required collecting 5 Redfin property URLs in San Diego filtered to max $500,000, 3+ bedrooms, and with view-rela"
+      },
+      {
+        "task_id": "1656949",
+        "judge_snippet": "The agent navigated to DEXTools, including the Ethereum Live New Pairs page, attempted multiple extractions, and concluded that there were no token pa"
+      },
+      {
+        "task_id": "1063981",
+        "judge_snippet": "[Used 1 step inspection(s)] The task required scraping detailed data for each listing from the specified Yad2 results page and formatting every listin"
+      },
+      {
+        "task_id": "500831",
+        "judge_snippet": "[Used 2 step inspection(s)] Using inspect_step, I verified that the agent\u2019s final table (step 59) includes CVEs from 2024 and 2022 (CVE-2024-49128, CV"
+      },
+      {
+        "task_id": "1465541",
+        "judge_snippet": "The agent navigated to the Contracts Finder search results page, extracted the first 20 tenders from the results, and visited individual tender pages "
+      },
+      {
+        "task_id": "352644",
+        "judge_snippet": "[Used 3 step inspection(s)] The user asked for listings for Pasadena, CA and Orange County, CA with URL, address, price, property type, and date of li"
+      },
+      {
+        "task_id": "2202304",
+        "judge_snippet": "[Used 5 step inspection(s)] The agent provided a comprehensive-looking summary, but several key claims are not supported by the site content visible i"
+      },
+      {
+        "task_id": "251101",
+        "judge_snippet": "[Used 3 step inspection(s)] Using inspect_step, I verified the agent\u2019s data sources and found issues: (1) The task specified collecting data from the "
+      },
+      {
+        "task_id": "757446",
+        "judge_snippet": "The agent attempted to navigate to Omaha Steaks and reach checkout but encountered consistent bot protection blocks (Akamai Edgesuite) returning 'Acce"
+      },
+      {
+        "task_id": "86041",
+        "judge_snippet": "The agent provided the ASML 2023 revenue breakdown by both region and product line, aligning with the user's request. Using the SEC 20-F/Annual Report"
+      },
+      {
+        "task_id": "1237178",
+        "judge_snippet": "The agent found and used the official Henrico General District Court online records portal (Virginia\u2019s Judicial System site), searched for A Plus Roof"
+      },
+      {
+        "task_id": "2226746",
+        "judge_snippet": "The agent used the Inflact Instagram Downloader on the specified profile and extracted post URL, media URL, caption, and hashtags. It compiled 36 post"
+      },
+      {
+        "task_id": "1019626",
+        "judge_snippet": "The agent located an official ISPO certified companies list from Ministry of Agriculture sources and even downloaded a PDF (ispo_list.pdf). They also "
+      },
+      {
+        "task_id": "1833859",
+        "judge_snippet": "[Used 1 step inspection(s)] Using inspect_step on the full homepage DOM (step 16) reveals contradictions with the agent\u2019s final analysis: (1) The agen"
+      },
+      {
+        "task_id": "705643",
+        "judge_snippet": "The agent provided the key result: it identified Mirati/BMS\u2019s KRAS G12D inhibitor trial (MRTX1133, NCT05737706) on ClinicalTrials.gov and reported its"
+      },
+      {
+        "task_id": "2174924",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent extracted a structured JSON array of 50 products from the specified page, applied the price > 1000 INR filter, a"
+      },
+      {
+        "task_id": "1254332",
+        "judge_snippet": "The agent located the Tennessee Department of Commerce & Insurance license verification site (verify.tn.gov / search.cloud.commerce.tn.gov), searched,"
+      },
+      {
+        "task_id": "808075",
+        "judge_snippet": "[Used 2 step inspection(s)] Verified via inspect_step that the agent\u2019s key claims are supported by the tool outputs. Step 48 shows the A Plus Oriental"
+      },
+      {
+        "task_id": "1486500",
+        "judge_snippet": "The agent navigated to the FAA DRS page, applied filters for Make 'The Boeing Company' and the relevant 777-300 Series with the Citation Publish Date "
+      },
+      {
+        "task_id": "1434249",
+        "judge_snippet": "[Used 2 step inspection(s)] The task required reporting the full text of the Claims section for each specified patent. The agent\u2019s final response cont"
+      },
+      {
+        "task_id": "2274972",
+        "judge_snippet": "The agent provided a clear, relevant summary of ESC guideline recommendations on antithrombotic therapy in the context of stroke prevention and intrac"
+      },
+      {
+        "task_id": "37757",
+        "judge_snippet": "[Used 3 step inspection(s)] The user asked to search Zillow and use Google Maps for 1\u20132 BR Berkeley rentals with no stairs, within 2 blocks of transit"
+      },
+      {
+        "task_id": "927731",
+        "judge_snippet": "The agent provided a clear, valid JSON array with exactly one entry per requested entity (Alphabet, VTB Capital, X). The output aligns with the OFAC s"
+      },
+      {
+        "task_id": "930386",
+        "judge_snippet": "[Used 5 step inspection(s)] Inspect_step confirms only 2 LinkedIn job detail pages with extractable fields: Krank (step 34) and Ace CPAs (step 36). A "
+      },
+      {
+        "task_id": "795094",
+        "judge_snippet": "[Used 3 step inspection(s)] The agent located charcoal grills on agrieuro.co.uk within the 20\u2013300 EUR range for the specified brands and extracted nam"
+      },
+      {
+        "task_id": "1783199",
+        "judge_snippet": "[Used 4 step inspection(s)] The agent provided specific yearly prices (e.g., $29/mo billed annually, $349/yr, $499/yr, etc.) that do not appear in the"
+      },
+      {
+        "task_id": "68754",
+        "judge_snippet": "The agent provided a structured dataset for the subject property (791 NW 20 ST) and a neighboring property (783 NW 20 ST) from the Miami-Dade Property"
+      },
+      {
+        "task_id": "1706786",
+        "judge_snippet": "The agent accessed the C.A.R. Market Data pages and extracted recent (2023\u20132025) inventory-related metrics. From the 'Market at a Glance' and the Dece"
+      },
+      {
+        "task_id": "976402",
+        "judge_snippet": "The agent provided a complete consolidated balance sheet for TCS as of March 31, 2024 with detailed line items and values, fulfilling the user's reque"
+      },
+      {
+        "task_id": "227142",
+        "judge_snippet": "[Used 1 step inspection(s)] The final output file (accommodations.json) contains entries that do not match the requested 'vakantiepark' results. Inspe"
+      },
+      {
+        "task_id": "1290796",
+        "judge_snippet": "The agent located and used the Otsego County Clerk\u2019s online records portal (searchiqs.com/nyots), searched both for \u201cClapper Construction LLC\u201d and for"
+      },
+      {
+        "task_id": "1202901",
+        "judge_snippet": "The agent navigated to the specified EIB project page and searched the EIB Public Register. It found only the ESDS (with a valid link to the PDF) and "
+      },
+      {
+        "task_id": "1792712",
+        "judge_snippet": "[Used 2 step inspection(s)] Using inspect_step on the two Patchstack pages confirms the entries contain version ranges, fixed versions, CVSS/priority,"
+      },
+      {
+        "task_id": "1391181",
+        "judge_snippet": "[Used 5 step inspection(s)] The agent performed a comprehensive SEO audit of proxyserver.tech focused on the keyword 'mobile proxies mexico' and provi"
+      },
+      {
+        "task_id": "1244725",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent located a UCC filing related to the company, extracted debtor and secured party details, noted collateral availa"
+      },
+      {
+        "task_id": "1300023",
+        "judge_snippet": "The agent navigated to the Birdeye page for the provided token address, opened the Holders section, identified the second-largest holder (G8jLr9VnwpvF"
+      },
+      {
+        "task_id": "1380258",
+        "judge_snippet": "[Used 4 step inspection(s)] The agent claimed to extract detailed enzyme/genes info from the NCBI Bookshelf pages (ATSDR Toxicological Profile and Sta"
+      },
+      {
+        "task_id": "1421359",
+        "judge_snippet": "[Used 3 step inspection(s)] The agent produced a comparative summary, but several key claims are either off-scope, unsupported by the inspected steps,"
+      },
+      {
+        "task_id": "415465",
+        "judge_snippet": "[Used 5 step inspection(s)] Verified via inspect_step that the DeedAuction 'Prior Sale Results' page (step 5) lists the exact auction entries the agen"
+      },
+      {
+        "task_id": "1065230",
+        "judge_snippet": "The agent provided a structured analysis with the key site links (About, Terms, Privacy), identified the legal business name as Baldor Technologies Pr"
+      },
+      {
+        "task_id": "1513697",
+        "judge_snippet": "[Used 1 step inspection(s)] The user asked to open each posting in the search results list and extract title, description, and contract value. The age"
+      },
+      {
+        "task_id": "959652",
+        "judge_snippet": "[Used 3 step inspection(s)] Inspecting the actual tool outputs shows the agent downloaded a full multi-year CSV and merely renamed it as if it were 20"
+      },
+      {
+        "task_id": "2236188",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent browsed SlimSista.com and extracted some style-related data via tools, but the final response was an internal er"
+      },
+      {
+        "task_id": "1504989",
+        "judge_snippet": "[Used 3 step inspection(s)] The target page was in maintenance with no tender content. The agent used Google site-search to look for the specific tend"
+      },
+      {
+        "task_id": "1821571",
+        "judge_snippet": "The user asked for the district heatmap of rental yields from Bayut MarketWatch and to return it in markdown. Despite encountering CAPTCHAs, the agent"
+      },
+      {
+        "task_id": "229756",
+        "judge_snippet": "The agent provided the product name, price, and seller. From the browsing trace, the Amazon product page it reached (the Black Oak variant it was redi"
+      },
+      {
+        "task_id": "1842739",
+        "judge_snippet": "[Used 3 step inspection(s)] Verified with inspect_step that the agent extracted accurate pricing from the sources it visited: (1) The /subscribe page "
+      },
+      {
+        "task_id": "2061640",
+        "judge_snippet": "The user asked to create the video using videogpt.io only if the service allows generation without authentication. The agent checked the site, attempt"
+      },
+      {
+        "task_id": "1099868",
+        "judge_snippet": "[Used 2 step inspection(s)] Verified with inspect_step. The agent only loaded page 1 via a single browser_navigate/browser_state (step 2). Step 2\u2019s fu"
+      },
+      {
+        "task_id": "1612534",
+        "judge_snippet": "[Used 1 step inspection(s)] Inspecting step 3 confirms the page contains the requested information (CAGR 29.24%, growth trends by device types, region"
+      },
+      {
+        "task_id": "867913",
+        "judge_snippet": "[Used 1 step inspection(s)] PASS. Using inspect_step on the product page confirms a full INCI ingredient list, a 99% natural-origin statement, and det"
+      },
+      {
+        "task_id": "967725",
+        "judge_snippet": "[Used 2 step inspection(s)] The extraction itself appears valid (verified via inspect_step step 14 showing product titles and prices), and the agent p"
+      },
+      {
+        "task_id": "1476683",
+        "judge_snippet": "The agent navigated to the SEC EDGAR search for Tesla (CIK 0001318605) and filtered within the last year. The screenshots show EDGAR listings for Tesl"
+      },
+      {
+        "task_id": "446054",
+        "judge_snippet": "The agent navigated to Amazon, searched for women\u2019s palazzo pants, identified a highest-rated item (CUPSHE Velvet Pants, 4.9 stars), opened the produc"
+      },
+      {
+        "task_id": "448768",
+        "judge_snippet": "The agent searched on Amazon and produced a concise list of phones with names, prices, and key specs, satisfying the user's request. The final output "
+      },
+      {
+        "task_id": "1024420",
+        "judge_snippet": "The agent performed the search on AutoTrader with postcode BT817YJ, make Volkswagen, model ID.4, and max price \u00a320,000. It then listed multiple availa"
+      },
+      {
+        "task_id": "1017491",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent\u2019s final summary includes multiple unverified and likely fabricated claims not supported by the Yahoo Finance AAP"
+      },
+      {
+        "task_id": "1563973",
+        "judge_snippet": "The agent searched the CA Prop 65 60-day notice database for 'Puritan', reviewed results pages and specific notice pages, and returned a structured su"
+      },
+      {
+        "task_id": "795554",
+        "judge_snippet": "The agent navigated to NIST\u2019s CSRC Cloud Computing section and the Publications page, then referenced current NIST documents as the basis for the summ"
+      },
+      {
+        "task_id": "1612606",
+        "judge_snippet": "[Used 2 step inspection(s)] The agent navigated to the RBI Bulletin site, opened the January 2025 bulletin, located the 'Current Statistics General' s"
+      },
+      {
+        "task_id": "202609",
+        "judge_snippet": "The agent provided a JSON object with MITRE ATT&CK mappings derived from the Cloud Matrix that align with the input scenario (GCS bucket ransomware be"
+      },
+      {
+        "task_id": "1771670",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent accessed the requested IEA executive summary and extracted key, verifiable details on grid modernization, infras"
+      },
+      {
+        "task_id": "2185648",
+        "judge_snippet": "The agent applied the HVAC industry filter (Ventilation, luftbehandling), experimented with the revenue filter (set to >=500,000 kSEK = 500M SEK), sor"
+      },
+      {
+        "task_id": "372770",
+        "judge_snippet": "The agent navigated to Amazon, searched for 'puma shoes', and scraped the first 15 results. It provided a tabular output containing image URLs, titles"
+      },
+      {
+        "task_id": "2092706",
+        "judge_snippet": "The agent provided a complete, structured extraction matching the user's requested fields and included a clear analysis of the page structure for syst"
+      },
+      {
+        "task_id": "966617",
+        "judge_snippet": "The agent produced a working Python script (extract_electricity_access.py) that uses the official World Bank API, handles pagination and retries, sele"
+      },
+      {
+        "task_id": "839951",
+        "judge_snippet": "The agent visited the specified Mailchimp pricing page, interacted with the contact range dropdown, and extracted plan details for 1,000, 5,000, and 1"
+      },
+      {
+        "task_id": "1125412",
+        "judge_snippet": "[Used 1 step inspection(s)] The agent navigated to arXiv quant-ph recent listings and parsed entries for the past two days (Thu, 5 Feb 2026 and Fri, 6"
+      },
+      {
+        "task_id": "1822100",
+        "judge_snippet": "The agent provided a structured analysis addressing all six requested points and backed several claims with evidence from the browsing session. Their "
+      },
+      {
+        "task_id": "1501614",
+        "judge_snippet": "The agent provided the specific information requested: physical/operational location with full addresses, a clear summary of the return policy includi"
+      },
+      {
+        "task_id": "1889096",
+        "judge_snippet": "The agent located KeyBank\u2019s GLBA privacy notice (KeyCorp Privacy Notice for Consumers) and provided the requested JSON output. The screenshots and bro"
+      },
+      {
+        "task_id": "823668",
+        "judge_snippet": "The agent navigated to the RASFF Window search page, set Countries -> Origin: Morocco, applied a last-year date range, and executed the search. The re"
+      },
+      {
+        "task_id": "1618713",
+        "judge_snippet": "The agent provided the phone numbers for the 12 property manager cards on the first page, which matches the user's request to extract phone numbers fr"
+      },
+      {
+        "task_id": "270711",
+        "judge_snippet": "The agent visited the target (which redirected to lectuepublibre4.com) and examined the page contents. It extracted download links and detected a Base"
+      },
+      {
+        "task_id": "1785321",
+        "judge_snippet": "The agent accessed the specified Medium article and extracted a comprehensive 2024 Tesla financial analysis. The final output includes revenue trends "
+      },
+      {
+        "task_id": "191779",
+        "judge_snippet": "The agent visited the specified product page on saytool.com and extracted the requested fields. The final JSON includes product name, specifications, "
+      },
+      {
+        "task_id": "382924",
+        "judge_snippet": "The agent opened Amazon, searched for 'Electronics', clicked the first result, and scraped the product page. The final response includes a detailed di"
+      },
+      {
+        "task_id": "1788829",
+        "judge_snippet": "The agent loaded the DJI Italy homepage and provided a structured competitive analysis that addresses all requested sections: title/meta, homepage con"
+      },
+      {
+        "task_id": "1766206",
+        "judge_snippet": "The agent provided a concise competitive summary directly addressing the prompt: rating, reviews count, downloads, developer info, pricing model, key "
+      },
+      {
+        "task_id": "769424",
+        "judge_snippet": "The agent browsed each of the four provided URLs and produced a final JSON summarizing the mobile offers by name. The output includes specific, plausi"
+      },
+      {
+        "task_id": "2275751",
+        "judge_snippet": "The agent visited the Facebook Ad Library page for 'posture corrector' in the US and provided the two items requested: (1) a count of active ads (~20,"
+      },
+      {
+        "task_id": "1960499",
+        "judge_snippet": "The agent explored multiple pages (homepage, Pricing, Comparison, Blogs) and provided a comprehensive analysis that addresses all requested points: st"
+      },
+      {
+        "task_id": "1173252",
+        "judge_snippet": "The agent navigated to PageSpeed Insights, analyzed https://karpathy.ai for both mobile and desktop, and provided a concise summary with Core Web Vita"
+      },
+      {
+        "task_id": "1015772",
+        "judge_snippet": "[Used 2 step inspection(s)] The agent visited the site and searched for all properties across all areas. It reported totals for both sales (498) and r"
+      },
+      {
+        "task_id": "2228307",
+        "judge_snippet": "The agent visited the requested Google Cloud Text-to-Speech pricing page and extracted the detailed pricing by voice type. The final response presents"
+      },
+      {
+        "task_id": "1662847",
+        "judge_snippet": "The agent cleaned the company name correctly (\"Mezzaten Inc\" -> \"Mezzaten\"), navigated to the specified Proposition 65 60-Day Notice Search page, ente"
+      },
+      {
+        "task_id": "1289271",
+        "judge_snippet": "The agent provided a clear, detailed summary of CVE-2024-34459 with technical details (affected function, trigger condition, impact), affected version"
+      },
+      {
+        "task_id": "910053",
+        "judge_snippet": "The agent visited the requested homepage and returned the SEO analysis strictly in the JSON format requested. The output includes: page title, an empt"
+      }
+    ]
+  }
+}
