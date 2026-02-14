@@ -1,0 +1,3178 @@
+{
+  "summary": {
+    "total_scraping_tasks": 201,
+    "total_urls_found": 511,
+    "unique_domains": 204
+  },
+  "domain_frequency": {
+    "github.com": 28,
+    "bhphotovideo.com": 12,
+    "google.com": 10,
+    "nvd.nist.gov": 10,
+    "nist.gov": 10,
+    "skymint.com": 10,
+    "instagram.com": 9,
+    "sec.gov": 9,
+    "autotrader.ca": 9,
+    "amazon.com": 8,
+    "eib.org": 6,
+    "biggerpockets.com": 6,
+    "apartments.com": 6,
+    "wcaworld.com": 6,
+    "car.org": 6,
+    "wordstream.com": 4,
+    "escardio.org": 4,
+    "patchstack.com": 4,
+    "karpathy.ai": 4,
+    "redfin.com": 4,
+    "mcgrath.com.au": 4,
+    "omahasteaks.com": 3,
+    "facebook.com": 3,
+    "dji.com": 3,
+    "uhaul.com": 3,
+    "cloud.google.com": 3,
+    "greeencode.com": 3,
+    "wanhai.com": 3,
+    "adb.org": 3,
+    "flipkart.com": 3,
+    "dice.com": 3,
+    "minimaxi.com": 3,
+    "renewableenergyworld.com": 3,
+    "wordtracker.com": 3,
+    "loopnet.com": 3,
+    "airbnb.ca": 3,
+    "homedepot.com": 3,
+    "machinerytrader.com": 3,
+    "bbb.org": 3,
+    "example.com": 3,
+    "lawfareblog.com": 3,
+    "examplevendor.com": 3,
+    "tcs.com": 3,
+    "nseindia.com": 3,
+    "linkedin.com": 3,
+    "upwork.com": 3,
+    "icis.com": 3,
+    "slimsista.com": 3,
+    "ptechpartners.com": 3,
+    "ungm.org": 3,
+    "docebo.com": 3,
+    "bstn.com": 3,
+    "dextools.io": 3,
+    "similarweb.com": 3,
+    "vals.ai": 3,
+    "beauhurst.com": 3,
+    "mordorintelligence.com": 3,
+    "closed.com": 3,
+    "padmapper.com": 3,
+    "thiscorner.co": 3,
+    "ubuntu.com": 3,
+    "poweradspy.com": 3,
+    "bseindia.com": 3,
+    "zolo.ca": 3,
+    "uniquemallorca.com": 3,
+    "narpm.org": 3,
+    "bayut.com": 3,
+    "imf.org": 3,
+    "uniqlo.com": 3,
+    "withroam.com": 3,
+    "redfin.ca": 3,
+    "iea.org": 3,
+    "semrush.com": 3,
+    "lectuepub3.com": 2,
+    "irela.org": 2,
+    "stake.com": 2,
+    "inflact.com": 2,
+    "immoweb.be": 2,
+    "minnodillc.com": 2,
+    "idfy.com": 2,
+    "contractsfinder.service.gov.uk": 2,
+    "acem.org": 2,
+    "themanatomy.com": 2,
+    "ppubs.uspto.gov": 2,
+    "uspto.gov": 2,
+    "birdeye.so": 2,
+    "emeralddrift.myshopify.com": 2,
+    "myshopify.com": 2,
+    "key.com": 2,
+    "theethnicworld.com": 2,
+    "mitre.org": 2,
+    "artificialanalysis.ai": 2,
+    "tenderned.nl": 2,
+    "yad2.co.il": 2,
+    "susannabeatrice.global": 2,
+    "adidas.jp": 2,
+    "thediplomat.com": 2,
+    "szigetfestival.com": 2,
+    "rbi.org.in": 2,
+    "oag.ca.gov": 2,
+    "oag.ca": 2,
+    "comparefirst.sg": 2,
+    "allabolag.se": 2,
+    "idx.co.id": 2,
+    "focal-dashboard.s3.amazonaws.com": 2,
+    "amazonaws.com": 2,
+    "daraz.pk": 2,
+    "bscscan.com": 2,
+    "act.nato.int": 2,
+    "videogpt.io": 2,
+    "dtfprinterusa.com": 2,
+    "apna.co": 2,
+    "mailchimp.com": 2,
+    "breaking-bet.com": 2,
+    "revapets.com": 2,
+    "spitexcare.ch": 2,
+    "derma-solution.com": 2,
+    "medium.com": 2,
+    "europages.co.uk": 2,
+    "saytool.com": 2,
+    "embracetransitioncoaching.com": 2,
+    "bstock.com": 2,
+    "launchpad.net": 2,
+    "mcgrath.com": 2,
+    "philgeps.gov.ph": 2,
+    "warmembracegifts.com": 2,
+    "acquistinretepa.it": 2,
+    "taobao.com": 2,
+    "zillow.com": 1,
+    "mergr.com": 1,
+    "eprocure.gov.in": 1,
+    "eprocure.gov": 1,
+    "hailuoai.video": 1,
+    "docs.github.com": 1,
+    "ai.google": 1,
+    "service.gov": 1,
+    "clinicaltrials.gov": 1,
+    "proxyserver.tech": 1,
+    "acem.org.au": 1,
+    "deedauction.net": 1,
+    "drs.faa.gov": 1,
+    "faa.gov": 1,
+    "sales.cabincloseoutstore.com": 1,
+    "cabincloseoutstore.com": 1,
+    "sanctionssearch.ofac.treas.gov": 1,
+    "treas.gov": 1,
+    "fr.caudalie.com": 1,
+    "caudalie.com": 1,
+    "pagespeed.web.dev": 1,
+    "web.dev": 1,
+    "attack.mitre.org": 1,
+    "celltrader.co.za": 1,
+    "celltrader.co": 1,
+    "play.google.com": 1,
+    "restaurantsofmanchester.com": 1,
+    "yad2.co": 1,
+    "argotstudio.com": 1,
+    "digitalcommons.law.scu.edu": 1,
+    "scu.edu": 1,
+    "tris.vn": 1,
+    "verificacfdi.facturaelectronica.sat.gob.mx": 1,
+    "rbi.org": 1,
+    "remote.team": 1,
+    "glassdoor.com": 1,
+    "autotrader.co.uk": 1,
+    "autotrader.co": 1,
+    "webgate.ec.europa.eu": 1,
+    "idx.co": 1,
+    "cve.mitre.org": 1,
+    "marketingsummit.siliconslopes.com": 1,
+    "siliconslopes.com": 1,
+    "en.youlive.ca": 1,
+    "youlive.ca": 1,
+    "ycombinator.com": 1,
+    "data.worldbank.org": 1,
+    "worldbank.org": 1,
+    "upkeepskin.com": 1,
+    "europages.co": 1,
+    "vividseats.com": 1,
+    "finance.yahoo.com": 1,
+    "yahoo.com": 1,
+    "nasdaq.com": 1,
+    "agrieuro.co": 1,
+    "aiindex.stanford.edu": 1,
+    "stanford.edu": 1,
+    "wro.westchesterclerk.com": 1,
+    "westchesterclerk.com": 1,
+    "packages.ubuntu.com": 1,
+    "people.canonical.com": 1,
+    "canonical.com": 1,
+    "goodrx.com": 1,
+    "canon.de": 1,
+    "pkg.go.dev": 1,
+    "go.dev": 1,
+    "wisconsinsurplus.com": 1,
+    "app.uniswap.org": 1,
+    "uniswap.org": 1,
+    "chromereleases.googleblog.com": 1,
+    "googleblog.com": 1,
+    "ango.ph": 1,
+    "philgeps.gov": 1,
+    "msrc.microsoft.com": 1,
+    "microsoft.com": 1,
+    "thedefiant.io": 1
+  },
+  "domain_to_tasks": {
+    "instagram.com": [
+      {
+        "task_id": "2118230",
+        "url": "https://www.instagram.com/douglasjaveda/",
+        "task_snippet": "Read webpage https://www.instagram.com/douglasjaveda/ and follow the prompt: Analyze the Instagram p..."
+      },
+      {
+        "task_id": "2118230",
+        "url": "https://www.instagram.com/douglasjaveda/",
+        "task_snippet": "Read webpage https://www.instagram.com/douglasjaveda/ and follow the prompt: Analyze the Instagram p..."
+      },
+      {
+        "task_id": "2118230",
+        "url": "https://instagram.com",
+        "task_snippet": "Read webpage https://www.instagram.com/douglasjaveda/ and follow the prompt: Analyze the Instagram p..."
+      },
+      {
+        "task_id": "2226746",
+        "url": "https://www.instagram.com/supersnake/?hl=en",
+        "task_snippet": "Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Inst..."
+      },
+      {
+        "task_id": "2226746",
+        "url": "https://www.instagram.com/supersnake/?hl=en",
+        "task_snippet": "Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Inst..."
+      },
+      {
+        "task_id": "2226746",
+        "url": "https://instagram.com",
+        "task_snippet": "Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Inst..."
+      },
+      {
+        "task_id": "2147069",
+        "url": "https://www.instagram.com/teo__idt/",
+        "task_snippet": "Read webpage https://www.instagram.com/teo__idt/ and follow the prompt: Analyze this Instagram accou..."
+      },
+      {
+        "task_id": "2147069",
+        "url": "https://www.instagram.com/teo__idt/",
+        "task_snippet": "Read webpage https://www.instagram.com/teo__idt/ and follow the prompt: Analyze this Instagram accou..."
+      },
+      {
+        "task_id": "2147069",
+        "url": "https://instagram.com",
+        "task_snippet": "Read webpage https://www.instagram.com/teo__idt/ and follow the prompt: Analyze this Instagram accou..."
+      }
+    ],
+    "amazon.com": [
+      {
+        "task_id": "446054",
+        "url": "https://amazon.com",
+        "task_snippet": "\nStep 1: Open web browser and vist amazon.com\nStep 2: Search for plazzo in women category\nStep 3: Am..."
+      },
+      {
+        "task_id": "448768",
+        "url": "https://amazon.com",
+        "task_snippet": "Search for the latest suggested phones on amazon.com and extract details including names, specificat..."
+      },
+      {
+        "task_id": "372770",
+        "url": "https://amazon.com",
+        "task_snippet": "go to amazon.com and search for puma shoes.\nafter scape the data of first 15 result of shoes. Get th..."
+      },
+      {
+        "task_id": "122404",
+        "url": "https://amazon.com",
+        "task_snippet": "go to amazon.com, search laptops, go to each laptop page and grab info of (Name,RAM,GPU,Processor,Di..."
+      },
+      {
+        "task_id": "1672827",
+        "url": "https://www.amazon.com/s?k=rtx+3060+ti+gaming+pc+intel+i7",
+        "task_snippet": "Read webpage https://www.amazon.com/s?k=rtx+3060+ti+gaming+pc+intel+i7 and follow the prompt: Extrac..."
+      },
+      {
+        "task_id": "1672827",
+        "url": "https://www.amazon.com/s?k=rtx+3060+ti+gaming+pc+intel+i7",
+        "task_snippet": "Read webpage https://www.amazon.com/s?k=rtx+3060+ti+gaming+pc+intel+i7 and follow the prompt: Extrac..."
+      },
+      {
+        "task_id": "1672827",
+        "url": "https://amazon.com",
+        "task_snippet": "Read webpage https://www.amazon.com/s?k=rtx+3060+ti+gaming+pc+intel+i7 and follow the prompt: Extrac..."
+      },
+      {
+        "task_id": "382924",
+        "url": "https://Amazon.com",
+        "task_snippet": "\n        **Task: Scrape Amazon Electronics (Output must be valid Python dict or list of dicts)**\n\n  ..."
+      }
+    ],
+    "omahasteaks.com": [
+      {
+        "task_id": "757446",
+        "url": "https://www.omahasteaks.com/.",
+        "task_snippet": "Visit the website: https://www.omahasteaks.com/.\nYour goal is to navigate to the checkout page of th..."
+      },
+      {
+        "task_id": "757446",
+        "url": "https://www.omahasteaks.com/.",
+        "task_snippet": "Visit the website: https://www.omahasteaks.com/.\nYour goal is to navigate to the checkout page of th..."
+      },
+      {
+        "task_id": "757446",
+        "url": "https://omahasteaks.com",
+        "task_snippet": "Visit the website: https://www.omahasteaks.com/.\nYour goal is to navigate to the checkout page of th..."
+      }
+    ],
+    "lectuepub3.com": [
+      {
+        "task_id": "270711",
+        "url": "https://lectuepub3.com/",
+        "task_snippet": "Visit https://lectuepub3.com/ and analyze whether the website contains phishing or malicious content..."
+      },
+      {
+        "task_id": "270711",
+        "url": "https://lectuepub3.com",
+        "task_snippet": "Visit https://lectuepub3.com/ and analyze whether the website contains phishing or malicious content..."
+      }
+    ],
+    "eib.org": [
+      {
+        "task_id": "1219357",
+        "url": "https://www.eib.org/en/projects/pipelines/index.htm",
+        "task_snippet": "scrape tender information from https://www.eib.org/en/projects/pipelines/index.htm and extract the f..."
+      },
+      {
+        "task_id": "1219357",
+        "url": "https://www.eib.org/en/projects/pipelines/index.htm",
+        "task_snippet": "scrape tender information from https://www.eib.org/en/projects/pipelines/index.htm and extract the f..."
+      },
+      {
+        "task_id": "1219357",
+        "url": "https://eib.org",
+        "task_snippet": "scrape tender information from https://www.eib.org/en/projects/pipelines/index.htm and extract the f..."
+      },
+      {
+        "task_id": "1202901",
+        "url": "https://www.eib.org/en/projects/pipelines/all/20230590",
+        "task_snippet": "Navigate to https://www.eib.org/en/projects/pipelines/all/20230590 and extract links to tender-speci..."
+      },
+      {
+        "task_id": "1202901",
+        "url": "https://www.eib.org/en/projects/pipelines/all/20230590",
+        "task_snippet": "Navigate to https://www.eib.org/en/projects/pipelines/all/20230590 and extract links to tender-speci..."
+      },
+      {
+        "task_id": "1202901",
+        "url": "https://eib.org",
+        "task_snippet": "Navigate to https://www.eib.org/en/projects/pipelines/all/20230590 and extract links to tender-speci..."
+      }
+    ],
+    "zillow.com": [
+      {
+        "task_id": "37757",
+        "url": "https://zillow.com",
+        "task_snippet": "search zillow.com for 1 or 2 bedroom rental apartments in Berkeley, California that that have no sta..."
+      }
+    ],
+    "mergr.com": [
+      {
+        "task_id": "342762",
+        "url": "https://mergr.com",
+        "task_snippet": "On mergr.com, navigate to the transactions page and extract all transaction details from page 1. Ret..."
+      }
+    ],
+    "eprocure.gov.in": [
+      {
+        "task_id": "259349",
+        "url": "https://eprocure.gov.in/eprocure/app",
+        "task_snippet": "Go to https://eprocure.gov.in/eprocure/app, search for all the past tenders award winners and make a..."
+      }
+    ],
+    "eprocure.gov": [
+      {
+        "task_id": "259349",
+        "url": "https://eprocure.gov",
+        "task_snippet": "Go to https://eprocure.gov.in/eprocure/app, search for all the past tenders award winners and make a..."
+      }
+    ],
+    "irela.org": [
+      {
+        "task_id": "1081387",
+        "url": "https://irela.org/Lawyer-Directory",
+        "task_snippet": "Fetch the the name, company, phone, email, and website of lawyers at https://irela.org/Lawyer-Direct..."
+      },
+      {
+        "task_id": "1081387",
+        "url": "https://irela.org",
+        "task_snippet": "Fetch the the name, company, phone, email, and website of lawyers at https://irela.org/Lawyer-Direct..."
+      }
+    ],
+    "facebook.com": [
+      {
+        "task_id": "2275751",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=posture%20corrector&sort_data[direction",
+        "task_snippet": "Read webpage https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=postur..."
+      },
+      {
+        "task_id": "2275751",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=posture%20corrector&sort_data[direction",
+        "task_snippet": "Read webpage https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=postur..."
+      },
+      {
+        "task_id": "2275751",
+        "url": "https://facebook.com",
+        "task_snippet": "Read webpage https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=postur..."
+      }
+    ],
+    "dji.com": [
+      {
+        "task_id": "1788829",
+        "url": "https://www.dji.com/it",
+        "task_snippet": "Read webpage https://www.dji.com/it and follow the prompt: Analizza la homepage di DJI Italia per co..."
+      },
+      {
+        "task_id": "1788829",
+        "url": "https://www.dji.com/it",
+        "task_snippet": "Read webpage https://www.dji.com/it and follow the prompt: Analizza la homepage di DJI Italia per co..."
+      },
+      {
+        "task_id": "1788829",
+        "url": "https://dji.com",
+        "task_snippet": "Read webpage https://www.dji.com/it and follow the prompt: Analizza la homepage di DJI Italia per co..."
+      }
+    ],
+    "stake.com": [
+      {
+        "task_id": "872717",
+        "url": "https://stake.com/sports/valorant/all",
+        "task_snippet": "\nGo to:\nhttps://stake.com/sports/valorant/all\n\n1. Wait until the page is fully loaded and all Valora..."
+      },
+      {
+        "task_id": "872717",
+        "url": "https://stake.com",
+        "task_snippet": "\nGo to:\nhttps://stake.com/sports/valorant/all\n\n1. Wait until the page is fully loaded and all Valora..."
+      }
+    ],
+    "hailuoai.video": [
+      {
+        "task_id": "1842739",
+        "url": "https://hailuoai.video/",
+        "task_snippet": "Read webpage https://hailuoai.video/ and follow the prompt: Navigate to the MiniMax Hailuo AI websit..."
+      }
+    ],
+    "inflact.com": [
+      {
+        "task_id": "2226746",
+        "url": "https://inflact.com/instagram-downloader/",
+        "task_snippet": "Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Inst..."
+      },
+      {
+        "task_id": "2226746",
+        "url": "https://inflact.com",
+        "task_snippet": "Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Inst..."
+      }
+    ],
+    "uhaul.com": [
+      {
+        "task_id": "1570984",
+        "url": "https://www.uhaul.com/",
+        "task_snippet": "Navigate to the U-Haul website, input the origin zip code 01420 and destination zip code 20743, and ..."
+      },
+      {
+        "task_id": "1570984",
+        "url": "https://www.uhaul.com/",
+        "task_snippet": "Navigate to the U-Haul website, input the origin zip code 01420 and destination zip code 20743, and ..."
+      },
+      {
+        "task_id": "1570984",
+        "url": "https://uhaul.com",
+        "task_snippet": "Navigate to the U-Haul website, input the origin zip code 01420 and destination zip code 20743, and ..."
+      }
+    ],
+    "sec.gov": [
+      {
+        "task_id": "1664550",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063..."
+      },
+      {
+        "task_id": "1664550",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm.",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063..."
+      },
+      {
+        "task_id": "1664550",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063..."
+      },
+      {
+        "task_id": "1664550",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm.",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063..."
+      },
+      {
+        "task_id": "1664550",
+        "url": "https://sec.gov",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063..."
+      },
+      {
+        "task_id": "1664550",
+        "url": "https://sec.gov",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063..."
+      },
+      {
+        "task_id": "2125188",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm a..."
+      },
+      {
+        "task_id": "2125188",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm a..."
+      },
+      {
+        "task_id": "2125188",
+        "url": "https://sec.gov",
+        "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm a..."
+      }
+    ],
+    "cloud.google.com": [
+      {
+        "task_id": "2228307",
+        "url": "https://cloud.google.com/text-to-speech/pricing",
+        "task_snippet": "Read webpage https://cloud.google.com/text-to-speech/pricing and follow the prompt: Go to the URL an..."
+      },
+      {
+        "task_id": "2329850",
+        "url": "https://cloud.google.com/terms/data-processing-addendum",
+        "task_snippet": "Goal: Find detailed information about Google Cloud's data processing agreements, regional data handl..."
+      },
+      {
+        "task_id": "2329850",
+        "url": "https://cloud.google.com/vertex-ai/docs/data-governance",
+        "task_snippet": "Goal: Find detailed information about Google Cloud's data processing agreements, regional data handl..."
+      }
+    ],
+    "google.com": [
+      {
+        "task_id": "2228307",
+        "url": "https://google.com",
+        "task_snippet": "Read webpage https://cloud.google.com/text-to-speech/pricing and follow the prompt: Go to the URL an..."
+      },
+      {
+        "task_id": "2329850",
+        "url": "https://google.com",
+        "task_snippet": "Goal: Find detailed information about Google Cloud's data processing agreements, regional data handl..."
+      },
+      {
+        "task_id": "2329850",
+        "url": "https://google.com",
+        "task_snippet": "Goal: Find detailed information about Google Cloud's data processing agreements, regional data handl..."
+      },
+      {
+        "task_id": "1766206",
+        "url": "https://google.com",
+        "task_snippet": "Read webpage https://play.google.com/store/apps/details?id=com.greentech.quran and follow the prompt..."
+      },
+      {
+        "task_id": "917119",
+        "url": "https://www.google.com/maps/place/UCI+Cinemas+Showville+Bari/@41.0907971",
+        "task_snippet": "Go to https://www.google.com/maps/place/UCI+Cinemas+Showville+Bari/@41.0907971,16.8850177,17z/data=!..."
+      },
+      {
+        "task_id": "917119",
+        "url": "https://www.google.com/maps/place/UCI+Cinemas+Showville+Bari/@41.0907971",
+        "task_snippet": "Go to https://www.google.com/maps/place/UCI+Cinemas+Showville+Bari/@41.0907971,16.8850177,17z/data=!..."
+      },
+      {
+        "task_id": "917119",
+        "url": "https://google.com",
+        "task_snippet": "Go to https://www.google.com/maps/place/UCI+Cinemas+Showville+Bari/@41.0907971,16.8850177,17z/data=!..."
+      },
+      {
+        "task_id": "205360",
+        "url": "https://www.google.com",
+        "task_snippet": "\n    Task: Collect comprehensive information from Visa's latest earnings for analyst report.\n    \n  ..."
+      },
+      {
+        "task_id": "205360",
+        "url": "https://www.google.com",
+        "task_snippet": "\n    Task: Collect comprehensive information from Visa's latest earnings for analyst report.\n    \n  ..."
+      },
+      {
+        "task_id": "205360",
+        "url": "https://google.com",
+        "task_snippet": "\n    Task: Collect comprehensive information from Visa's latest earnings for analyst report.\n    \n  ..."
+      }
+    ],
+    "greeencode.com": [
+      {
+        "task_id": "2225648",
+        "url": "https://www.greeencode.com",
+        "task_snippet": "Read webpage https://www.greeencode.com and follow the prompt: Analyze this software agency website ..."
+      },
+      {
+        "task_id": "2225648",
+        "url": "https://www.greeencode.com",
+        "task_snippet": "Read webpage https://www.greeencode.com and follow the prompt: Analyze this software agency website ..."
+      },
+      {
+        "task_id": "2225648",
+        "url": "https://greeencode.com",
+        "task_snippet": "Read webpage https://www.greeencode.com and follow the prompt: Analyze this software agency website ..."
+      }
+    ],
+    "nvd.nist.gov": [
+      {
+        "task_id": "1092722",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22881",
+        "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorizatio..."
+      },
+      {
+        "task_id": "1092722",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-41801",
+        "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorizatio..."
+      },
+      {
+        "task_id": "1289271",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-34459",
+        "task_snippet": "Goal: Find detailed information about CVE-2024-34459\nExpected output: Detailed information about CVE..."
+      },
+      {
+        "task_id": "1077220",
+        "url": "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Agoogle&cpe_product=cpe%3A%2F%3Agoogle%3Achrome",
+        "task_snippet": "Goal: Find non-UAF Chrome vulnerabilities in 2024-2025 specifically related to WebGPU, WebAssembly, ..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-27407",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-47887",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41275",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41274",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8167",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8166",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      }
+    ],
+    "github.com": [
+      {
+        "task_id": "1092722",
+        "url": "https://github.com/rails/rails/pull/51018",
+        "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorizatio..."
+      },
+      {
+        "task_id": "1092722",
+        "url": "https://github.com/rails/rails/commit/ffc5df4cdafb6dddac70b4e543458983c89ba121",
+        "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorizatio..."
+      },
+      {
+        "task_id": "1092722",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorizatio..."
+      },
+      {
+        "task_id": "1092722",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorizatio..."
+      },
+      {
+        "task_id": "93046",
+        "url": "https://github.com",
+        "task_snippet": "Your task is to extract all relevant documentation from GitHub Copilot Documentation efficiently whi..."
+      },
+      {
+        "task_id": "1093228",
+        "url": "https://github.com/vercel/next.js/security/advisories/GHSA-9vp7-r9jw-79hj",
+        "task_snippet": "Goal: Find details about the most recent critical Next.js vulnerability (Authorization Bypass in Nex..."
+      },
+      {
+        "task_id": "1093228",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Find details about the most recent critical Next.js vulnerability (Authorization Bypass in Nex..."
+      },
+      {
+        "task_id": "1327246",
+        "url": "https://github.com/makenotion/notion-mcp-server/blob/main/src/openapi-mcp-server/auth/index.ts",
+        "task_snippet": "Goal: Analyze authentication implementation and the main server entry point\nBackground motivation: N..."
+      },
+      {
+        "task_id": "1327246",
+        "url": "https://github.com/makenotion/notion-mcp-server/blob/main/src/init-server.ts",
+        "task_snippet": "Goal: Analyze authentication implementation and the main server entry point\nBackground motivation: N..."
+      },
+      {
+        "task_id": "1327246",
+        "url": "https://github.com/makenotion/notion-mcp-server/blob/main/src/openapi-mcp-server/index.ts",
+        "task_snippet": "Goal: Analyze authentication implementation and the main server entry point\nBackground motivation: N..."
+      },
+      {
+        "task_id": "1327246",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Analyze authentication implementation and the main server entry point\nBackground motivation: N..."
+      },
+      {
+        "task_id": "1327246",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Analyze authentication implementation and the main server entry point\nBackground motivation: N..."
+      },
+      {
+        "task_id": "1327246",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Analyze authentication implementation and the main server entry point\nBackground motivation: N..."
+      },
+      {
+        "task_id": "1704522",
+        "url": "https://github.com/ljharb/qs/pull/428",
+        "task_snippet": "Goal: Find technical details of the vulnerability from GitHub or the original pull request that fixe..."
+      },
+      {
+        "task_id": "1704522",
+        "url": "https://github.com/n8tz/CVE-2022-24999",
+        "task_snippet": "Goal: Find technical details of the vulnerability from GitHub or the original pull request that fixe..."
+      },
+      {
+        "task_id": "1704522",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Find technical details of the vulnerability from GitHub or the original pull request that fixe..."
+      },
+      {
+        "task_id": "1704522",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Find technical details of the vulnerability from GitHub or the original pull request that fixe..."
+      },
+      {
+        "task_id": "1624674",
+        "url": "https://github.com/opencv/opencv_contrib/blob/4.10.0/modules/freetype/CMakeLists.txt",
+        "task_snippet": "Goal: Get specific details about freetype module's CMake configuration and how to include it in a co..."
+      },
+      {
+        "task_id": "1624674",
+        "url": "https://github.com/opencv/opencv/wiki/Docker",
+        "task_snippet": "Goal: Get specific details about freetype module's CMake configuration and how to include it in a co..."
+      },
+      {
+        "task_id": "1624674",
+        "url": "https://github.com/opencv/opencv_contrib/blob/4.10.0/modules/freetype/README.md",
+        "task_snippet": "Goal: Get specific details about freetype module's CMake configuration and how to include it in a co..."
+      },
+      {
+        "task_id": "1624674",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Get specific details about freetype module's CMake configuration and how to include it in a co..."
+      },
+      {
+        "task_id": "1624674",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Get specific details about freetype module's CMake configuration and how to include it in a co..."
+      },
+      {
+        "task_id": "1624674",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Get specific details about freetype module's CMake configuration and how to include it in a co..."
+      },
+      {
+        "task_id": "1297694",
+        "url": "https://github.com/alexrudd/cognito-srp",
+        "task_snippet": "Goal: Find detailed information about the SRP authentication flow and cryptographic operations in th..."
+      },
+      {
+        "task_id": "1297694",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Find detailed information about the SRP authentication flow and cryptographic operations in th..."
+      },
+      {
+        "task_id": "1297694",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Find detailed information about the SRP authentication flow and cryptographic operations in th..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://github.com/advisories/GHSA-q92j-grw3-h492",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://github.com",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      }
+    ],
+    "nist.gov": [
+      {
+        "task_id": "1092722",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorizatio..."
+      },
+      {
+        "task_id": "1092722",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorizatio..."
+      },
+      {
+        "task_id": "1289271",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Find detailed information about CVE-2024-34459\nExpected output: Detailed information about CVE..."
+      },
+      {
+        "task_id": "1077220",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Find non-UAF Chrome vulnerabilities in 2024-2025 specifically related to WebGPU, WebAssembly, ..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      },
+      {
+        "task_id": "1195938",
+        "url": "https://nist.gov",
+        "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nEx..."
+      }
+    ],
+    "docs.github.com": [
+      {
+        "task_id": "93046",
+        "url": "https://docs.github.com/en/copilot.",
+        "task_snippet": "Your task is to extract all relevant documentation from GitHub Copilot Documentation efficiently whi..."
+      }
+    ],
+    "ai.google": [
+      {
+        "task_id": "2329850",
+        "url": "https://ai.google/responsibility/responsible-ai-practices/",
+        "task_snippet": "Goal: Find detailed information about Google Cloud's data processing agreements, regional data handl..."
+      }
+    ],
+    "wanhai.com": [
+      {
+        "task_id": "185981",
+        "url": "https://www.wanhai.com/views/Main.xhtml",
+        "task_snippet": "Go to url: https://www.wanhai.com/views/Main.xhtml and search BL no. 027E664477\n        then click t..."
+      },
+      {
+        "task_id": "185981",
+        "url": "https://www.wanhai.com/views/Main.xhtml",
+        "task_snippet": "Go to url: https://www.wanhai.com/views/Main.xhtml and search BL no. 027E664477\n        then click t..."
+      },
+      {
+        "task_id": "185981",
+        "url": "https://wanhai.com",
+        "task_snippet": "Go to url: https://www.wanhai.com/views/Main.xhtml and search BL no. 027E664477\n        then click t..."
+      }
+    ],
+    "adb.org": [
+      {
+        "task_id": "887205",
+        "url": "https://www.adb.org/work-with-us",
+        "task_snippet": "Open the webpage https://www.adb.org/work-with-us and retrieve a list of the first 3 currently open ..."
+      },
+      {
+        "task_id": "887205",
+        "url": "https://www.adb.org/work-with-us",
+        "task_snippet": "Open the webpage https://www.adb.org/work-with-us and retrieve a list of the first 3 currently open ..."
+      },
+      {
+        "task_id": "887205",
+        "url": "https://adb.org",
+        "task_snippet": "Open the webpage https://www.adb.org/work-with-us and retrieve a list of the first 3 currently open ..."
+      }
+    ],
+    "wordstream.com": [
+      {
+        "task_id": "2309290",
+        "url": "https://www.wordstream.com/keywords",
+        "task_snippet": "Read webpage https://www.wordstream.com/keywords and follow the prompt: Navigate to the WordStream f..."
+      },
+      {
+        "task_id": "2309290",
+        "url": "https://www.wordstream.com/keywords",
+        "task_snippet": "Read webpage https://www.wordstream.com/keywords and follow the prompt: Navigate to the WordStream f..."
+      },
+      {
+        "task_id": "2309290",
+        "url": "https://wordstream.com",
+        "task_snippet": "Read webpage https://www.wordstream.com/keywords and follow the prompt: Navigate to the WordStream f..."
+      },
+      {
+        "task_id": "2309290",
+        "url": "https://wordstream.com",
+        "task_snippet": "Read webpage https://www.wordstream.com/keywords and follow the prompt: Navigate to the WordStream f..."
+      }
+    ],
+    "biggerpockets.com": [
+      {
+        "task_id": "2068140",
+        "url": "https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-software",
+        "task_snippet": "Read webpage https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-softwa..."
+      },
+      {
+        "task_id": "2068140",
+        "url": "https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-software",
+        "task_snippet": "Read webpage https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-softwa..."
+      },
+      {
+        "task_id": "2068140",
+        "url": "https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-software",
+        "task_snippet": "Read webpage https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-softwa..."
+      },
+      {
+        "task_id": "2068140",
+        "url": "https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-software",
+        "task_snippet": "Read webpage https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-softwa..."
+      },
+      {
+        "task_id": "2068140",
+        "url": "https://biggerpockets.com",
+        "task_snippet": "Read webpage https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-softwa..."
+      },
+      {
+        "task_id": "2068140",
+        "url": "https://biggerpockets.com",
+        "task_snippet": "Read webpage https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-softwa..."
+      }
+    ],
+    "immoweb.be": [
+      {
+        "task_id": "2099475",
+        "url": "https://www.immoweb.be/en/search/house-and-apartment/for-rent/gent/9000",
+        "task_snippet": "Read webpage https://www.immoweb.be/en/search/house-and-apartment/for-rent/gent/9000 and follow the ..."
+      },
+      {
+        "task_id": "2099475",
+        "url": "https://www.immoweb.be/en/search/house-and-apartment/for-rent/gent/9000",
+        "task_snippet": "Read webpage https://www.immoweb.be/en/search/house-and-apartment/for-rent/gent/9000 and follow the ..."
+      }
+    ],
+    "flipkart.com": [
+      {
+        "task_id": "2110707",
+        "url": "https://www.flipkart.com",
+        "task_snippet": "Read webpage https://www.flipkart.com and follow the prompt: Continue collecting products from Flipk..."
+      },
+      {
+        "task_id": "2110707",
+        "url": "https://www.flipkart.com",
+        "task_snippet": "Read webpage https://www.flipkart.com and follow the prompt: Continue collecting products from Flipk..."
+      },
+      {
+        "task_id": "2110707",
+        "url": "https://flipkart.com",
+        "task_snippet": "Read webpage https://www.flipkart.com and follow the prompt: Continue collecting products from Flipk..."
+      }
+    ],
+    "minnodillc.com": [
+      {
+        "task_id": "910053",
+        "url": "https://minnodillc.com",
+        "task_snippet": "Navigate to https://minnodillc.com and perform a comprehensive SEO analysis based on the homepage. E..."
+      },
+      {
+        "task_id": "910053",
+        "url": "https://minnodillc.com",
+        "task_snippet": "Navigate to https://minnodillc.com and perform a comprehensive SEO analysis based on the homepage. E..."
+      }
+    ],
+    "idfy.com": [
+      {
+        "task_id": "1065230",
+        "url": "https://idfy.com",
+        "task_snippet": "\n\nYou are a specialized web analysis agent with expertise in financial categorization systems, parti..."
+      },
+      {
+        "task_id": "1065230",
+        "url": "https://idfy.com",
+        "task_snippet": "\n\nYou are a specialized web analysis agent with expertise in financial categorization systems, parti..."
+      }
+    ],
+    "contractsfinder.service.gov.uk": [
+      {
+        "task_id": "1465541",
+        "url": "https://www.contractsfinder.service.gov.uk/Search/Results",
+        "task_snippet": "Access the URL https://www.contractsfinder.service.gov.uk/Search/Results and extract the first 20 te..."
+      },
+      {
+        "task_id": "1465541",
+        "url": "https://www.contractsfinder.service.gov.uk/Search/Results",
+        "task_snippet": "Access the URL https://www.contractsfinder.service.gov.uk/Search/Results and extract the first 20 te..."
+      }
+    ],
+    "service.gov": [
+      {
+        "task_id": "1465541",
+        "url": "https://service.gov",
+        "task_snippet": "Access the URL https://www.contractsfinder.service.gov.uk/Search/Results and extract the first 20 te..."
+      }
+    ],
+    "dice.com": [
+      {
+        "task_id": "959157",
+        "url": "https://Dice.com",
+        "task_snippet": "Navigate to Dice.com and follow these steps carefully:\n\n1. In the location textbox enter 'Tallahasse..."
+      },
+      {
+        "task_id": "959157",
+        "url": "https://Dice.com",
+        "task_snippet": "Navigate to Dice.com and follow these steps carefully:\n\n1. In the location textbox enter 'Tallahasse..."
+      },
+      {
+        "task_id": "959157",
+        "url": "https://Dice.com",
+        "task_snippet": "Navigate to Dice.com and follow these steps carefully:\n\n1. In the location textbox enter 'Tallahasse..."
+      }
+    ],
+    "clinicaltrials.gov": [
+      {
+        "task_id": "705643",
+        "url": "https://clinicaltrials.gov",
+        "task_snippet": "Find clinical trials for KRAS G12D inhibitors from Amgen and Mirati on clinicaltrials.gov"
+      }
+    ],
+    "proxyserver.tech": [
+      {
+        "task_id": "1391181",
+        "url": "https://proxyserver.tech",
+        "task_snippet": "Go to proxyserver.tech and perform a comprehensive SEO audit focusing on the keyword 'mobile proxies..."
+      }
+    ],
+    "acem.org.au": [
+      {
+        "task_id": "2275411",
+        "url": "https://acem.org.au/",
+        "task_snippet": "Read webpage https://acem.org.au/ and follow the prompt: Go to the ACEM website (acem.org.au) and se..."
+      }
+    ],
+    "acem.org": [
+      {
+        "task_id": "2275411",
+        "url": "https://acem.org",
+        "task_snippet": "Read webpage https://acem.org.au/ and follow the prompt: Go to the ACEM website (acem.org.au) and se..."
+      },
+      {
+        "task_id": "2275411",
+        "url": "https://acem.org",
+        "task_snippet": "Read webpage https://acem.org.au/ and follow the prompt: Go to the ACEM website (acem.org.au) and se..."
+      }
+    ],
+    "deedauction.net": [
+      {
+        "task_id": "415465",
+        "url": "https://deedauction.net",
+        "task_snippet": "site:broward.deedauction.net assessed value for properties in the most recent auctions"
+      }
+    ],
+    "minimaxi.com": [
+      {
+        "task_id": "1833859",
+        "url": "https://www.minimaxi.com/",
+        "task_snippet": "Read webpage https://www.minimaxi.com/ and follow the prompt: Analyze the MiniMax website comprehens..."
+      },
+      {
+        "task_id": "1833859",
+        "url": "https://www.minimaxi.com/",
+        "task_snippet": "Read webpage https://www.minimaxi.com/ and follow the prompt: Analyze the MiniMax website comprehens..."
+      },
+      {
+        "task_id": "1833859",
+        "url": "https://minimaxi.com",
+        "task_snippet": "Read webpage https://www.minimaxi.com/ and follow the prompt: Analyze the MiniMax website comprehens..."
+      }
+    ],
+    "themanatomy.com": [
+      {
+        "task_id": "967725",
+        "url": "https://themanatomy.com/",
+        "task_snippet": "\n            Your task is to extract fashion product information from an e-commerce website.\n\n      ..."
+      },
+      {
+        "task_id": "967725",
+        "url": "https://themanatomy.com",
+        "task_snippet": "\n            Your task is to extract fashion product information from an e-commerce website.\n\n      ..."
+      }
+    ],
+    "ppubs.uspto.gov": [
+      {
+        "task_id": "1434249",
+        "url": "https://ppubs.uspto.gov/pubwebapp/static/pages/landing.html",
+        "task_snippet": "Read webpage https://ppubs.uspto.gov/pubwebapp/static/pages/landing.html and follow the prompt: For ..."
+      },
+      {
+        "task_id": "1434249",
+        "url": "https://ppubs.uspto.gov/pubwebapp/static/pages/landing.html",
+        "task_snippet": "Read webpage https://ppubs.uspto.gov/pubwebapp/static/pages/landing.html and follow the prompt: For ..."
+      }
+    ],
+    "uspto.gov": [
+      {
+        "task_id": "1434249",
+        "url": "https://uspto.gov",
+        "task_snippet": "Read webpage https://ppubs.uspto.gov/pubwebapp/static/pages/landing.html and follow the prompt: For ..."
+      },
+      {
+        "task_id": "1434249",
+        "url": "https://uspto.gov",
+        "task_snippet": "Read webpage https://ppubs.uspto.gov/pubwebapp/static/pages/landing.html and follow the prompt: For ..."
+      }
+    ],
+    "drs.faa.gov": [
+      {
+        "task_id": "1486500",
+        "url": "https://drs.faa.gov/browse/ADFRAWD/doctypeDetails.",
+        "task_snippet": "ONLY go to https://drs.faa.gov/browse/ADFRAWD/doctypeDetails. Select Make as 'The Boeing Company'. W..."
+      }
+    ],
+    "faa.gov": [
+      {
+        "task_id": "1486500",
+        "url": "https://faa.gov",
+        "task_snippet": "ONLY go to https://drs.faa.gov/browse/ADFRAWD/doctypeDetails. Select Make as 'The Boeing Company'. W..."
+      }
+    ],
+    "birdeye.so": [
+      {
+        "task_id": "1300023",
+        "url": "https://www.birdeye.so/",
+        "task_snippet": "https://www.birdeye.so/, Search this address GYTd9XbZTfwicCV28LGkwiDF4DgpXTTAi2UeCajfpump , then go ..."
+      },
+      {
+        "task_id": "1300023",
+        "url": "https://www.birdeye.so/",
+        "task_snippet": "https://www.birdeye.so/, Search this address GYTd9XbZTfwicCV28LGkwiDF4DgpXTTAi2UeCajfpump , then go ..."
+      }
+    ],
+    "emeralddrift.myshopify.com": [
+      {
+        "task_id": "2304432",
+        "url": "https://emeralddrift.myshopify.com/",
+        "task_snippet": "Read webpage https://emeralddrift.myshopify.com/ and follow the prompt: Crawl the website https://em..."
+      },
+      {
+        "task_id": "2304432",
+        "url": "https://emeralddrift.myshopify.com/",
+        "task_snippet": "Read webpage https://emeralddrift.myshopify.com/ and follow the prompt: Crawl the website https://em..."
+      }
+    ],
+    "myshopify.com": [
+      {
+        "task_id": "2304432",
+        "url": "https://myshopify.com",
+        "task_snippet": "Read webpage https://emeralddrift.myshopify.com/ and follow the prompt: Crawl the website https://em..."
+      },
+      {
+        "task_id": "2304432",
+        "url": "https://myshopify.com",
+        "task_snippet": "Read webpage https://emeralddrift.myshopify.com/ and follow the prompt: Crawl the website https://em..."
+      }
+    ],
+    "renewableenergyworld.com": [
+      {
+        "task_id": "1625592",
+        "url": "https://www.renewableenergyworld.com/energy-business/energy-finance/",
+        "task_snippet": "scrape the webpage for tender information: https://www.renewableenergyworld.com/energy-business/ener..."
+      },
+      {
+        "task_id": "1625592",
+        "url": "https://www.renewableenergyworld.com/energy-business/energy-finance/",
+        "task_snippet": "scrape the webpage for tender information: https://www.renewableenergyworld.com/energy-business/ener..."
+      },
+      {
+        "task_id": "1625592",
+        "url": "https://renewableenergyworld.com",
+        "task_snippet": "scrape the webpage for tender information: https://www.renewableenergyworld.com/energy-business/ener..."
+      }
+    ],
+    "bhphotovideo.com": [
+      {
+        "task_id": "2357186",
+        "url": "https://www.bhphotovideo.com/c/product/1573777-REG/canon_rf_extender_2x.html/specs",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357186",
+        "url": "https://www.bhphotovideo.com/c/product/1573777-REG/canon_rf_extender_2x.html/specs",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357186",
+        "url": "https://www.bhphotovideo.com/c/product/1573777-REG/canon_rf_extender_2x.html/specs",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357186",
+        "url": "https://www.bhphotovideo.com/c/product/1573777-REG/canon_rf_extender_2x.html/specs",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357186",
+        "url": "https://bhphotovideo.com",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357186",
+        "url": "https://bhphotovideo.com",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357258",
+        "url": "https://www.bhphotovideo.com/c/product/1871607-REG/lacie_stna4000400_4tb_rugged_ssd_pro.html",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357258",
+        "url": "https://www.bhphotovideo.com/c/product/1871607-REG/lacie_stna4000400_4tb_rugged_ssd_pro.html",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357258",
+        "url": "https://www.bhphotovideo.com/c/product/1871607-REG/lacie_stna4000400_4tb_rugged_ssd_pro.html",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357258",
+        "url": "https://www.bhphotovideo.com/c/product/1871607-REG/lacie_stna4000400_4tb_rugged_ssd_pro.html",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357258",
+        "url": "https://bhphotovideo.com",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357258",
+        "url": "https://bhphotovideo.com",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      }
+    ],
+    "sales.cabincloseoutstore.com": [
+      {
+        "task_id": "885451",
+        "url": "https://sales.cabincloseoutstore.com/app/0/cruise/0/search_cruises_quick.html?clear=all&search[search_type",
+        "task_snippet": "\n                    URL to visit: https://sales.cabincloseoutstore.com/app/0/cruise/0/search_cruise..."
+      }
+    ],
+    "cabincloseoutstore.com": [
+      {
+        "task_id": "885451",
+        "url": "https://cabincloseoutstore.com",
+        "task_snippet": "\n                    URL to visit: https://sales.cabincloseoutstore.com/app/0/cruise/0/search_cruise..."
+      }
+    ],
+    "key.com": [
+      {
+        "task_id": "1889096",
+        "url": "https://key.com",
+        "task_snippet": "\n        1. Navigate to https://key.com to find relevant documents.\n        2. Answer the question: ..."
+      },
+      {
+        "task_id": "1889096",
+        "url": "https://key.com",
+        "task_snippet": "\n        1. Navigate to https://key.com to find relevant documents.\n        2. Answer the question: ..."
+      }
+    ],
+    "wordtracker.com": [
+      {
+        "task_id": "2121476",
+        "url": "https://www.wordtracker.com/",
+        "task_snippet": "Read webpage https://www.wordtracker.com/ and follow the prompt: Use the Wordtracker free keyword to..."
+      },
+      {
+        "task_id": "2121476",
+        "url": "https://www.wordtracker.com/",
+        "task_snippet": "Read webpage https://www.wordtracker.com/ and follow the prompt: Use the Wordtracker free keyword to..."
+      },
+      {
+        "task_id": "2121476",
+        "url": "https://wordtracker.com",
+        "task_snippet": "Read webpage https://www.wordtracker.com/ and follow the prompt: Use the Wordtracker free keyword to..."
+      }
+    ],
+    "escardio.org": [
+      {
+        "task_id": "2274972",
+        "url": "https://www.escardio.org/Guidelines",
+        "task_snippet": "Read webpage https://www.escardio.org/Guidelines and follow the prompt: Navigate to the European Soc..."
+      },
+      {
+        "task_id": "2274972",
+        "url": "https://www.escardio.org/Guidelines",
+        "task_snippet": "Read webpage https://www.escardio.org/Guidelines and follow the prompt: Navigate to the European Soc..."
+      },
+      {
+        "task_id": "2274972",
+        "url": "https://escardio.org",
+        "task_snippet": "Read webpage https://www.escardio.org/Guidelines and follow the prompt: Navigate to the European Soc..."
+      },
+      {
+        "task_id": "2274972",
+        "url": "https://escardio.org",
+        "task_snippet": "Read webpage https://www.escardio.org/Guidelines and follow the prompt: Navigate to the European Soc..."
+      }
+    ],
+    "sanctionssearch.ofac.treas.gov": [
+      {
+        "task_id": "927731",
+        "url": "https://sanctionssearch.ofac.treas.gov/.",
+        "task_snippet": "\n            Context:\n            You are a compliance agent. Your task is to check if entities have..."
+      }
+    ],
+    "treas.gov": [
+      {
+        "task_id": "927731",
+        "url": "https://treas.gov",
+        "task_snippet": "\n            Context:\n            You are a compliance agent. Your task is to check if entities have..."
+      }
+    ],
+    "fr.caudalie.com": [
+      {
+        "task_id": "867913",
+        "url": "https://fr.caudalie.com",
+        "task_snippet": "\nYou are an expert auditor for CRO checklists. \nThese were the instructions given to find if an item..."
+      }
+    ],
+    "caudalie.com": [
+      {
+        "task_id": "867913",
+        "url": "https://caudalie.com",
+        "task_snippet": "\nYou are an expert auditor for CRO checklists. \nThese were the instructions given to find if an item..."
+      }
+    ],
+    "patchstack.com": [
+      {
+        "task_id": "1792712",
+        "url": "https://patchstack.com/database/wordpress/plugin/ti-woocommerce-wishlist/vulnerability/wordpress-ti-woocommerce-wishlist-2-9-2-arbitrary-file-upload-vulnerability",
+        "task_snippet": "Goal: Obtain specific details about the vulnerabilities including how they work, exploitation method..."
+      },
+      {
+        "task_id": "1792712",
+        "url": "https://patchstack.com/database/wordpress/plugin/ti-woocommerce-wishlist/vulnerability/wordpress-ti-woocommerce-wishlist-plugin-2-9-2-cross-site-scripting-xss-vulnerability",
+        "task_snippet": "Goal: Obtain specific details about the vulnerabilities including how they work, exploitation method..."
+      },
+      {
+        "task_id": "1792712",
+        "url": "https://patchstack.com",
+        "task_snippet": "Goal: Obtain specific details about the vulnerabilities including how they work, exploitation method..."
+      },
+      {
+        "task_id": "1792712",
+        "url": "https://patchstack.com",
+        "task_snippet": "Goal: Obtain specific details about the vulnerabilities including how they work, exploitation method..."
+      }
+    ],
+    "loopnet.com": [
+      {
+        "task_id": "2253155",
+        "url": "https://www.loopnet.com",
+        "task_snippet": "Read webpage https://www.loopnet.com and follow the prompt: Search for vacant retail and warehouse s..."
+      },
+      {
+        "task_id": "2253155",
+        "url": "https://www.loopnet.com",
+        "task_snippet": "Read webpage https://www.loopnet.com and follow the prompt: Search for vacant retail and warehouse s..."
+      },
+      {
+        "task_id": "2253155",
+        "url": "https://loopnet.com",
+        "task_snippet": "Read webpage https://www.loopnet.com and follow the prompt: Search for vacant retail and warehouse s..."
+      }
+    ],
+    "theethnicworld.com": [
+      {
+        "task_id": "2174924",
+        "url": "https://theethnicworld.com/buy-single-piece-wholesale-catalog-surat",
+        "task_snippet": "Read webpage https://theethnicworld.com/buy-single-piece-wholesale-catalog-surat and follow the prom..."
+      },
+      {
+        "task_id": "2174924",
+        "url": "https://theethnicworld.com",
+        "task_snippet": "Read webpage https://theethnicworld.com/buy-single-piece-wholesale-catalog-surat and follow the prom..."
+      }
+    ],
+    "airbnb.ca": [
+      {
+        "task_id": "1348833",
+        "url": "https://www.airbnb.ca/rooms/715766776231493780/reviews",
+        "task_snippet": "go to this link 'https://www.airbnb.ca/rooms/715766776231493780/reviews' EXTRACT ALL THE REVIEWS of ..."
+      },
+      {
+        "task_id": "1348833",
+        "url": "https://www.airbnb.ca/rooms/715766776231493780/reviews",
+        "task_snippet": "go to this link 'https://www.airbnb.ca/rooms/715766776231493780/reviews' EXTRACT ALL THE REVIEWS of ..."
+      },
+      {
+        "task_id": "1348833",
+        "url": "https://airbnb.ca",
+        "task_snippet": "go to this link 'https://www.airbnb.ca/rooms/715766776231493780/reviews' EXTRACT ALL THE REVIEWS of ..."
+      }
+    ],
+    "pagespeed.web.dev": [
+      {
+        "task_id": "1173252",
+        "url": "https://pagespeed.web.dev/",
+        "task_snippet": "Read webpage https://pagespeed.web.dev/ and summarize content according to the following prompt: Ana..."
+      }
+    ],
+    "karpathy.ai": [
+      {
+        "task_id": "1173252",
+        "url": "https://karpathy.ai",
+        "task_snippet": "Read webpage https://pagespeed.web.dev/ and summarize content according to the following prompt: Ana..."
+      },
+      {
+        "task_id": "1173252",
+        "url": "https://karpathy.ai",
+        "task_snippet": "Read webpage https://pagespeed.web.dev/ and summarize content according to the following prompt: Ana..."
+      },
+      {
+        "task_id": "1681243",
+        "url": "https://karpathy.ai/",
+        "task_snippet": "Read webpage https://karpathy.ai/ and follow the prompt: Analyze the page for keyword usage and cont..."
+      },
+      {
+        "task_id": "1681243",
+        "url": "https://karpathy.ai",
+        "task_snippet": "Read webpage https://karpathy.ai/ and follow the prompt: Analyze the page for keyword usage and cont..."
+      }
+    ],
+    "web.dev": [
+      {
+        "task_id": "1173252",
+        "url": "https://web.dev",
+        "task_snippet": "Read webpage https://pagespeed.web.dev/ and summarize content according to the following prompt: Ana..."
+      }
+    ],
+    "apartments.com": [
+      {
+        "task_id": "1609021",
+        "url": "https://www.apartments.com/",
+        "task_snippet": "Go to the website https://www.apartments.com/ and search for real estate\tGrok 3.5 (xAI): Search for ..."
+      },
+      {
+        "task_id": "1609021",
+        "url": "https://www.apartments.com/",
+        "task_snippet": "Go to the website https://www.apartments.com/ and search for real estate\tGrok 3.5 (xAI): Search for ..."
+      },
+      {
+        "task_id": "1609021",
+        "url": "https://apartments.com",
+        "task_snippet": "Go to the website https://www.apartments.com/ and search for real estate\tGrok 3.5 (xAI): Search for ..."
+      },
+      {
+        "task_id": "251101",
+        "url": "https://www.apartments.com/apartments/arlington-tx/min-1-bedrooms/",
+        "task_snippet": "{\"instructions\":{\"data_to_collect\":{\"property_info\":[\"property_name\",\"management_email\",\"phone_numbe..."
+      },
+      {
+        "task_id": "251101",
+        "url": "https://www.apartments.com/apartments/arlington-tx/min-1-bedrooms/",
+        "task_snippet": "{\"instructions\":{\"data_to_collect\":{\"property_info\":[\"property_name\",\"management_email\",\"phone_numbe..."
+      },
+      {
+        "task_id": "251101",
+        "url": "https://apartments.com",
+        "task_snippet": "{\"instructions\":{\"data_to_collect\":{\"property_info\":[\"property_name\",\"management_email\",\"phone_numbe..."
+      }
+    ],
+    "homedepot.com": [
+      {
+        "task_id": "1017678",
+        "url": "https://www.homedepot.com/b/Electrical/N-5yc1vZarcd?catStyle=ShowProducts",
+        "task_snippet": "go to \"https://www.homedepot.com/b/Electrical/N-5yc1vZarcd?catStyle=ShowProducts\"\n\ncreate list with ..."
+      },
+      {
+        "task_id": "1017678",
+        "url": "https://www.homedepot.com/b/Electrical/N-5yc1vZarcd?catStyle=ShowProducts",
+        "task_snippet": "go to \"https://www.homedepot.com/b/Electrical/N-5yc1vZarcd?catStyle=ShowProducts\"\n\ncreate list with ..."
+      },
+      {
+        "task_id": "1017678",
+        "url": "https://homedepot.com",
+        "task_snippet": "go to \"https://www.homedepot.com/b/Electrical/N-5yc1vZarcd?catStyle=ShowProducts\"\n\ncreate list with ..."
+      }
+    ],
+    "wcaworld.com": [
+      {
+        "task_id": "1356330",
+        "url": "https://www.wcaworld.com/directory",
+        "task_snippet": "\n**Objective:** Scrape contact details for companies in specific WCA networks located in Hong Kong, ..."
+      },
+      {
+        "task_id": "1356330",
+        "url": "https://www.wcaworld.com/directory",
+        "task_snippet": "\n**Objective:** Scrape contact details for companies in specific WCA networks located in Hong Kong, ..."
+      },
+      {
+        "task_id": "1356330",
+        "url": "https://www.wcaworld.com/directory",
+        "task_snippet": "\n**Objective:** Scrape contact details for companies in specific WCA networks located in Hong Kong, ..."
+      },
+      {
+        "task_id": "1356330",
+        "url": "https://www.wcaworld.com/directory",
+        "task_snippet": "\n**Objective:** Scrape contact details for companies in specific WCA networks located in Hong Kong, ..."
+      },
+      {
+        "task_id": "1356330",
+        "url": "https://wcaworld.com",
+        "task_snippet": "\n**Objective:** Scrape contact details for companies in specific WCA networks located in Hong Kong, ..."
+      },
+      {
+        "task_id": "1356330",
+        "url": "https://wcaworld.com",
+        "task_snippet": "\n**Objective:** Scrape contact details for companies in specific WCA networks located in Hong Kong, ..."
+      }
+    ],
+    "attack.mitre.org": [
+      {
+        "task_id": "202609",
+        "url": "https://attack.mitre.org/matrices/enterprise/cloud/",
+        "task_snippet": "\n\n    1) Objective\n    - Extract MITRE tags from the source: https://attack.mitre.org/matrices/enter..."
+      }
+    ],
+    "mitre.org": [
+      {
+        "task_id": "202609",
+        "url": "https://mitre.org",
+        "task_snippet": "\n\n    1) Objective\n    - Extract MITRE tags from the source: https://attack.mitre.org/matrices/enter..."
+      },
+      {
+        "task_id": "1289271",
+        "url": "https://mitre.org",
+        "task_snippet": "Goal: Find detailed information about CVE-2024-34459\nExpected output: Detailed information about CVE..."
+      }
+    ],
+    "celltrader.co.za": [
+      {
+        "task_id": "191902",
+        "url": "https://celltrader.co.za/shop/",
+        "task_snippet": "Go to https://celltrader.co.za/shop/ it is a woocommerce store, Extract as much information as possi..."
+      }
+    ],
+    "celltrader.co": [
+      {
+        "task_id": "191902",
+        "url": "https://celltrader.co",
+        "task_snippet": "Go to https://celltrader.co.za/shop/ it is a woocommerce store, Extract as much information as possi..."
+      }
+    ],
+    "artificialanalysis.ai": [
+      {
+        "task_id": "2202304",
+        "url": "https://artificialanalysis.ai",
+        "task_snippet": "Read webpage https://artificialanalysis.ai and follow the prompt: Analyze this website comprehensive..."
+      },
+      {
+        "task_id": "2202304",
+        "url": "https://artificialanalysis.ai",
+        "task_snippet": "Read webpage https://artificialanalysis.ai and follow the prompt: Analyze this website comprehensive..."
+      }
+    ],
+    "play.google.com": [
+      {
+        "task_id": "1766206",
+        "url": "https://play.google.com/store/apps/details?id=com.greentech.quran",
+        "task_snippet": "Read webpage https://play.google.com/store/apps/details?id=com.greentech.quran and follow the prompt..."
+      }
+    ],
+    "redfin.com": [
+      {
+        "task_id": "451705",
+        "url": "https://www.redfin.com",
+        "task_snippet": "search https://www.redfin.com for homes in 70125 and find homes that have been on the market for 180..."
+      },
+      {
+        "task_id": "451705",
+        "url": "https://www.redfin.com",
+        "task_snippet": "search https://www.redfin.com for homes in 70125 and find homes that have been on the market for 180..."
+      },
+      {
+        "task_id": "451705",
+        "url": "https://redfin.com",
+        "task_snippet": "search https://www.redfin.com for homes in 70125 and find homes that have been on the market for 180..."
+      },
+      {
+        "task_id": "1360102",
+        "url": "https://redfin.com",
+        "task_snippet": "Go to redfin.com, handle any security checks, search for properties in San Diego, CA. Apply the foll..."
+      }
+    ],
+    "machinerytrader.com": [
+      {
+        "task_id": "944335",
+        "url": "https://www.machinerytrader.com/listings/search?Category=1055&sort=9",
+        "task_snippet": "\n        Go to https://www.machinerytrader.com/listings/search?Category=1055&sort=9\n\n        If a ca..."
+      },
+      {
+        "task_id": "944335",
+        "url": "https://www.machinerytrader.com/listings/search?Category=1055&sort=9",
+        "task_snippet": "\n        Go to https://www.machinerytrader.com/listings/search?Category=1055&sort=9\n\n        If a ca..."
+      },
+      {
+        "task_id": "944335",
+        "url": "https://machinerytrader.com",
+        "task_snippet": "\n        Go to https://www.machinerytrader.com/listings/search?Category=1055&sort=9\n\n        If a ca..."
+      }
+    ],
+    "bbb.org": [
+      {
+        "task_id": "503786",
+        "url": "https://www.bbb.org/search?find_country=USA&find_text=access%20control%20systems&find_type=Category&page=1&sort=Relevance",
+        "task_snippet": "Develop a robust web scraping script to systematically extract detailed business information from th..."
+      },
+      {
+        "task_id": "503786",
+        "url": "https://www.bbb.org/search?find_country=USA&find_text=access%20control%20systems&find_type=Category&page=1&sort=Relevance",
+        "task_snippet": "Develop a robust web scraping script to systematically extract detailed business information from th..."
+      },
+      {
+        "task_id": "503786",
+        "url": "https://bbb.org",
+        "task_snippet": "Develop a robust web scraping script to systematically extract detailed business information from th..."
+      }
+    ],
+    "example.com": [
+      {
+        "task_id": "503786",
+        "url": "http://www.example.com",
+        "task_snippet": "Develop a robust web scraping script to systematically extract detailed business information from th..."
+      },
+      {
+        "task_id": "503786",
+        "url": "https://www.example.com",
+        "task_snippet": "Develop a robust web scraping script to systematically extract detailed business information from th..."
+      },
+      {
+        "task_id": "503786",
+        "url": "https://example.com",
+        "task_snippet": "Develop a robust web scraping script to systematically extract detailed business information from th..."
+      }
+    ],
+    "tenderned.nl": [
+      {
+        "task_id": "1513697",
+        "url": "https://www.tenderned.nl/aankondigingen/overzicht",
+        "task_snippet": "Go to \"https://www.tenderned.nl/aankondigingen/overzicht\", search for \"Digitale Transformatie\". For ..."
+      },
+      {
+        "task_id": "1513697",
+        "url": "https://www.tenderned.nl/aankondigingen/overzicht",
+        "task_snippet": "Go to \"https://www.tenderned.nl/aankondigingen/overzicht\", search for \"Digitale Transformatie\". For ..."
+      }
+    ],
+    "restaurantsofmanchester.com": [
+      {
+        "task_id": "808075",
+        "url": "https://restaurantsofmanchester.com",
+        "task_snippet": "email address or contact form for restaurants listed on restaurantsofmanchester.com"
+      }
+    ],
+    "yad2.co.il": [
+      {
+        "task_id": "1063981",
+        "url": "https://www.yad2.co.il/realestate/rent?multiNeighborhood=855%2C159%2C163&rooms=2-3&price=4000-8000&zoom=14",
+        "task_snippet": "\n            Task: Scrape property listings from a pre-filtered Yad2 search results page\n\n          ..."
+      },
+      {
+        "task_id": "1063981",
+        "url": "https://www.yad2.co.il/realestate/rent?multiNeighborhood=855%2C159%2C163&rooms=2-3&price=4000-8000&zoom=14",
+        "task_snippet": "\n            Task: Scrape property listings from a pre-filtered Yad2 search results page\n\n          ..."
+      }
+    ],
+    "yad2.co": [
+      {
+        "task_id": "1063981",
+        "url": "https://yad2.co",
+        "task_snippet": "\n            Task: Scrape property listings from a pre-filtered Yad2 search results page\n\n          ..."
+      }
+    ],
+    "susannabeatrice.global": [
+      {
+        "task_id": "2252317",
+        "url": "https://www.susannabeatrice.global",
+        "task_snippet": "Read webpage https://www.susannabeatrice.global and follow the prompt: Extract all website content i..."
+      },
+      {
+        "task_id": "2252317",
+        "url": "https://www.susannabeatrice.global",
+        "task_snippet": "Read webpage https://www.susannabeatrice.global and follow the prompt: Extract all website content i..."
+      }
+    ],
+    "adidas.jp": [
+      {
+        "task_id": "225377",
+        "url": "https://www.adidas.jp/%E3%82%B3%E3%83%BC%E3%83%89%E3%82%AB%E3%82%AA%E3%82%B9-%E3%83%9C%E3%82%A2-25-codechaos-boa-25/IH5142.html?pr=product2_rr&slot=2&rec=ds",
+        "task_snippet": "Extract the following information from the provided product page:\nURL: https://www.adidas.jp/%E3%82%..."
+      },
+      {
+        "task_id": "225377",
+        "url": "https://www.adidas.jp/%E3%82%B3%E3%83%BC%E3%83%89%E3%82%AB%E3%82%AA%E3%82%B9-%E3%83%9C%E3%82%A2-25-codechaos-boa-25/IH5142.html?pr=product2_rr&slot=2&rec=ds",
+        "task_snippet": "Extract the following information from the provided product page:\nURL: https://www.adidas.jp/%E3%82%..."
+      }
+    ],
+    "argotstudio.com": [
+      {
+        "task_id": "1501614",
+        "url": "https://argotstudio.com",
+        "task_snippet": "\nYou are a compliance analyst specialized in e-commerce due diligence.\nYou havr to gather key inform..."
+      }
+    ],
+    "lawfareblog.com": [
+      {
+        "task_id": "1748573",
+        "url": "https://www.lawfareblog.com/beijings-new-national-intelligence-law-defense-offense",
+        "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to ass..."
+      },
+      {
+        "task_id": "1748573",
+        "url": "https://www.lawfareblog.com/beijings-new-national-intelligence-law-defense-offense",
+        "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to ass..."
+      },
+      {
+        "task_id": "1748573",
+        "url": "https://lawfareblog.com",
+        "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to ass..."
+      }
+    ],
+    "digitalcommons.law.scu.edu": [
+      {
+        "task_id": "1748573",
+        "url": "https://digitalcommons.law.scu.edu/cgi/viewcontent.cgi?article=3169&context=historical",
+        "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to ass..."
+      }
+    ],
+    "thediplomat.com": [
+      {
+        "task_id": "1748573",
+        "url": "https://thediplomat.com/2019/02/the-real-danger-of-chinas-national-intelligence-law/",
+        "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to ass..."
+      },
+      {
+        "task_id": "1748573",
+        "url": "https://thediplomat.com",
+        "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to ass..."
+      }
+    ],
+    "scu.edu": [
+      {
+        "task_id": "1748573",
+        "url": "https://scu.edu",
+        "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to ass..."
+      }
+    ],
+    "examplevendor.com": [
+      {
+        "task_id": "325376",
+        "url": "http://www.examplevendor.com",
+        "task_snippet": "\nTask: Get 10 vendors with name, email, address, contact_no, rating, and vendor_distance.\nRetrieve c..."
+      },
+      {
+        "task_id": "325376",
+        "url": "https://www.examplevendor.com",
+        "task_snippet": "\nTask: Get 10 vendors with name, email, address, contact_no, rating, and vendor_distance.\nRetrieve c..."
+      },
+      {
+        "task_id": "325376",
+        "url": "https://examplevendor.com",
+        "task_snippet": "\nTask: Get 10 vendors with name, email, address, contact_no, rating, and vendor_distance.\nRetrieve c..."
+      }
+    ],
+    "tris.vn": [
+      {
+        "task_id": "2118996",
+        "url": "https://tris.vn/",
+        "task_snippet": "Read webpage https://tris.vn/ and follow the prompt: Analyze this website comprehensively. Extract:\n..."
+      }
+    ],
+    "verificacfdi.facturaelectronica.sat.gob.mx": [
+      {
+        "task_id": "453534",
+        "url": "https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?id=B4BB65A2-3346-4988-BB10-124524B20148&re=PMO131216PM8&rr=XAXX010101000&tt=369900.000000&fe=HIl4RQ==",
+        "task_snippet": "Visit the URL https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?id=B4BB65A2-3346-4988-..."
+      }
+    ],
+    "szigetfestival.com": [
+      {
+        "task_id": "1122929",
+        "url": "https://szigetfestival.com/en/tickets",
+        "task_snippet": "\n    Go to https://szigetfestival.com/en/tickets and scrape the webpage to extract all available tic..."
+      },
+      {
+        "task_id": "1122929",
+        "url": "https://szigetfestival.com",
+        "task_snippet": "\n    Go to https://szigetfestival.com/en/tickets and scrape the webpage to extract all available tic..."
+      }
+    ],
+    "tcs.com": [
+      {
+        "task_id": "976402",
+        "url": "https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2023-24/ar/annual-report-2023-2024.pdf",
+        "task_snippet": "\ngo to this url and give me the Complete balance sheet of this company : https://www.tcs.com/content..."
+      },
+      {
+        "task_id": "976402",
+        "url": "https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2023-24/ar/annual-report-2023-2024.pdf",
+        "task_snippet": "\ngo to this url and give me the Complete balance sheet of this company : https://www.tcs.com/content..."
+      },
+      {
+        "task_id": "976402",
+        "url": "https://tcs.com",
+        "task_snippet": "\ngo to this url and give me the Complete balance sheet of this company : https://www.tcs.com/content..."
+      }
+    ],
+    "rbi.org.in": [
+      {
+        "task_id": "1612606",
+        "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx",
+        "task_snippet": "\n\n### Step 1: Navigate to the website\n- Open [RBI Bulletin] (https://www.rbi.org.in/Scripts/BS_ViewB..."
+      },
+      {
+        "task_id": "1612606",
+        "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx",
+        "task_snippet": "\n\n### Step 1: Navigate to the website\n- Open [RBI Bulletin] (https://www.rbi.org.in/Scripts/BS_ViewB..."
+      }
+    ],
+    "rbi.org": [
+      {
+        "task_id": "1612606",
+        "url": "https://rbi.org",
+        "task_snippet": "\n\n### Step 1: Navigate to the website\n- Open [RBI Bulletin] (https://www.rbi.org.in/Scripts/BS_ViewB..."
+      }
+    ],
+    "remote.team": [
+      {
+        "task_id": "1960499",
+        "url": "https://remote.team/en/",
+        "task_snippet": "Read webpage https://remote.team/en/ and follow the prompt: Analyze this website comprehensively. I ..."
+      }
+    ],
+    "oag.ca.gov": [
+      {
+        "task_id": "1662847",
+        "url": "https://oag.ca.gov/prop65/60-day-notice-search",
+        "task_snippet": "Revised Prompt:\n\nObjective:\n\nAutomate the process of searching the California Attorney General's Pro..."
+      },
+      {
+        "task_id": "1563973",
+        "url": "https://oag.ca.gov/prop65/60-day-notice-search",
+        "task_snippet": "You are a legal research assistant focused on California Proposition 65 cases. \n\nYour task is to sea..."
+      }
+    ],
+    "oag.ca": [
+      {
+        "task_id": "1662847",
+        "url": "https://oag.ca",
+        "task_snippet": "Revised Prompt:\n\nObjective:\n\nAutomate the process of searching the California Attorney General's Pro..."
+      },
+      {
+        "task_id": "1563973",
+        "url": "https://oag.ca",
+        "task_snippet": "You are a legal research assistant focused on California Proposition 65 cases. \n\nYour task is to sea..."
+      }
+    ],
+    "comparefirst.sg": [
+      {
+        "task_id": "426639",
+        "url": "https://www.comparefirst.sg",
+        "task_snippet": "go to https://www.comparefirst.sg, click term insurance, click non-DPI, set date of birth as 01/01/1..."
+      },
+      {
+        "task_id": "426639",
+        "url": "https://www.comparefirst.sg",
+        "task_snippet": "go to https://www.comparefirst.sg, click term insurance, click non-DPI, set date of birth as 01/01/1..."
+      }
+    ],
+    "nseindia.com": [
+      {
+        "task_id": "265470",
+        "url": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision",
+        "task_snippet": "1. Go to url https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparis..."
+      },
+      {
+        "task_id": "265470",
+        "url": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision",
+        "task_snippet": "1. Go to url https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparis..."
+      },
+      {
+        "task_id": "265470",
+        "url": "https://nseindia.com",
+        "task_snippet": "1. Go to url https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparis..."
+      }
+    ],
+    "linkedin.com": [
+      {
+        "task_id": "930386",
+        "url": "https://linkedin.com/job/123",
+        "task_snippet": "\n    **Job Search Instructions**\n    1. Google Search:\n       - Search: 'site:linkedin.com OR site:g..."
+      },
+      {
+        "task_id": "930386",
+        "url": "https://linkedin.com",
+        "task_snippet": "\n    **Job Search Instructions**\n    1. Google Search:\n       - Search: 'site:linkedin.com OR site:g..."
+      },
+      {
+        "task_id": "930386",
+        "url": "https://linkedin.com",
+        "task_snippet": "\n    **Job Search Instructions**\n    1. Google Search:\n       - Search: 'site:linkedin.com OR site:g..."
+      }
+    ],
+    "glassdoor.com": [
+      {
+        "task_id": "930386",
+        "url": "https://glassdoor.com",
+        "task_snippet": "\n    **Job Search Instructions**\n    1. Google Search:\n       - Search: 'site:linkedin.com OR site:g..."
+      }
+    ],
+    "autotrader.co.uk": [
+      {
+        "task_id": "1024420",
+        "url": "https://www.autotrader.co.uk",
+        "task_snippet": "go to www.autotrader.co.uk\naccept all cookies\nuse the \"find your perfect car\" form\nenter a postcode ..."
+      }
+    ],
+    "autotrader.co": [
+      {
+        "task_id": "1024420",
+        "url": "https://autotrader.co",
+        "task_snippet": "go to www.autotrader.co.uk\naccept all cookies\nuse the \"find your perfect car\" form\nenter a postcode ..."
+      }
+    ],
+    "upwork.com": [
+      {
+        "task_id": "919843",
+        "url": "https://upwork.com",
+        "task_snippet": "'You are a professional job finder.\n\t\t\t\tGo to https://upwork.com then: \n\n\t\t\t\t'find Python Django job..."
+      },
+      {
+        "task_id": "919843",
+        "url": "https://upwork.com",
+        "task_snippet": "'You are a professional job finder.\n\t\t\t\tGo to https://upwork.com then: \n\n\t\t\t\t'find Python Django job..."
+      },
+      {
+        "task_id": "919843",
+        "url": "https://Upwork.com",
+        "task_snippet": "'You are a professional job finder.\n\t\t\t\tGo to https://upwork.com then: \n\n\t\t\t\t'find Python Django job..."
+      }
+    ],
+    "allabolag.se": [
+      {
+        "task_id": "2185648",
+        "url": "https://www.allabolag.se/segmentering",
+        "task_snippet": "Read webpage https://www.allabolag.se/segmentering and follow the prompt: Try a different approach t..."
+      },
+      {
+        "task_id": "2185648",
+        "url": "https://www.allabolag.se/segmentering",
+        "task_snippet": "Read webpage https://www.allabolag.se/segmentering and follow the prompt: Try a different approach t..."
+      }
+    ],
+    "autotrader.ca": [
+      {
+        "task_id": "1099868",
+        "url": "https://www.autotrader.ca/dealersearch/",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      },
+      {
+        "task_id": "1099868",
+        "url": "https://www.autotrader.ca/dealersearch/?pg=N",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      },
+      {
+        "task_id": "1099868",
+        "url": "https://www.autotrader.ca/dealersearch/?pg=2",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      },
+      {
+        "task_id": "1099868",
+        "url": "https://www.autotrader.ca/dealersearch/",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      },
+      {
+        "task_id": "1099868",
+        "url": "https://www.autotrader.ca/dealersearch/?pg=N",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      },
+      {
+        "task_id": "1099868",
+        "url": "https://www.autotrader.ca/dealersearch/?pg=2",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      },
+      {
+        "task_id": "1099868",
+        "url": "https://autotrader.ca",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      },
+      {
+        "task_id": "1099868",
+        "url": "https://autotrader.ca",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      },
+      {
+        "task_id": "1099868",
+        "url": "https://autotrader.ca",
+        "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1..."
+      }
+    ],
+    "webgate.ec.europa.eu": [
+      {
+        "task_id": "823668",
+        "url": "https://webgate.ec.europa.eu/rasff-window/screen/search",
+        "task_snippet": "Go to https://webgate.ec.europa.eu/rasff-window/screen/search search for Morocco (origin), collect t..."
+      }
+    ],
+    "idx.co.id": [
+      {
+        "task_id": "2179094",
+        "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404/e8896172d8_1ec8334461.pdf",
+        "task_snippet": "Read webpage https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404..."
+      },
+      {
+        "task_id": "2179094",
+        "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404/e8896172d8_1ec8334461.pdf",
+        "task_snippet": "Read webpage https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404..."
+      }
+    ],
+    "idx.co": [
+      {
+        "task_id": "2179094",
+        "url": "https://idx.co",
+        "task_snippet": "Read webpage https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404..."
+      }
+    ],
+    "focal-dashboard.s3.amazonaws.com": [
+      {
+        "task_id": "2357258",
+        "url": "https://focal-dashboard.s3.amazonaws.com/issue_creation/76ee887d-4ab2-4d4e-ae35-2dc99fab0fc1.webp",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357258",
+        "url": "https://focal-dashboard.s3.amazonaws.com/issue_creation/f9be2621-5a73-4260-86bd-d7b8ac626056.webp",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      }
+    ],
+    "amazonaws.com": [
+      {
+        "task_id": "2357258",
+        "url": "https://amazonaws.com",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      },
+      {
+        "task_id": "2357258",
+        "url": "https://amazonaws.com",
+        "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real..."
+      }
+    ],
+    "icis.com": [
+      {
+        "task_id": "2307496",
+        "url": "https://www.icis.com/explore/commodities/chemicals/",
+        "task_snippet": "Read webpage https://www.icis.com/explore/commodities/chemicals/ and follow the prompt: Navigate to ..."
+      },
+      {
+        "task_id": "2307496",
+        "url": "https://www.icis.com/explore/commodities/chemicals/",
+        "task_snippet": "Read webpage https://www.icis.com/explore/commodities/chemicals/ and follow the prompt: Navigate to ..."
+      },
+      {
+        "task_id": "2307496",
+        "url": "https://icis.com",
+        "task_snippet": "Read webpage https://www.icis.com/explore/commodities/chemicals/ and follow the prompt: Navigate to ..."
+      }
+    ],
+    "slimsista.com": [
+      {
+        "task_id": "2236188",
+        "url": "https://SlimSista.com",
+        "task_snippet": "Read webpage https://SlimSista.com and follow the prompt: Analyze the brand and style guidelines of ..."
+      },
+      {
+        "task_id": "2236188",
+        "url": "https://SlimSista.com",
+        "task_snippet": "Read webpage https://SlimSista.com and follow the prompt: Analyze the brand and style guidelines of ..."
+      },
+      {
+        "task_id": "2236188",
+        "url": "https://SlimSista.com",
+        "task_snippet": "Read webpage https://SlimSista.com and follow the prompt: Analyze the brand and style guidelines of ..."
+      }
+    ],
+    "daraz.pk": [
+      {
+        "task_id": "1485252",
+        "url": "https://www.daraz.pk/",
+        "task_snippet": "\n    0. Go to https://www.daraz.pk/, handle any captcha/security if shown.\n    1. Search for 'wirele..."
+      },
+      {
+        "task_id": "1485252",
+        "url": "https://www.daraz.pk/",
+        "task_snippet": "\n    0. Go to https://www.daraz.pk/, handle any captcha/security if shown.\n    1. Search for 'wirele..."
+      }
+    ],
+    "bscscan.com": [
+      {
+        "task_id": "1797096",
+        "url": "https://bscscan.com/token/0x700735317e1af4687c17f5c30e11a74778395922#code",
+        "task_snippet": "Analyze MCC token smart contract code on BSC to identify functions, ownership, and potential risks w..."
+      },
+      {
+        "task_id": "1797096",
+        "url": "https://bscscan.com",
+        "task_snippet": "Analyze MCC token smart contract code on BSC to identify functions, ownership, and potential risks w..."
+      }
+    ],
+    "ptechpartners.com": [
+      {
+        "task_id": "1873462",
+        "url": "https://www.ptechpartners.com/",
+        "task_snippet": "Read webpage https://www.ptechpartners.com/ and follow the prompt: Navigate to this website and find..."
+      },
+      {
+        "task_id": "1873462",
+        "url": "https://www.ptechpartners.com/",
+        "task_snippet": "Read webpage https://www.ptechpartners.com/ and follow the prompt: Navigate to this website and find..."
+      },
+      {
+        "task_id": "1873462",
+        "url": "https://ptechpartners.com",
+        "task_snippet": "Read webpage https://www.ptechpartners.com/ and follow the prompt: Navigate to this website and find..."
+      }
+    ],
+    "ungm.org": [
+      {
+        "task_id": "1133145",
+        "url": "https://www.ungm.org/Public/Notice",
+        "task_snippet": "Scrape the first 20 tenders for UN-related IT projects from the UN Global Marketplace at https://www..."
+      },
+      {
+        "task_id": "1133145",
+        "url": "https://www.ungm.org/Public/Notice",
+        "task_snippet": "Scrape the first 20 tenders for UN-related IT projects from the UN Global Marketplace at https://www..."
+      },
+      {
+        "task_id": "1133145",
+        "url": "https://ungm.org",
+        "task_snippet": "Scrape the first 20 tenders for UN-related IT projects from the UN Global Marketplace at https://www..."
+      }
+    ],
+    "cve.mitre.org": [
+      {
+        "task_id": "1289271",
+        "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34459",
+        "task_snippet": "Goal: Find detailed information about CVE-2024-34459\nExpected output: Detailed information about CVE..."
+      }
+    ],
+    "act.nato.int": [
+      {
+        "task_id": "1145398",
+        "url": "https://www.act.nato.int/opportunities/contracting/.",
+        "task_snippet": "Scrape the tenders from https://www.act.nato.int/opportunities/contracting/. For each tender, extrac..."
+      },
+      {
+        "task_id": "1145398",
+        "url": "https://www.act.nato.int/opportunities/contracting/.",
+        "task_snippet": "Scrape the tenders from https://www.act.nato.int/opportunities/contracting/. For each tender, extrac..."
+      }
+    ],
+    "marketingsummit.siliconslopes.com": [
+      {
+        "task_id": "1406205",
+        "url": "https://marketingsummit.siliconslopes.com/agenda/list/?tribe-bar-date=2025-05-05",
+        "task_snippet": "go to https://marketingsummit.siliconslopes.com/agenda/list/?tribe-bar-date=2025-05-05 and open each..."
+      }
+    ],
+    "siliconslopes.com": [
+      {
+        "task_id": "1406205",
+        "url": "https://siliconslopes.com",
+        "task_snippet": "go to https://marketingsummit.siliconslopes.com/agenda/list/?tribe-bar-date=2025-05-05 and open each..."
+      }
+    ],
+    "videogpt.io": [
+      {
+        "task_id": "2061640",
+        "url": "https://videogpt.io/",
+        "task_snippet": "Read webpage https://videogpt.io/ and follow the prompt: I need to create a 10-15 second 3D Pixar-st..."
+      },
+      {
+        "task_id": "2061640",
+        "url": "https://videogpt.io",
+        "task_snippet": "Read webpage https://videogpt.io/ and follow the prompt: I need to create a 10-15 second 3D Pixar-st..."
+      }
+    ],
+    "docebo.com": [
+      {
+        "task_id": "2310254",
+        "url": "https://www.docebo.com/customers/",
+        "task_snippet": "Go to https://www.docebo.com/customers/ and apply filters for manufacturing industry. Look through t..."
+      },
+      {
+        "task_id": "2310254",
+        "url": "https://www.docebo.com/customers/",
+        "task_snippet": "Go to https://www.docebo.com/customers/ and apply filters for manufacturing industry. Look through t..."
+      },
+      {
+        "task_id": "2310254",
+        "url": "https://docebo.com",
+        "task_snippet": "Go to https://www.docebo.com/customers/ and apply filters for manufacturing industry. Look through t..."
+      }
+    ],
+    "bstn.com": [
+      {
+        "task_id": "1625845",
+        "url": "https://www.bstn.com/us_en/catalogsearch/result/?q=all&categories=Men.",
+        "task_snippet": "Extract all product data (name, price, url, image) from all pages of the search results on https://w..."
+      },
+      {
+        "task_id": "1625845",
+        "url": "https://www.bstn.com/us_en/catalogsearch/result/?q=all&categories=Men.",
+        "task_snippet": "Extract all product data (name, price, url, image) from all pages of the search results on https://w..."
+      },
+      {
+        "task_id": "1625845",
+        "url": "https://bstn.com",
+        "task_snippet": "Extract all product data (name, price, url, image) from all pages of the search results on https://w..."
+      }
+    ],
+    "en.youlive.ca": [
+      {
+        "task_id": "2092706",
+        "url": "https://en.youlive.ca/vancouver-building/10526-cambie-garden",
+        "task_snippet": "Read webpage https://en.youlive.ca/vancouver-building/10526-cambie-garden and follow the prompt: Ext..."
+      }
+    ],
+    "youlive.ca": [
+      {
+        "task_id": "2092706",
+        "url": "https://youlive.ca",
+        "task_snippet": "Read webpage https://en.youlive.ca/vancouver-building/10526-cambie-garden and follow the prompt: Ext..."
+      }
+    ],
+    "ycombinator.com": [
+      {
+        "task_id": "1136410",
+        "url": "https://ycombinator.com",
+        "task_snippet": "Go to ycombinator.com and find all enterprises under the Winter 2025 (W25) B2B tag. Collect informat..."
+      }
+    ],
+    "dtfprinterusa.com": [
+      {
+        "task_id": "2277898",
+        "url": "https://dtfprinterusa.com/",
+        "task_snippet": "Read webpage https://dtfprinterusa.com/ and follow the prompt: Navigate to the website and perform a..."
+      },
+      {
+        "task_id": "2277898",
+        "url": "https://dtfprinterusa.com",
+        "task_snippet": "Read webpage https://dtfprinterusa.com/ and follow the prompt: Navigate to the website and perform a..."
+      }
+    ],
+    "apna.co": [
+      {
+        "task_id": "1310325",
+        "url": "https://apna.co/candidate/jobs.",
+        "task_snippet": "\n        Goto the link https://apna.co/candidate/jobs. This is a job search portal.  \n\n        You h..."
+      },
+      {
+        "task_id": "1310325",
+        "url": "https://apna.co",
+        "task_snippet": "\n        Goto the link https://apna.co/candidate/jobs. This is a job search portal.  \n\n        You h..."
+      }
+    ],
+    "mailchimp.com": [
+      {
+        "task_id": "839951",
+        "url": "https://mailchimp.com/pricing/marketing/compare-plans/?currency=EUR",
+        "task_snippet": "Visit https://mailchimp.com/pricing/marketing/compare-plans/?currency=EUR and analyze the pricing in..."
+      },
+      {
+        "task_id": "839951",
+        "url": "https://mailchimp.com",
+        "task_snippet": "Visit https://mailchimp.com/pricing/marketing/compare-plans/?currency=EUR and analyze the pricing in..."
+      }
+    ],
+    "dextools.io": [
+      {
+        "task_id": "1656949",
+        "url": "https://www.dextools.io/app/en/ether/pool-explorer.",
+        "task_snippet": "\n    Go to https://www.dextools.io/app/en/ether/pool-explorer.\n    Observe the list of newly listed ..."
+      },
+      {
+        "task_id": "1656949",
+        "url": "https://www.dextools.io/app/en/ether/pool-explorer.",
+        "task_snippet": "\n    Go to https://www.dextools.io/app/en/ether/pool-explorer.\n    Observe the list of newly listed ..."
+      },
+      {
+        "task_id": "1656949",
+        "url": "https://dextools.io",
+        "task_snippet": "\n    Go to https://www.dextools.io/app/en/ether/pool-explorer.\n    Observe the list of newly listed ..."
+      }
+    ],
+    "breaking-bet.com": [
+      {
+        "task_id": "1123218",
+        "url": "https://breaking-bet.com/en/arbs/prematch",
+        "task_snippet": "\n        Visit https://breaking-bet.com/en/arbs/prematch\n\n        1. Look for the gear/settings icon..."
+      },
+      {
+        "task_id": "1123218",
+        "url": "https://breaking-bet.com",
+        "task_snippet": "\n        Visit https://breaking-bet.com/en/arbs/prematch\n\n        1. Look for the gear/settings icon..."
+      }
+    ],
+    "similarweb.com": [
+      {
+        "task_id": "1026443",
+        "url": "https://www.similarweb.com/website/",
+        "task_snippet": "Go to https://www.similarweb.com/website/\nAnalyze traffic for the website https://revapets.com\nClick..."
+      },
+      {
+        "task_id": "1026443",
+        "url": "https://www.similarweb.com/website/",
+        "task_snippet": "Go to https://www.similarweb.com/website/\nAnalyze traffic for the website https://revapets.com\nClick..."
+      },
+      {
+        "task_id": "1026443",
+        "url": "https://similarweb.com",
+        "task_snippet": "Go to https://www.similarweb.com/website/\nAnalyze traffic for the website https://revapets.com\nClick..."
+      }
+    ],
+    "revapets.com": [
+      {
+        "task_id": "1026443",
+        "url": "https://revapets.com",
+        "task_snippet": "Go to https://www.similarweb.com/website/\nAnalyze traffic for the website https://revapets.com\nClick..."
+      },
+      {
+        "task_id": "1026443",
+        "url": "https://revapets.com",
+        "task_snippet": "Go to https://www.similarweb.com/website/\nAnalyze traffic for the website https://revapets.com\nClick..."
+      }
+    ],
+    "data.worldbank.org": [
+      {
+        "task_id": "966617",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?name_desc=false",
+        "task_snippet": "PROMPT - Generate a script to extract all countries and their most recent year and value for electri..."
+      }
+    ],
+    "worldbank.org": [
+      {
+        "task_id": "966617",
+        "url": "https://worldbank.org",
+        "task_snippet": "PROMPT - Generate a script to extract all countries and their most recent year and value for electri..."
+      }
+    ],
+    "vals.ai": [
+      {
+        "task_id": "1757675",
+        "url": "https://www.vals.ai/benchmarks",
+        "task_snippet": "Read webpage https://www.vals.ai/benchmarks and follow the prompt: \\u68c0\\u67e5\\u6240\\u6709\\u7684\\u5..."
+      },
+      {
+        "task_id": "1757675",
+        "url": "https://www.vals.ai/benchmarks",
+        "task_snippet": "Read webpage https://www.vals.ai/benchmarks and follow the prompt: \\u68c0\\u67e5\\u6240\\u6709\\u7684\\u5..."
+      },
+      {
+        "task_id": "1757675",
+        "url": "https://vals.ai",
+        "task_snippet": "Read webpage https://www.vals.ai/benchmarks and follow the prompt: \\u68c0\\u67e5\\u6240\\u6709\\u7684\\u5..."
+      }
+    ],
+    "beauhurst.com": [
+      {
+        "task_id": "2094857",
+        "url": "https://www.beauhurst.com/",
+        "task_snippet": "Read webpage https://www.beauhurst.com/ and follow the prompt: Extract detailed information about Be..."
+      },
+      {
+        "task_id": "2094857",
+        "url": "https://www.beauhurst.com/",
+        "task_snippet": "Read webpage https://www.beauhurst.com/ and follow the prompt: Extract detailed information about Be..."
+      },
+      {
+        "task_id": "2094857",
+        "url": "https://beauhurst.com",
+        "task_snippet": "Read webpage https://www.beauhurst.com/ and follow the prompt: Extract detailed information about Be..."
+      }
+    ],
+    "spitexcare.ch": [
+      {
+        "task_id": "2140824",
+        "url": "https://www.spitexcare.ch/",
+        "task_snippet": "Read webpage https://www.spitexcare.ch/ and follow the prompt: Analyze the website spitexcare.ch to ..."
+      },
+      {
+        "task_id": "2140824",
+        "url": "https://www.spitexcare.ch/",
+        "task_snippet": "Read webpage https://www.spitexcare.ch/ and follow the prompt: Analyze the website spitexcare.ch to ..."
+      }
+    ],
+    "derma-solution.com": [
+      {
+        "task_id": "2216354",
+        "url": "https://derma-solution.com/",
+        "task_snippet": "Read webpage https://derma-solution.com/ and follow the prompt: Analyze this second competitor's web..."
+      },
+      {
+        "task_id": "2216354",
+        "url": "https://derma-solution.com",
+        "task_snippet": "Read webpage https://derma-solution.com/ and follow the prompt: Analyze this second competitor's web..."
+      }
+    ],
+    "upkeepskin.com": [
+      {
+        "task_id": "2216354",
+        "url": "https://upkeepskin.com",
+        "task_snippet": "Read webpage https://derma-solution.com/ and follow the prompt: Analyze this second competitor's web..."
+      }
+    ],
+    "medium.com": [
+      {
+        "task_id": "1785321",
+        "url": "https://medium.com/@nambos3rd/tesla-full-year-2024-analysis-a-review-of-actual-performance-my-financial-forecast-41ee70091b5a",
+        "task_snippet": "Read webpage https://medium.com/@nambos3rd/tesla-full-year-2024-analysis-a-review-of-actual-performa..."
+      },
+      {
+        "task_id": "1785321",
+        "url": "https://medium.com",
+        "task_snippet": "Read webpage https://medium.com/@nambos3rd/tesla-full-year-2024-analysis-a-review-of-actual-performa..."
+      }
+    ],
+    "mordorintelligence.com": [
+      {
+        "task_id": "1612534",
+        "url": "https://www.mordorintelligence.com/zh-CN/industry-reports/smart-sound-and-gateway-market",
+        "task_snippet": "Read webpage https://www.mordorintelligence.com/zh-CN/industry-reports/smart-sound-and-gateway-marke..."
+      },
+      {
+        "task_id": "1612534",
+        "url": "https://www.mordorintelligence.com/zh-CN/industry-reports/smart-sound-and-gateway-market",
+        "task_snippet": "Read webpage https://www.mordorintelligence.com/zh-CN/industry-reports/smart-sound-and-gateway-marke..."
+      },
+      {
+        "task_id": "1612534",
+        "url": "https://mordorintelligence.com",
+        "task_snippet": "Read webpage https://www.mordorintelligence.com/zh-CN/industry-reports/smart-sound-and-gateway-marke..."
+      }
+    ],
+    "europages.co.uk": [
+      {
+        "task_id": "1716501",
+        "url": "https://www.europages.co.uk/companies/distributor/import-export%20-%20medical%20and%20surgical%20equipment.html",
+        "task_snippet": "Read webpage https://www.europages.co.uk/companies/distributor/import-export%20-%20medical%20and%20s..."
+      },
+      {
+        "task_id": "1716501",
+        "url": "https://www.europages.co.uk/companies/distributor/import-export%20-%20medical%20and%20surgical%20equipment.html",
+        "task_snippet": "Read webpage https://www.europages.co.uk/companies/distributor/import-export%20-%20medical%20and%20s..."
+      }
+    ],
+    "europages.co": [
+      {
+        "task_id": "1716501",
+        "url": "https://europages.co",
+        "task_snippet": "Read webpage https://www.europages.co.uk/companies/distributor/import-export%20-%20medical%20and%20s..."
+      }
+    ],
+    "saytool.com": [
+      {
+        "task_id": "191779",
+        "url": "https://saytool.com/product/%EC%97%90%EC%9D%B4%EC%95%A4%EB%94%94-%EC%A0%84%EC%9E%90%EC%A0%80%EC%9A%B8%EC%A4%91%EB%9F%89%EB%B9%84%EA%B5%90-hc-30kw-hc-30kw-30kg5g/59643/",
+        "task_snippet": "\n                    Visit https://saytool.com/product/%EC%97%90%EC%9D%B4%EC%95%A4%EB%94%94-%EC%A0%8..."
+      },
+      {
+        "task_id": "191779",
+        "url": "https://saytool.com",
+        "task_snippet": "\n                    Visit https://saytool.com/product/%EC%97%90%EC%9D%B4%EC%95%A4%EB%94%94-%EC%A0%8..."
+      }
+    ],
+    "closed.com": [
+      {
+        "task_id": "1062848",
+        "url": "https://www.closed.com/en/women/jeans",
+        "task_snippet": "\n        You are an e-commerce site analyzer. Visit https://www.closed.com/en/women/jeans and carefu..."
+      },
+      {
+        "task_id": "1062848",
+        "url": "https://www.closed.com/en/women/jeans",
+        "task_snippet": "\n        You are an e-commerce site analyzer. Visit https://www.closed.com/en/women/jeans and carefu..."
+      },
+      {
+        "task_id": "1062848",
+        "url": "https://closed.com",
+        "task_snippet": "\n        You are an e-commerce site analyzer. Visit https://www.closed.com/en/women/jeans and carefu..."
+      }
+    ],
+    "vividseats.com": [
+      {
+        "task_id": "702654",
+        "url": "https://vividseats.com",
+        "task_snippet": "Navigate to vividseats.com and search for Toronto FC vs Inter Miami CF tickets for September 27, 202..."
+      }
+    ],
+    "finance.yahoo.com": [
+      {
+        "task_id": "1017491",
+        "url": "https://finance.yahoo.com/quote/AAPL/news/",
+        "task_snippet": "Extract key points from the article at https://finance.yahoo.com/quote/AAPL/news/ focusing on Apple'..."
+      }
+    ],
+    "yahoo.com": [
+      {
+        "task_id": "1017491",
+        "url": "https://yahoo.com",
+        "task_snippet": "Extract key points from the article at https://finance.yahoo.com/quote/AAPL/news/ focusing on Apple'..."
+      }
+    ],
+    "nasdaq.com": [
+      {
+        "task_id": "959652",
+        "url": "https://nasdaq.com",
+        "task_snippet": "Go to nasdaq.com and search for the stock symbol 'Garrett Advancing Motion'. Navigate to its histori..."
+      }
+    ],
+    "embracetransitioncoaching.com": [
+      {
+        "task_id": "2282208",
+        "url": "https://embracetransitioncoaching.com/about-paula/",
+        "task_snippet": "Read webpage https://embracetransitioncoaching.com/about-paula/ and follow the prompt: Extract all c..."
+      },
+      {
+        "task_id": "2282208",
+        "url": "https://embracetransitioncoaching.com",
+        "task_snippet": "Read webpage https://embracetransitioncoaching.com/about-paula/ and follow the prompt: Extract all c..."
+      }
+    ],
+    "padmapper.com": [
+      {
+        "task_id": "1822100",
+        "url": "https://www.padmapper.com/apartments/san-francisco-ca",
+        "task_snippet": "Read webpage https://www.padmapper.com/apartments/san-francisco-ca and follow the prompt: Analyze th..."
+      },
+      {
+        "task_id": "1822100",
+        "url": "https://www.padmapper.com/apartments/san-francisco-ca",
+        "task_snippet": "Read webpage https://www.padmapper.com/apartments/san-francisco-ca and follow the prompt: Analyze th..."
+      },
+      {
+        "task_id": "1822100",
+        "url": "https://padmapper.com",
+        "task_snippet": "Read webpage https://www.padmapper.com/apartments/san-francisco-ca and follow the prompt: Analyze th..."
+      }
+    ],
+    "agrieuro.co": [
+      {
+        "task_id": "795094",
+        "url": "https://agrieuro.co",
+        "task_snippet": "site:agrieuro.co.uk \"charcoal grill\" 20-300 EUR reviews specifications Edilmark OR Classe OR Masterc..."
+      }
+    ],
+    "aiindex.stanford.edu": [
+      {
+        "task_id": "1421359",
+        "url": "https://aiindex.stanford.edu/report/",
+        "task_snippet": "Read webpage https://aiindex.stanford.edu/report/ and follow the prompt: Extract key findings from t..."
+      }
+    ],
+    "stanford.edu": [
+      {
+        "task_id": "1421359",
+        "url": "https://stanford.edu",
+        "task_snippet": "Read webpage https://aiindex.stanford.edu/report/ and follow the prompt: Extract key findings from t..."
+      }
+    ],
+    "thiscorner.co": [
+      {
+        "task_id": "1246927",
+        "url": "https://www.thiscorner.co/",
+        "task_snippet": "\n        Browse a retailer's website of https://www.thiscorner.co/ and get all products the retailer..."
+      },
+      {
+        "task_id": "1246927",
+        "url": "https://www.thiscorner.co/",
+        "task_snippet": "\n        Browse a retailer's website of https://www.thiscorner.co/ and get all products the retailer..."
+      },
+      {
+        "task_id": "1246927",
+        "url": "https://thiscorner.co",
+        "task_snippet": "\n        Browse a retailer's website of https://www.thiscorner.co/ and get all products the retailer..."
+      }
+    ],
+    "wro.westchesterclerk.com": [
+      {
+        "task_id": "759493",
+        "url": "https://wro.westchesterclerk.com/landsearch.aspx",
+        "task_snippet": "Go to https://wro.westchesterclerk.com/landsearch.aspx, Look for land records for the Name Seven Spr..."
+      }
+    ],
+    "westchesterclerk.com": [
+      {
+        "task_id": "759493",
+        "url": "https://westchesterclerk.com",
+        "task_snippet": "Go to https://wro.westchesterclerk.com/landsearch.aspx, Look for land records for the Name Seven Spr..."
+      }
+    ],
+    "bstock.com": [
+      {
+        "task_id": "2214895",
+        "url": "https://bstock.com/amazon/",
+        "task_snippet": "Read webpage https://bstock.com/amazon/ and follow the prompt: Navigate to the B-Stock website and f..."
+      },
+      {
+        "task_id": "2214895",
+        "url": "https://bstock.com",
+        "task_snippet": "Read webpage https://bstock.com/amazon/ and follow the prompt: Navigate to the B-Stock website and f..."
+      }
+    ],
+    "packages.ubuntu.com": [
+      {
+        "task_id": "1624560",
+        "url": "https://packages.ubuntu.com/jammy/libfreetype6",
+        "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details..."
+      }
+    ],
+    "ubuntu.com": [
+      {
+        "task_id": "1624560",
+        "url": "https://ubuntu.com/security/CVE-2025-27363",
+        "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details..."
+      },
+      {
+        "task_id": "1624560",
+        "url": "https://ubuntu.com",
+        "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details..."
+      },
+      {
+        "task_id": "1624560",
+        "url": "https://ubuntu.com",
+        "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details..."
+      }
+    ],
+    "launchpad.net": [
+      {
+        "task_id": "1624560",
+        "url": "https://launchpad.net/ubuntu/+source/freetype",
+        "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details..."
+      },
+      {
+        "task_id": "1624560",
+        "url": "https://launchpad.net",
+        "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details..."
+      }
+    ],
+    "people.canonical.com": [
+      {
+        "task_id": "1624560",
+        "url": "https://people.canonical.com/~ubuntu-security/cve/2025/CVE-2025-27363.html",
+        "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details..."
+      }
+    ],
+    "canonical.com": [
+      {
+        "task_id": "1624560",
+        "url": "https://canonical.com",
+        "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details..."
+      }
+    ],
+    "poweradspy.com": [
+      {
+        "task_id": "1783199",
+        "url": "https://www.poweradspy.com/",
+        "task_snippet": "Read webpage https://www.poweradspy.com/ and follow the prompt: Extract exact pricing plans, feature..."
+      },
+      {
+        "task_id": "1783199",
+        "url": "https://www.poweradspy.com/",
+        "task_snippet": "Read webpage https://www.poweradspy.com/ and follow the prompt: Extract exact pricing plans, feature..."
+      },
+      {
+        "task_id": "1783199",
+        "url": "https://poweradspy.com",
+        "task_snippet": "Read webpage https://www.poweradspy.com/ and follow the prompt: Extract exact pricing plans, feature..."
+      }
+    ],
+    "goodrx.com": [
+      {
+        "task_id": "265277",
+        "url": "https://goodrx.com",
+        "task_snippet": "Search for Metformin on goodrx.com:\n        1. First scroll down and enter location: 172 S Sunnyvale..."
+      }
+    ],
+    "bseindia.com": [
+      {
+        "task_id": "1568496",
+        "url": "https://www.bseindia.com/corporates/ann.html.",
+        "task_snippet": "\nGo to https://www.bseindia.com/corporates/ann.html.\nClick the button with selector \"#btnSubmit\".\nWa..."
+      },
+      {
+        "task_id": "1568496",
+        "url": "https://www.bseindia.com/corporates/ann.html.",
+        "task_snippet": "\nGo to https://www.bseindia.com/corporates/ann.html.\nClick the button with selector \"#btnSubmit\".\nWa..."
+      },
+      {
+        "task_id": "1568496",
+        "url": "https://bseindia.com",
+        "task_snippet": "\nGo to https://www.bseindia.com/corporates/ann.html.\nClick the button with selector \"#btnSubmit\".\nWa..."
+      }
+    ],
+    "zolo.ca": [
+      {
+        "task_id": "246025",
+        "url": "https://www.zolo.ca/",
+        "task_snippet": "Go to https://www.zolo.ca/ and select Price and write 1600000. Then find homes with 4 bedrooms then ..."
+      },
+      {
+        "task_id": "246025",
+        "url": "https://www.zolo.ca/",
+        "task_snippet": "Go to https://www.zolo.ca/ and select Price and write 1600000. Then find homes with 4 bedrooms then ..."
+      },
+      {
+        "task_id": "246025",
+        "url": "https://zolo.ca",
+        "task_snippet": "Go to https://www.zolo.ca/ and select Price and write 1600000. Then find homes with 4 bedrooms then ..."
+      }
+    ],
+    "uniquemallorca.com": [
+      {
+        "task_id": "1015772",
+        "url": "https://www.uniquemallorca.com/",
+        "task_snippet": "visit: https://www.uniquemallorca.com/ and search for all properites in all areas"
+      },
+      {
+        "task_id": "1015772",
+        "url": "https://www.uniquemallorca.com/",
+        "task_snippet": "visit: https://www.uniquemallorca.com/ and search for all properites in all areas"
+      },
+      {
+        "task_id": "1015772",
+        "url": "https://uniquemallorca.com",
+        "task_snippet": "visit: https://www.uniquemallorca.com/ and search for all properites in all areas"
+      }
+    ],
+    "narpm.org": [
+      {
+        "task_id": "1618713",
+        "url": "https://www.narpm.org/find/property-managers/",
+        "task_snippet": "go to https://www.narpm.org/find/property-managers/ and for each of the property manager cards, clic..."
+      },
+      {
+        "task_id": "1618713",
+        "url": "https://www.narpm.org/find/property-managers/",
+        "task_snippet": "go to https://www.narpm.org/find/property-managers/ and for each of the property manager cards, clic..."
+      },
+      {
+        "task_id": "1618713",
+        "url": "https://narpm.org",
+        "task_snippet": "go to https://www.narpm.org/find/property-managers/ and for each of the property manager cards, clic..."
+      }
+    ],
+    "mcgrath.com.au": [
+      {
+        "task_id": "1762101",
+        "url": "https://www.mcgrath.com.au",
+        "task_snippet": "\n    Explore the McGrath real estate website (https://www.mcgrath.com.au) and gather the following i..."
+      },
+      {
+        "task_id": "1762101",
+        "url": "https://www.mcgrath.com.au",
+        "task_snippet": "\n    Explore the McGrath real estate website (https://www.mcgrath.com.au) and gather the following i..."
+      },
+      {
+        "task_id": "1762101",
+        "url": "https://www.mcgrath.com.au",
+        "task_snippet": "\n    Explore the McGrath real estate website (https://www.mcgrath.com.au) and gather the following i..."
+      },
+      {
+        "task_id": "1762101",
+        "url": "https://www.mcgrath.com.au",
+        "task_snippet": "\n    Explore the McGrath real estate website (https://www.mcgrath.com.au) and gather the following i..."
+      }
+    ],
+    "mcgrath.com": [
+      {
+        "task_id": "1762101",
+        "url": "https://mcgrath.com",
+        "task_snippet": "\n    Explore the McGrath real estate website (https://www.mcgrath.com.au) and gather the following i..."
+      },
+      {
+        "task_id": "1762101",
+        "url": "https://mcgrath.com",
+        "task_snippet": "\n    Explore the McGrath real estate website (https://www.mcgrath.com.au) and gather the following i..."
+      }
+    ],
+    "canon.de": [
+      {
+        "task_id": "1130803",
+        "url": "https://www.canon.de",
+        "task_snippet": "go to www.canon.de and get all product information for system cameras. add these to a table \n\n"
+      }
+    ],
+    "pkg.go.dev": [
+      {
+        "task_id": "1297694",
+        "url": "https://pkg.go.dev/github.com/alexrudd/cognito-srp",
+        "task_snippet": "Goal: Find detailed information about the SRP authentication flow and cryptographic operations in th..."
+      }
+    ],
+    "go.dev": [
+      {
+        "task_id": "1297694",
+        "url": "https://go.dev",
+        "task_snippet": "Goal: Find detailed information about the SRP authentication flow and cryptographic operations in th..."
+      }
+    ],
+    "wisconsinsurplus.com": [
+      {
+        "task_id": "1007520",
+        "url": "https://wisconsinsurplus.com",
+        "task_snippet": "wisconsinsurplus.com visit the site and extract the auction item details including prices, current b..."
+      }
+    ],
+    "bayut.com": [
+      {
+        "task_id": "1821571",
+        "url": "https://www.bayut.com/mybayut/dubai-property-market-report/",
+        "task_snippet": "Browser agent: Extract district heatmap of rental yields from Bayut MarketWatch at https://www.bayut..."
+      },
+      {
+        "task_id": "1821571",
+        "url": "https://www.bayut.com/mybayut/dubai-property-market-report/",
+        "task_snippet": "Browser agent: Extract district heatmap of rental yields from Bayut MarketWatch at https://www.bayut..."
+      },
+      {
+        "task_id": "1821571",
+        "url": "https://bayut.com",
+        "task_snippet": "Browser agent: Extract district heatmap of rental yields from Bayut MarketWatch at https://www.bayut..."
+      }
+    ],
+    "imf.org": [
+      {
+        "task_id": "1999011",
+        "url": "https://www.imf.org/en/Publications/WEO/weo-database/2024/October.",
+        "task_snippet": "First, navigate to https://www.imf.org/en/Publications/WEO/weo-database/2024/October. Then, extract...."
+      },
+      {
+        "task_id": "1999011",
+        "url": "https://www.imf.org/en/Publications/WEO/weo-database/2024/October.",
+        "task_snippet": "First, navigate to https://www.imf.org/en/Publications/WEO/weo-database/2024/October. Then, extract...."
+      },
+      {
+        "task_id": "1999011",
+        "url": "https://imf.org",
+        "task_snippet": "First, navigate to https://www.imf.org/en/Publications/WEO/weo-database/2024/October. Then, extract...."
+      }
+    ],
+    "app.uniswap.org": [
+      {
+        "task_id": "2003613",
+        "url": "https://app.uniswap.org/explore/pools",
+        "task_snippet": "Read webpage https://app.uniswap.org/explore/pools and follow the prompt: Navega por la p\\u00e1gina ..."
+      }
+    ],
+    "uniswap.org": [
+      {
+        "task_id": "2003613",
+        "url": "https://uniswap.org",
+        "task_snippet": "Read webpage https://app.uniswap.org/explore/pools and follow the prompt: Navega por la p\\u00e1gina ..."
+      }
+    ],
+    "chromereleases.googleblog.com": [
+      {
+        "task_id": "1077220",
+        "url": "https://chromereleases.googleblog.com/2024/",
+        "task_snippet": "Goal: Find non-UAF Chrome vulnerabilities in 2024-2025 specifically related to WebGPU, WebAssembly, ..."
+      }
+    ],
+    "googleblog.com": [
+      {
+        "task_id": "1077220",
+        "url": "https://googleblog.com",
+        "task_snippet": "Goal: Find non-UAF Chrome vulnerabilities in 2024-2025 specifically related to WebGPU, WebAssembly, ..."
+      }
+    ],
+    "uniqlo.com": [
+      {
+        "task_id": "221599",
+        "url": "https://www.uniqlo.com/kr/ko/products/E461011-000/00?colorDisplayCode=08&sizeDisplayCode=004",
+        "task_snippet": "Extract the following information as JSON from this product page:\nURL: https://www.uniqlo.com/kr/ko/..."
+      },
+      {
+        "task_id": "221599",
+        "url": "https://www.uniqlo.com/kr/ko/products/E461011-000/00?colorDisplayCode=08&sizeDisplayCode=004",
+        "task_snippet": "Extract the following information as JSON from this product page:\nURL: https://www.uniqlo.com/kr/ko/..."
+      },
+      {
+        "task_id": "221599",
+        "url": "https://uniqlo.com",
+        "task_snippet": "Extract the following information as JSON from this product page:\nURL: https://www.uniqlo.com/kr/ko/..."
+      }
+    ],
+    "skymint.com": [
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com/white-cloud/category/flower",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com/white-cloud/category/pre-rolls/",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com/white-cloud/category/vaporizers/",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com/white-cloud/category/edibles/",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com/white-cloud/category/concentrates/",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      },
+      {
+        "task_id": "124347",
+        "url": "https://skymint.com",
+        "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-clo..."
+      }
+    ],
+    "philgeps.gov.ph": [
+      {
+        "task_id": "1012772",
+        "url": "https://www.philgeps.gov.ph",
+        "task_snippet": "\nPhase 3: Data Collection Workflow\n\nYour task is to act as an AI agent that discovers leads for a Ra..."
+      },
+      {
+        "task_id": "1012772",
+        "url": "https://www.philgeps.gov.ph",
+        "task_snippet": "\nPhase 3: Data Collection Workflow\n\nYour task is to act as an AI agent that discovers leads for a Ra..."
+      }
+    ],
+    "ango.ph": [
+      {
+        "task_id": "1012772",
+        "url": "https://ango.ph/",
+        "task_snippet": "\nPhase 3: Data Collection Workflow\n\nYour task is to act as an AI agent that discovers leads for a Ra..."
+      }
+    ],
+    "philgeps.gov": [
+      {
+        "task_id": "1012772",
+        "url": "https://philgeps.gov",
+        "task_snippet": "\nPhase 3: Data Collection Workflow\n\nYour task is to act as an AI agent that discovers leads for a Ra..."
+      }
+    ],
+    "withroam.com": [
+      {
+        "task_id": "352644",
+        "url": "https://www.withroam.com/zipcode/91101?bedrooms=2&down_payment=400000&mode=viewport&order=ir_low&property_types=single_family&viewport=-118.47145%3A33.55095%3A-117.35938%3A34.24766",
+        "task_snippet": "Navigate to: https://www.withroam.com/zipcode/91101?bedrooms=2&down_payment=400000&mode=viewport&ord..."
+      },
+      {
+        "task_id": "352644",
+        "url": "https://www.withroam.com/zipcode/91101?bedrooms=2&down_payment=400000&mode=viewport&order=ir_low&property_types=single_family&viewport=-118.47145%3A33.55095%3A-117.35938%3A34.24766",
+        "task_snippet": "Navigate to: https://www.withroam.com/zipcode/91101?bedrooms=2&down_payment=400000&mode=viewport&ord..."
+      },
+      {
+        "task_id": "352644",
+        "url": "https://withroam.com",
+        "task_snippet": "Navigate to: https://www.withroam.com/zipcode/91101?bedrooms=2&down_payment=400000&mode=viewport&ord..."
+      }
+    ],
+    "car.org": [
+      {
+        "task_id": "1706786",
+        "url": "https://www.car.org/marketdata/data",
+        "task_snippet": "Read webpage https://www.car.org/marketdata/data and follow the prompt: Access the California Associ..."
+      },
+      {
+        "task_id": "1706786",
+        "url": "https://www.car.org/marketdata/data",
+        "task_snippet": "Read webpage https://www.car.org/marketdata/data and follow the prompt: Access the California Associ..."
+      },
+      {
+        "task_id": "1706786",
+        "url": "https://www.car.org/marketdata/data",
+        "task_snippet": "Read webpage https://www.car.org/marketdata/data and follow the prompt: Access the California Associ..."
+      },
+      {
+        "task_id": "1706786",
+        "url": "https://www.car.org/marketdata/data",
+        "task_snippet": "Read webpage https://www.car.org/marketdata/data and follow the prompt: Access the California Associ..."
+      },
+      {
+        "task_id": "1706786",
+        "url": "https://car.org",
+        "task_snippet": "Read webpage https://www.car.org/marketdata/data and follow the prompt: Access the California Associ..."
+      },
+      {
+        "task_id": "1706786",
+        "url": "https://car.org",
+        "task_snippet": "Read webpage https://www.car.org/marketdata/data and follow the prompt: Access the California Associ..."
+      }
+    ],
+    "warmembracegifts.com": [
+      {
+        "task_id": "2271368",
+        "url": "https://warmembracegifts.com/",
+        "task_snippet": "Read webpage https://warmembracegifts.com/ and follow the prompt: Navigate through this website to f..."
+      },
+      {
+        "task_id": "2271368",
+        "url": "https://warmembracegifts.com",
+        "task_snippet": "Read webpage https://warmembracegifts.com/ and follow the prompt: Navigate through this website to f..."
+      }
+    ],
+    "msrc.microsoft.com": [
+      {
+        "task_id": "500831",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability",
+        "task_snippet": "go to https://msrc.microsoft.com/update-guide/vulnerability, sort the list by release date, only con..."
+      }
+    ],
+    "microsoft.com": [
+      {
+        "task_id": "500831",
+        "url": "https://microsoft.com",
+        "task_snippet": "go to https://msrc.microsoft.com/update-guide/vulnerability, sort the list by release date, only con..."
+      }
+    ],
+    "acquistinretepa.it": [
+      {
+        "task_id": "1504989",
+        "url": "https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=51e7896e855eabe7",
+        "task_snippet": "visit this website 'https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=5..."
+      },
+      {
+        "task_id": "1504989",
+        "url": "https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=51e7896e855eabe7",
+        "task_snippet": "visit this website 'https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=5..."
+      }
+    ],
+    "redfin.ca": [
+      {
+        "task_id": "1067771",
+        "url": "https://www.redfin.ca/",
+        "task_snippet": "\n    Go to https://www.redfin.ca/ and enter the vancouver in the input box and then press the search..."
+      },
+      {
+        "task_id": "1067771",
+        "url": "https://www.redfin.ca/",
+        "task_snippet": "\n    Go to https://www.redfin.ca/ and enter the vancouver in the input box and then press the search..."
+      },
+      {
+        "task_id": "1067771",
+        "url": "https://redfin.ca",
+        "task_snippet": "\n    Go to https://www.redfin.ca/ and enter the vancouver in the input box and then press the search..."
+      }
+    ],
+    "iea.org": [
+      {
+        "task_id": "1771670",
+        "url": "https://www.iea.org/reports/electricity-grids-and-secure-energy-transitions/executive-summary",
+        "task_snippet": "Read webpage https://www.iea.org/reports/electricity-grids-and-secure-energy-transitions/executive-s..."
+      },
+      {
+        "task_id": "1771670",
+        "url": "https://www.iea.org/reports/electricity-grids-and-secure-energy-transitions/executive-summary",
+        "task_snippet": "Read webpage https://www.iea.org/reports/electricity-grids-and-secure-energy-transitions/executive-s..."
+      },
+      {
+        "task_id": "1771670",
+        "url": "https://iea.org",
+        "task_snippet": "Read webpage https://www.iea.org/reports/electricity-grids-and-secure-energy-transitions/executive-s..."
+      }
+    ],
+    "taobao.com": [
+      {
+        "task_id": "885584",
+        "url": "https://taobao.com.",
+        "task_snippet": "\n        Get 100 item images from https://taobao.com. \n        You act like a human being, go straig..."
+      },
+      {
+        "task_id": "885584",
+        "url": "https://taobao.com",
+        "task_snippet": "\n        Get 100 item images from https://taobao.com. \n        You act like a human being, go straig..."
+      }
+    ],
+    "semrush.com": [
+      {
+        "task_id": "2136340",
+        "url": "https://www.semrush.com/website/",
+        "task_snippet": "Read webpage https://www.semrush.com/website/ and follow the prompt: Go to the Semrush website traff..."
+      },
+      {
+        "task_id": "2136340",
+        "url": "https://www.semrush.com/website/",
+        "task_snippet": "Read webpage https://www.semrush.com/website/ and follow the prompt: Go to the Semrush website traff..."
+      },
+      {
+        "task_id": "2136340",
+        "url": "https://semrush.com",
+        "task_snippet": "Read webpage https://www.semrush.com/website/ and follow the prompt: Go to the Semrush website traff..."
+      }
+    ],
+    "thedefiant.io": [
+      {
+        "task_id": "2136340",
+        "url": "https://thedefiant.io",
+        "task_snippet": "Read webpage https://www.semrush.com/website/ and follow the prompt: Go to the Semrush website traff..."
+      }
+    ]
+  }
+}

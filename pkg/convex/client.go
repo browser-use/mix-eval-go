@@ -30,13 +30,14 @@ func NewClient(baseURL, secretKey string) *Client {
 
 // Task represents an evaluation task
 type Task struct {
-	ID              string                 `json:"taskId"`
+	ID              string                 `json:"task_id"`
 	RunID           string                 `json:"runId,omitempty"`
-	Text            string                 `json:"task"`
+	Text            string                 `json:"confirmed_task"`
 	Website         string                 `json:"website,omitempty"`
 	LoginCookie     string                 `json:"loginCookie,omitempty"`
 	OutputSchema    map[string]interface{} `json:"outputSchema,omitempty"`
 	BrowserProvider string                 `json:"browserProvider,omitempty"`
+	Category        string                 `json:"category,omitempty"`
 }
 
 // TaskResult represents evaluation result

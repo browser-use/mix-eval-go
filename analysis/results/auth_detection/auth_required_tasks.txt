@@ -1,0 +1,451 @@
+Authentication Requirements for Direct Web Scraping Tasks
+================================================================================
+
+Total Direct Web Scraping Tasks: 201
+
+Authentication Required (HIGH confidence): 28
+Authentication Likely (MEDIUM confidence): 5
+Authentication Possible (LOW confidence): 12
+Authentication Explicitly NOT Required: 9
+No Auth Indicators Detected: 147
+
+================================================================================
+
+1. AUTHENTICATION REQUIRED (HIGH CONFIDENCE) - 28 tasks
+--------------------------------------------------------------------------------
+
+1. Task ID: 2118230
+   Reason: Known authentication-required platform
+   Platforms:
+     - instagram.com: Social Media - Login Required
+     - instagram.com: Social Media - Login Required
+     - instagram.com: Social Media - Login Required
+   Task: Read webpage https://www.instagram.com/douglasjaveda/ and follow the prompt: Analyze the Instagram profile for 'Douglas J Aveda Institute'. Extract information on the type of content posted (e.g., stu...
+
+2. Task ID: 37757
+   Reason: Known authentication-required platform
+   Platforms:
+     - zillow.com: Real Estate - Premium Features Need Login
+   Task: search zillow.com for 1 or 2 bedroom rental apartments in Berkeley, California that that have no stairs, within 2 blocks of public transportation, within 4 blocks of berkeley bowl supermarket or monte...
+
+3. Task ID: 259349
+   Reason: Known authentication-required platform
+   Platforms:
+     - eprocure.gov.in: Government Procurement - Registration Required
+   Task: Go to https://eprocure.gov.in/eprocure/app, search for all the past tenders award winners and make a excel...
+
+4. Task ID: 2275751
+   Reason: Known authentication-required platform
+   Platforms:
+     - facebook.com: Social Media - Login Required
+     - facebook.com: Social Media - Login Required
+     - facebook.com: Social Media - Login Required
+   Task: Read webpage https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=posture%20corrector&sort_data[direction]=desc&sort_data[mode]=relevancy_monthly_grouped and follow the pro...
+
+5. Task ID: 872717
+   Reason: Known authentication-required platform
+   Platforms:
+     - stake.com: Betting Platform - Login Required
+     - stake.com: Betting Platform - Login Required
+   Task: 
+Go to:
+https://stake.com/sports/valorant/all
+
+1. Wait until the page is fully loaded and all Valorant leagues are visible, memorize the leagues.
+2. Click on each league to reveal upcoming matches (ex...
+
+6. Task ID: 2226746
+   Reason: Known authentication-required platform
+   Platforms:
+     - instagram.com: Social Media - Login Required
+     - instagram.com: Social Media - Login Required
+     - instagram.com: Social Media - Login Required
+   Task: Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Instagram Downloader and use it to download all posts from the URL 'https://www.instagram.com/supersnake...
+
+7. Task ID: 1664550
+   Reason: Known authentication-required platform
+   Platforms:
+     - sec.gov: Government - Some EDGAR filings may need registration
+     - sec.gov: Government - Some EDGAR filings may need registration
+     - sec.gov: Government - Some EDGAR filings may need registration
+     - sec.gov: Government - Some EDGAR filings may need registration
+     - sec.gov: Government - Some EDGAR filings may need registration
+     - sec.gov: Government - Some EDGAR filings may need registration
+   Task: Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm and follow the prompt: Navigate to the Tesla 10-K filing: https://www.sec.gov/Archives/ed...
+
+8. Task ID: 2110707
+   Reason: Known authentication-required platform
+   Platforms:
+     - flipkart.com: E-commerce - Account for some features
+     - flipkart.com: E-commerce - Account for some features
+     - flipkart.com: E-commerce - Account for some features
+   Task: Read webpage https://www.flipkart.com and follow the prompt: Continue collecting products from Flipkart in the following categories. I need approximately 40 products from:
+
+1. Books & Media (books, st...
+
+9. Task ID: 1465541
+   Reason: Known authentication-required platform
+   Platforms:
+     - contractsfinder.service.gov.uk: Government - Registration May Be Required
+     - contractsfinder.service.gov.uk: Government - Registration May Be Required
+   Task: Access the URL https://www.contractsfinder.service.gov.uk/Search/Results and extract the first 20 tenders with their details: title, reference number, submission deadline, estimated budget, brief desc...
+
+10. Task ID: 1348833
+   Reason: Known authentication-required platform
+   Platforms:
+     - airbnb.ca: Booking Platform - Login Often Required
+     - airbnb.ca: Booking Platform - Login Often Required
+     - airbnb.ca: Booking Platform - Login Often Required
+   Task: go to this link 'https://www.airbnb.ca/rooms/715766776231493780/reviews' EXTRACT ALL THE REVIEWS of this property, you have to scroll down till the end of the page to LOAD ALL THE REVIEWS, DONT MISS A...
+
+11. Task ID: 451705
+   Reason: Known authentication-required platform
+   Platforms:
+     - redfin.com: Real Estate - Some Features Need Login
+     - redfin.com: Real Estate - Some Features Need Login
+     - redfin.com: Real Estate - Some Features Need Login
+   Task: search https://www.redfin.com for homes in 70125 and find homes that have been on the market for 180 days are longer and that are multifamily also produce the Puppeteer script used to do this with a s...
+
+12. Task ID: 1513697
+   Reason: Known authentication-required platform
+   Platforms:
+     - tenderned.nl: Tender Platform - May Need Registration
+     - tenderned.nl: Tender Platform - May Need Registration
+     - tenderned.nl: Tender Platform - May Need Registration
+   Task: Go to "https://www.tenderned.nl/aankondigingen/overzicht", search for "Digitale Transformatie". For each posting in the list open the page and extract title, description and the value of the contract....
+
+13. Task ID: 1960499
+   Reason: Known authentication-required platform
+   Platforms:
+     - remote.team: Job Platform - Login Required
+   Task: Read webpage https://remote.team/en/ and follow the prompt: Analyze this website comprehensively. I need to understand:
+1. Overall structure and navigation
+2. All main pages and sections
+3. Content ty...
+
+14. Task ID: 265470
+   Reason: Known authentication-required platform
+   Platforms:
+     - nseindia.com: Stock Exchange - Login for detailed data
+     - nseindia.com: Stock Exchange - Login for detailed data
+     - nseindia.com: Stock Exchange - Login for detailed data
+   Task: 1. Go to url https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision
+			2. type Tata Consultancy Services Limited in company name
+			3. seclect name from dropdown
+		...
+
+15. Task ID: 930386
+   Reason: Known authentication-required platform
+   Platforms:
+     - linkedin.com: Social Media - Login Required
+     - linkedin.com: Social Media - Login Required
+     - glassdoor.com: Job Platform - Login Required
+     - linkedin.com: Social Media - Login Required
+   Keywords found: cookie
+   Task: 
+    **Job Search Instructions**
+    1. Google Search:
+       - Search: 'site:linkedin.com OR site:glassdoor.com AI Engineer jobs in Pakistan'
+       - If any pop-ups appear (cookies, newsletters, sig...
+
+16. Task ID: 919843
+   Reason: Known authentication-required platform
+   Platforms:
+     - upwork.com: Job Platform - Login Required
+     - upwork.com: Job Platform - Login Required
+     - upwork.com: Job Platform - Login Required
+   Task: 'You are a professional job finder.
+				Go to https://upwork.com then: 
+
+				'find Python Django jobs on Upwork.com and save them to a file'
+				Important:
+				- Wait for each element to load before i...
+
+17. Task ID: 2125188
+   Reason: Known authentication-required platform
+   Platforms:
+     - sec.gov: Government - Some EDGAR filings may need registration
+     - sec.gov: Government - Some EDGAR filings may need registration
+     - sec.gov: Government - Some EDGAR filings may need registration
+   Task: Read webpage https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm and follow the prompt: Extract the financial statements from this S-1/A filing. Look for tables with ...
+
+18. Task ID: 2179094
+   Reason: Known authentication-required platform
+   Platforms:
+     - idx.co.id: Stock Exchange - Login for detailed data
+     - idx.co.id: Stock Exchange - Login for detailed data
+   Task: Read webpage https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404/e8896172d8_1ec8334461.pdf and follow the prompt: Go to the Kalbe Farma Annual Report 2023. Find the...
+
+19. Task ID: 1485252
+   Reason: Known authentication-required platform
+   Platforms:
+     - daraz.pk: E-commerce - Account for some features
+     - daraz.pk: E-commerce - Account for some features
+     - daraz.pk: E-commerce - Account for some features
+   Task: 
+    0. Go to https://www.daraz.pk/, handle any captcha/security if shown.
+    1. Search for 'wireless headphones'.
+    2. Browse and extract product information from the first two pages.
+    3. For e...
+
+20. Task ID: 1360102
+   Reason: Known authentication-required platform
+   Platforms:
+     - redfin.com: Real Estate - Some Features Need Login
+   Task: Go to redfin.com, handle any security checks, search for properties in San Diego, CA. Apply the following filters: Max Price set to $500,000, Bedrooms set to 3+. Since there isn't a direct 'nice view'...
+
+21. Task ID: 2147069
+   Reason: Known authentication-required platform
+   Platforms:
+     - instagram.com: Social Media - Login Required
+     - instagram.com: Social Media - Login Required
+     - instagram.com: Social Media - Login Required
+   Keywords found: account
+   Task: Read webpage https://www.instagram.com/teo__idt/ and follow the prompt: Analyze this Instagram account thoroughly. I need to understand:
+1. What type of content does this account post? (photos, videos...
+
+22. Task ID: 1310325
+   Reason: Known authentication-required platform
+   Platforms:
+     - apna.co: Job Platform - Login Required
+     - apna.co: Job Platform - Login Required
+   Task: 
+        Goto the link https://apna.co/candidate/jobs. This is a job search portal.  
+
+        You have to select 2 filters.
+        
+        1. Under Filters, for Department, if there is a link sayin...
+
+23. Task ID: 1123218
+   Reason: Known authentication-required platform
+   Platforms:
+     - breaking-bet.com: Betting Platform - Login Required
+     - breaking-bet.com: Betting Platform - Login Required
+   Task: 
+        Visit https://breaking-bet.com/en/arbs/prematch
+
+        1. Look for the gear/settings icon in the TOP RIGHT corner of the page (it's a circular icon with a gear symbol).
+           This is t...
+
+24. Task ID: 1568496
+   Reason: Known authentication-required platform
+   Platforms:
+     - bseindia.com: Stock Exchange - Login for detailed data
+     - bseindia.com: Stock Exchange - Login for detailed data
+     - bseindia.com: Stock Exchange - Login for detailed data
+   Task: 
+Go to https://www.bseindia.com/corporates/ann.html.
+Click the button with selector "#btnSubmit".
+Wait until the table of announcements appears.
+
+Only on this page, for each annoucement in the table d...
+
+25. Task ID: 1012772
+   Reason: Known authentication-required platform
+   Platforms:
+     - philgeps.gov.ph: Government Procurement - Registration Required
+     - philgeps.gov.ph: Government Procurement - Registration Required
+   Task: 
+Phase 3: Data Collection Workflow
+
+Your task is to act as an AI agent that discovers leads for a Raw Materials Importer in the Philippines.
+Follow these steps:
+
+1. Scrape Philippine Government Portal...
+
+26. Task ID: 1504989
+   Reason: Known authentication-required platform
+   Platforms:
+     - acquistinretepa.it: Tender Platform - May Need Registration
+     - acquistinretepa.it: Tender Platform - May Need Registration
+     - acquistinretepa.it: Tender Platform - May Need Registration
+   Task: visit this website 'https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=51e7896e855eabe7', extract the tender information on the website and compare it with this tender {ten...
+
+27. Task ID: 1067771
+   Reason: Known authentication-required platform
+   Platforms:
+     - redfin.ca: Real Estate - Some Features Need Login
+     - redfin.ca: Real Estate - Some Features Need Login
+     - redfin.ca: Real Estate - Some Features Need Login
+   Task: 
+    Go to https://www.redfin.ca/ and enter the vancouver in the input box and then press the search button. After the page loads select price
+    and enter the 750000 underneath maximum. After that s...
+
+28. Task ID: 885584
+   Reason: Known authentication-required platform
+   Platforms:
+     - taobao.com: E-commerce - Account often required
+     - taobao.com: E-commerce - Account often required
+   Task: 
+        Get 100 item images from https://taobao.com. 
+        You act like a human being, go straight to items, that are with an image, a title and a price.
+        You only get the title and the pri...
+
+================================================================================
+
+2. AUTHENTICATION LIKELY (MEDIUM CONFIDENCE) - 5 tasks
+--------------------------------------------------------------------------------
+
+1. Task ID: 202609
+   Reason: Multiple authentication-related keywords found
+   Keywords found: credentials, auth, authorize
+   Task: 
+
+    1) Objective
+    - Extract MITRE tags from the source: https://attack.mitre.org/matrices/enterprise/cloud/
+    - Based on the input json data.
+    2) Required Tags
+    - tactics
+    - techniques...
+
+2. Task ID: 1327246
+   Reason: Multiple authentication-related keywords found
+   Keywords found: authentication, auth
+   Task: Goal: Analyze authentication implementation and the main server entry point
+Background motivation: Need to understand how authentication is implemented and how the server is initialized
+Expected outpu...
+
+3. Task ID: 2061640
+   Reason: Multiple authentication-related keywords found
+   Keywords found: authentication, auth
+   Task: Read webpage https://videogpt.io/ and follow the prompt: I need to create a 10-15 second 3D Pixar-style animated video for "SNAKE ATTACK" game splash screen. Please help me use this video generator to...
+
+4. Task ID: 1297694
+   Reason: Multiple authentication-related keywords found
+   Keywords found: authentication, auth
+   Task: Goal: Find detailed information about the SRP authentication flow and cryptographic operations in the alexrudd/cognito-srp library
+Background motivation: Need to understand the specific implementation...
+
+5. Task ID: 1195938
+   Reason: Multiple authentication-related keywords found
+   Keywords found: authentication, auth
+   Task: Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs
+Expected output: Full details for each CVE including exact vulnerability description, affected compone...
+
+================================================================================
+
+3. AUTHENTICATION POSSIBLE (LOW CONFIDENCE) - 12 tasks
+--------------------------------------------------------------------------------
+
+1. Task ID: 270711
+   Keywords found: login
+   Task: Visit https://lectuepub3.com/ and analyze whether the website contains phishing or malicious content. Identify any suspicious links, fake login portals, or other indicators of phishing. Return a verdi...
+
+2. Task ID: 1842739
+   Keywords found: subscription
+   Task: Read webpage https://hailuoai.video/ and follow the prompt: Navigate to the MiniMax Hailuo AI website and find comprehensive pricing information. Look for:
+1. Subscription/pricing plans page
+2. API pr...
+
+3. Task ID: 1092722
+   Keywords found: auth
+   Task: Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorization IPv6 hostname validation
+
+Candidate URLs: 
+- https://nvd.nist.gov/vuln/detail/CVE-2021-22881
+- htt...
+
+4. Task ID: 1065230
+   Keywords found: member
+   Task: 
+
+You are a specialized web analysis agent with expertise in financial categorization systems, particularly Merchant Category Codes (MCCs). Your task is to analyze https://idfy.com and determine the m...
+
+5. Task ID: 1093228
+   Keywords found: auth
+   Task: Goal: Find details about the most recent critical Next.js vulnerability (Authorization Bypass in Next.js Middleware)
+
+Candidate URLs: 
+- https://github.com/vercel/next.js/security/advisories/GHSA-9vp7...
+
+6. Task ID: 2357186
+   Keywords found: auth
+   Task: 
+    You are a helpful assistant that validates if an issue detected by an upstream system is a real issue on the website or not.
+    You will be given an issue and a website url.
+    You will need to...
+
+7. Task ID: 1748573
+   Keywords found: auth
+   Task: Goal: Find information about China's National Intelligence Law and requirements for companies to assist with state intelligence work
+Background motivation: Need to understand specific legal requiremen...
+
+8. Task ID: 2143378
+   Keywords found: auth
+   Task: On the current Amazon Best Sellers in Books page, identify all book listings. Each book listing is typically marked with a rank (e.g., #1, #2). For each book listing, extract the following information...
+
+9. Task ID: 1122929
+   Keywords found: cookie
+   Task: 
+    Go to https://szigetfestival.com/en/tickets and scrape the webpage to extract all available ticket pricing information. For each ticket type, collect the ticket name, price, ticket category (e.g....
+
+10. Task ID: 1024420
+   Keywords found: cookie
+   Task: go to www.autotrader.co.uk
+accept all cookies
+use the "find your perfect car" form
+enter a postcode of BT817YJ
+select volkswagen from the list of makes
+pause for a few seconds to allow the model list ...
+
+11. Task ID: 1873462
+   Keywords found: member
+   Task: Read webpage https://www.ptechpartners.com/ and follow the prompt: Navigate to this website and find the About Us, Team, Leadership, or Staff pages. Extract all named contacts with their job titles an...
+
+12. Task ID: 1289271
+   Keywords found: auth
+   Task: Goal: Find detailed information about CVE-2024-34459
+Expected output: Detailed information about CVE-2024-34459 from authoritative sources, including technical details and mitigations
+
+Candidate URLs:...
+
+================================================================================
+
+4. AUTHENTICATION EXPLICITLY NOT REQUIRED - 9 tasks
+--------------------------------------------------------------------------------
+
+1. Task ID: 757446
+   Reason: Task explicitly states: "guest checkout"
+   Task: Visit the website: https://www.omahasteaks.com/.
+Your goal is to navigate to the checkout page of this website. The checkout page is where payment details are to be entered to buy something sold on th...
+
+2. Task ID: 1237178
+   Reason: Task explicitly states: "do not try to login"
+   Task: 
+            Find the website for Local Court Records (Henrico County).
+            Search for the company 'A Plus Roofing' with context: {"location": "2907 Hungary Spring Rd, Henrico VA 23228"} using...
+
+3. Task ID: 1220939
+   Reason: Task explicitly states: "do not try to login"
+   Task: 
+        Find the website for Georgia Superior Court Clerks' Cooperative Authority (GSCCCA) UCC Filings and search for the company '1 OAK Roofing' using the method: Search the GSCCCA UCC index by debt...
+
+4. Task ID: 1291834
+   Reason: Task explicitly states: "do not try to login"
+   Task: 
+            Find the website for Pennsylvania Department of State - Corporation Bureau or use Google to search for the Core Roofing on Pennsylvania Department of State - Corporation Bureau (this meth...
+
+5. Task ID: 1254332
+   Reason: Task explicitly states: "do not try to login"
+   Task: 
+            Find the website for Tennessee Department of Commerce and Insurance or use Google to search for the Armor Roofing of Tennessee on Tennessee Department of Commerce and Insurance (this meth...
+
+6. Task ID: 1244960
+   Reason: Task explicitly states: "do not try to login"
+   Task: 
+            Find the website for All Star Roofing LinkedIn Page or use Google to search for the All Star Roofing on All Star Roofing LinkedIn Page (this method works best with non goverment websites ...
+
+7. Task ID: 1290796
+   Reason: Task explicitly states: "do not try to login"
+   Task: 
+            Find the website for Otsego County Clerk's Office or use Google to search for the Clapper Construction LLC on Otsego County Clerk's Office (this method works best with non goverment websi...
+
+8. Task ID: 1244725
+   Reason: Task explicitly states: "do not try to login"
+   Task: 
+            Find the website for Uniform Commercial Code (UCC) Filings - Ohio Secretary of State or use Google to search for the All Side Roofing and Restoration LLC on Uniform Commercial Code (UCC) ...
+
+9. Task ID: 1251782
+   Reason: Task explicitly states: "do not try to login"
+   Task: 
+            Find the website for Kentucky Court of Justice or use Google to search for the Amigos Roofing & Construction on Kentucky Court of Justice (this method works best with non goverment websit...

@@ -1,0 +1,423 @@
+Direct Web Scraping Websites
+================================================================================
+Total tasks: 201
+Total URLs found: 511
+Unique domains: 204
+
+================================================================================
+
+DOMAINS SORTED BY FREQUENCY:
+--------------------------------------------------------------------------------
+ 28x  github.com
+ 12x  bhphotovideo.com
+ 10x  google.com
+ 10x  nvd.nist.gov
+ 10x  nist.gov
+ 10x  skymint.com
+  9x  instagram.com
+  9x  sec.gov
+  9x  autotrader.ca
+  8x  amazon.com
+  6x  eib.org
+  6x  biggerpockets.com
+  6x  apartments.com
+  6x  wcaworld.com
+  6x  car.org
+  4x  wordstream.com
+  4x  escardio.org
+  4x  patchstack.com
+  4x  karpathy.ai
+  4x  redfin.com
+  4x  mcgrath.com.au
+  3x  omahasteaks.com
+  3x  facebook.com
+  3x  dji.com
+  3x  uhaul.com
+  3x  cloud.google.com
+  3x  greeencode.com
+  3x  wanhai.com
+  3x  adb.org
+  3x  flipkart.com
+  3x  dice.com
+  3x  minimaxi.com
+  3x  renewableenergyworld.com
+  3x  wordtracker.com
+  3x  loopnet.com
+  3x  airbnb.ca
+  3x  homedepot.com
+  3x  machinerytrader.com
+  3x  bbb.org
+  3x  example.com
+  3x  lawfareblog.com
+  3x  examplevendor.com
+  3x  tcs.com
+  3x  nseindia.com
+  3x  linkedin.com
+  3x  upwork.com
+  3x  icis.com
+  3x  slimsista.com
+  3x  ptechpartners.com
+  3x  ungm.org
+  3x  docebo.com
+  3x  bstn.com
+  3x  dextools.io
+  3x  similarweb.com
+  3x  vals.ai
+  3x  beauhurst.com
+  3x  mordorintelligence.com
+  3x  closed.com
+  3x  padmapper.com
+  3x  thiscorner.co
+  3x  ubuntu.com
+  3x  poweradspy.com
+  3x  bseindia.com
+  3x  zolo.ca
+  3x  uniquemallorca.com
+  3x  narpm.org
+  3x  bayut.com
+  3x  imf.org
+  3x  uniqlo.com
+  3x  withroam.com
+  3x  redfin.ca
+  3x  iea.org
+  3x  semrush.com
+  2x  lectuepub3.com
+  2x  irela.org
+  2x  stake.com
+  2x  inflact.com
+  2x  immoweb.be
+  2x  minnodillc.com
+  2x  idfy.com
+  2x  contractsfinder.service.gov.uk
+  2x  acem.org
+  2x  themanatomy.com
+  2x  ppubs.uspto.gov
+  2x  uspto.gov
+  2x  birdeye.so
+  2x  emeralddrift.myshopify.com
+  2x  myshopify.com
+  2x  key.com
+  2x  theethnicworld.com
+  2x  mitre.org
+  2x  artificialanalysis.ai
+  2x  tenderned.nl
+  2x  yad2.co.il
+  2x  susannabeatrice.global
+  2x  adidas.jp
+  2x  thediplomat.com
+  2x  szigetfestival.com
+  2x  rbi.org.in
+  2x  oag.ca.gov
+  2x  oag.ca
+  2x  comparefirst.sg
+  2x  allabolag.se
+  2x  idx.co.id
+  2x  focal-dashboard.s3.amazonaws.com
+  2x  amazonaws.com
+  2x  daraz.pk
+  2x  bscscan.com
+  2x  act.nato.int
+  2x  videogpt.io
+  2x  dtfprinterusa.com
+  2x  apna.co
+  2x  mailchimp.com
+  2x  breaking-bet.com
+  2x  revapets.com
+  2x  spitexcare.ch
+  2x  derma-solution.com
+  2x  medium.com
+  2x  europages.co.uk
+  2x  saytool.com
+  2x  embracetransitioncoaching.com
+  2x  bstock.com
+  2x  launchpad.net
+  2x  mcgrath.com
+  2x  philgeps.gov.ph
+  2x  warmembracegifts.com
+  2x  acquistinretepa.it
+  2x  taobao.com
+  1x  zillow.com
+  1x  mergr.com
+  1x  eprocure.gov.in
+  1x  eprocure.gov
+  1x  hailuoai.video
+  1x  docs.github.com
+  1x  ai.google
+  1x  service.gov
+  1x  clinicaltrials.gov
+  1x  proxyserver.tech
+  1x  acem.org.au
+  1x  deedauction.net
+  1x  drs.faa.gov
+  1x  faa.gov
+  1x  sales.cabincloseoutstore.com
+  1x  cabincloseoutstore.com
+  1x  sanctionssearch.ofac.treas.gov
+  1x  treas.gov
+  1x  fr.caudalie.com
+  1x  caudalie.com
+  1x  pagespeed.web.dev
+  1x  web.dev
+  1x  attack.mitre.org
+  1x  celltrader.co.za
+  1x  celltrader.co
+  1x  play.google.com
+  1x  restaurantsofmanchester.com
+  1x  yad2.co
+  1x  argotstudio.com
+  1x  digitalcommons.law.scu.edu
+  1x  scu.edu
+  1x  tris.vn
+  1x  verificacfdi.facturaelectronica.sat.gob.mx
+  1x  rbi.org
+  1x  remote.team
+  1x  glassdoor.com
+  1x  autotrader.co.uk
+  1x  autotrader.co
+  1x  webgate.ec.europa.eu
+  1x  idx.co
+  1x  cve.mitre.org
+  1x  marketingsummit.siliconslopes.com
+  1x  siliconslopes.com
+  1x  en.youlive.ca
+  1x  youlive.ca
+  1x  ycombinator.com
+  1x  data.worldbank.org
+  1x  worldbank.org
+  1x  upkeepskin.com
+  1x  europages.co
+  1x  vividseats.com
+  1x  finance.yahoo.com
+  1x  yahoo.com
+  1x  nasdaq.com
+  1x  agrieuro.co
+  1x  aiindex.stanford.edu
+  1x  stanford.edu
+  1x  wro.westchesterclerk.com
+  1x  westchesterclerk.com
+  1x  packages.ubuntu.com
+  1x  people.canonical.com
+  1x  canonical.com
+  1x  goodrx.com
+  1x  canon.de
+  1x  pkg.go.dev
+  1x  go.dev
+  1x  wisconsinsurplus.com
+  1x  app.uniswap.org
+  1x  uniswap.org
+  1x  chromereleases.googleblog.com
+  1x  googleblog.com
+  1x  ango.ph
+  1x  philgeps.gov
+  1x  msrc.microsoft.com
+  1x  microsoft.com
+  1x  thedefiant.io
+
+================================================================================
+
+ALL UNIQUE DOMAINS (ALPHABETICALLY):
+--------------------------------------------------------------------------------
+acem.org
+acem.org.au
+acquistinretepa.it
+act.nato.int
+adb.org
+adidas.jp
+agrieuro.co
+ai.google
+aiindex.stanford.edu
+airbnb.ca
+allabolag.se
+amazon.com
+amazonaws.com
+ango.ph
+apartments.com
+apna.co
+app.uniswap.org
+argotstudio.com
+artificialanalysis.ai
+attack.mitre.org
+autotrader.ca
+autotrader.co
+autotrader.co.uk
+bayut.com
+bbb.org
+beauhurst.com
+bhphotovideo.com
+biggerpockets.com
+birdeye.so
+breaking-bet.com
+bscscan.com
+bseindia.com
+bstn.com
+bstock.com
+cabincloseoutstore.com
+canon.de
+canonical.com
+car.org
+caudalie.com
+celltrader.co
+celltrader.co.za
+chromereleases.googleblog.com
+clinicaltrials.gov
+closed.com
+cloud.google.com
+comparefirst.sg
+contractsfinder.service.gov.uk
+cve.mitre.org
+daraz.pk
+data.worldbank.org
+deedauction.net
+derma-solution.com
+dextools.io
+dice.com
+digitalcommons.law.scu.edu
+dji.com
+docebo.com
+docs.github.com
+drs.faa.gov
+dtfprinterusa.com
+eib.org
+embracetransitioncoaching.com
+emeralddrift.myshopify.com
+en.youlive.ca
+eprocure.gov
+eprocure.gov.in
+escardio.org
+europages.co
+europages.co.uk
+example.com
+examplevendor.com
+faa.gov
+facebook.com
+finance.yahoo.com
+flipkart.com
+focal-dashboard.s3.amazonaws.com
+fr.caudalie.com
+github.com
+glassdoor.com
+go.dev
+goodrx.com
+google.com
+googleblog.com
+greeencode.com
+hailuoai.video
+homedepot.com
+icis.com
+idfy.com
+idx.co
+idx.co.id
+iea.org
+imf.org
+immoweb.be
+inflact.com
+instagram.com
+irela.org
+karpathy.ai
+key.com
+launchpad.net
+lawfareblog.com
+lectuepub3.com
+linkedin.com
+loopnet.com
+machinerytrader.com
+mailchimp.com
+marketingsummit.siliconslopes.com
+mcgrath.com
+mcgrath.com.au
+medium.com
+mergr.com
+microsoft.com
+minimaxi.com
+minnodillc.com
+mitre.org
+mordorintelligence.com
+msrc.microsoft.com
+myshopify.com
+narpm.org
+nasdaq.com
+nist.gov
+nseindia.com
+nvd.nist.gov
+oag.ca
+oag.ca.gov
+omahasteaks.com
+packages.ubuntu.com
+padmapper.com
+pagespeed.web.dev
+patchstack.com
+people.canonical.com
+philgeps.gov
+philgeps.gov.ph
+pkg.go.dev
+play.google.com
+poweradspy.com
+ppubs.uspto.gov
+proxyserver.tech
+ptechpartners.com
+rbi.org
+rbi.org.in
+redfin.ca
+redfin.com
+remote.team
+renewableenergyworld.com
+restaurantsofmanchester.com
+revapets.com
+sales.cabincloseoutstore.com
+sanctionssearch.ofac.treas.gov
+saytool.com
+scu.edu
+sec.gov
+semrush.com
+service.gov
+siliconslopes.com
+similarweb.com
+skymint.com
+slimsista.com
+spitexcare.ch
+stake.com
+stanford.edu
+susannabeatrice.global
+szigetfestival.com
+taobao.com
+tcs.com
+tenderned.nl
+thedefiant.io
+thediplomat.com
+theethnicworld.com
+themanatomy.com
+thiscorner.co
+treas.gov
+tris.vn
+ubuntu.com
+uhaul.com
+ungm.org
+uniqlo.com
+uniquemallorca.com
+uniswap.org
+upkeepskin.com
+upwork.com
+uspto.gov
+vals.ai
+verificacfdi.facturaelectronica.sat.gob.mx
+videogpt.io
+vividseats.com
+wanhai.com
+warmembracegifts.com
+wcaworld.com
+web.dev
+webgate.ec.europa.eu
+westchesterclerk.com
+wisconsinsurplus.com
+withroam.com
+wordstream.com
+wordtracker.com
+worldbank.org
+wro.westchesterclerk.com
+yad2.co
+yad2.co.il
+yahoo.com
+ycombinator.com
+youlive.ca
+zillow.com
+zolo.ca

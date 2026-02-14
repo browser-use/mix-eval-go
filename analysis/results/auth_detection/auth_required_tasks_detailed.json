@@ -1,0 +1,1496 @@
+{
+  "summary": {
+    "total_scraping_tasks": 201,
+    "auth_required_high": 28,
+    "auth_required_medium": 5,
+    "auth_required_low": 12,
+    "auth_explicitly_no": 9,
+    "no_auth_detected": 147
+  },
+  "auth_required_yes": [
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://www.instagram.com/douglasjaveda/"
+        },
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://www.instagram.com/douglasjaveda/"
+        },
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://instagram.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "2118230",
+      "task_snippet": "Read webpage https://www.instagram.com/douglasjaveda/ and follow the prompt: Analyze the Instagram profile for 'Douglas J Aveda Institute'. Extract information on the type of content posted (e.g., stu"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "zillow.com",
+          "reason": "Real Estate - Premium Features Need Login",
+          "url": "https://zillow.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "37757",
+      "task_snippet": "search zillow.com for 1 or 2 bedroom rental apartments in Berkeley, California that that have no stairs, within 2 blocks of public transportation, within 4 blocks of berkeley bowl supermarket or monte"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "eprocure.gov.in",
+          "reason": "Government Procurement - Registration Required",
+          "url": "https://eprocure.gov.in/eprocure/app"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "259349",
+      "task_snippet": "Go to https://eprocure.gov.in/eprocure/app, search for all the past tenders award winners and make a excel"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "facebook.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=posture%20corrector&sort_data[direction"
+        },
+        {
+          "domain": "facebook.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=posture%20corrector&sort_data[direction"
+        },
+        {
+          "domain": "facebook.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://facebook.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "2275751",
+      "task_snippet": "Read webpage https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=posture%20corrector&sort_data[direction]=desc&sort_data[mode]=relevancy_monthly_grouped and follow the pro"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "stake.com",
+          "reason": "Betting Platform - Login Required",
+          "url": "https://stake.com/sports/valorant/all"
+        },
+        {
+          "domain": "stake.com",
+          "reason": "Betting Platform - Login Required",
+          "url": "https://stake.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "872717",
+      "task_snippet": "\nGo to:\nhttps://stake.com/sports/valorant/all\n\n1. Wait until the page is fully loaded and all Valorant leagues are visible, memorize the leagues.\n2. Click on each league to reveal upcoming matches (ex"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://www.instagram.com/supersnake/?hl=en"
+        },
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://www.instagram.com/supersnake/?hl=en"
+        },
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://instagram.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "2226746",
+      "task_snippet": "Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Instagram Downloader and use it to download all posts from the URL 'https://www.instagram.com/supersnake"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm"
+        },
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm."
+        },
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm"
+        },
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm."
+        },
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://sec.gov"
+        },
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://sec.gov"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1664550",
+      "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm and follow the prompt: Navigate to the Tesla 10-K filing: https://www.sec.gov/Archives/ed"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "flipkart.com",
+          "reason": "E-commerce - Account for some features",
+          "url": "https://www.flipkart.com"
+        },
+        {
+          "domain": "flipkart.com",
+          "reason": "E-commerce - Account for some features",
+          "url": "https://www.flipkart.com"
+        },
+        {
+          "domain": "flipkart.com",
+          "reason": "E-commerce - Account for some features",
+          "url": "https://flipkart.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "2110707",
+      "task_snippet": "Read webpage https://www.flipkart.com and follow the prompt: Continue collecting products from Flipkart in the following categories. I need approximately 40 products from:\n\n1. Books & Media (books, st"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "contractsfinder.service.gov.uk",
+          "reason": "Government - Registration May Be Required",
+          "url": "https://www.contractsfinder.service.gov.uk/Search/Results"
+        },
+        {
+          "domain": "contractsfinder.service.gov.uk",
+          "reason": "Government - Registration May Be Required",
+          "url": "https://www.contractsfinder.service.gov.uk/Search/Results"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1465541",
+      "task_snippet": "Access the URL https://www.contractsfinder.service.gov.uk/Search/Results and extract the first 20 tenders with their details: title, reference number, submission deadline, estimated budget, brief desc"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "airbnb.ca",
+          "reason": "Booking Platform - Login Often Required",
+          "url": "https://www.airbnb.ca/rooms/715766776231493780/reviews"
+        },
+        {
+          "domain": "airbnb.ca",
+          "reason": "Booking Platform - Login Often Required",
+          "url": "https://www.airbnb.ca/rooms/715766776231493780/reviews"
+        },
+        {
+          "domain": "airbnb.ca",
+          "reason": "Booking Platform - Login Often Required",
+          "url": "https://airbnb.ca"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1348833",
+      "task_snippet": "go to this link 'https://www.airbnb.ca/rooms/715766776231493780/reviews' EXTRACT ALL THE REVIEWS of this property, you have to scroll down till the end of the page to LOAD ALL THE REVIEWS, DONT MISS A"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "redfin.com",
+          "reason": "Real Estate - Some Features Need Login",
+          "url": "https://www.redfin.com"
+        },
+        {
+          "domain": "redfin.com",
+          "reason": "Real Estate - Some Features Need Login",
+          "url": "https://www.redfin.com"
+        },
+        {
+          "domain": "redfin.com",
+          "reason": "Real Estate - Some Features Need Login",
+          "url": "https://redfin.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "451705",
+      "task_snippet": "search https://www.redfin.com for homes in 70125 and find homes that have been on the market for 180 days are longer and that are multifamily also produce the Puppeteer script used to do this with a s"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "tenderned.nl",
+          "reason": "Tender Platform - May Need Registration",
+          "url": "https://www.tenderned.nl/aankondigingen/overzicht"
+        },
+        {
+          "domain": "tenderned.nl",
+          "reason": "Tender Platform - May Need Registration",
+          "url": "https://www.tenderned.nl/aankondigingen/overzicht"
+        },
+        {
+          "domain": "tenderned.nl",
+          "reason": "Tender Platform - May Need Registration",
+          "url": "https://tenderned.nl"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1513697",
+      "task_snippet": "Go to \"https://www.tenderned.nl/aankondigingen/overzicht\", search for \"Digitale Transformatie\". For each posting in the list open the page and extract title, description and the value of the contract."
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "remote.team",
+          "reason": "Job Platform - Login Required",
+          "url": "https://remote.team/en/"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1960499",
+      "task_snippet": "Read webpage https://remote.team/en/ and follow the prompt: Analyze this website comprehensively. I need to understand:\n1. Overall structure and navigation\n2. All main pages and sections\n3. Content ty"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "nseindia.com",
+          "reason": "Stock Exchange - Login for detailed data",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision"
+        },
+        {
+          "domain": "nseindia.com",
+          "reason": "Stock Exchange - Login for detailed data",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision"
+        },
+        {
+          "domain": "nseindia.com",
+          "reason": "Stock Exchange - Login for detailed data",
+          "url": "https://nseindia.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "265470",
+      "task_snippet": "1. Go to url https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision\n\t\t\t2. type Tata Consultancy Services Limited in company name\n\t\t\t3. seclect name from dropdown\n\t\t"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "linkedin.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://linkedin.com/job/123"
+        },
+        {
+          "domain": "linkedin.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://linkedin.com"
+        },
+        {
+          "domain": "glassdoor.com",
+          "reason": "Job Platform - Login Required",
+          "url": "https://glassdoor.com"
+        },
+        {
+          "domain": "linkedin.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://linkedin.com"
+        }
+      ],
+      "keywords": [
+        "cookie"
+      ],
+      "confidence": "HIGH",
+      "task_id": "930386",
+      "task_snippet": "\n    **Job Search Instructions**\n    1. Google Search:\n       - Search: 'site:linkedin.com OR site:glassdoor.com AI Engineer jobs in Pakistan'\n       - If any pop-ups appear (cookies, newsletters, sig"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "upwork.com",
+          "reason": "Job Platform - Login Required",
+          "url": "https://upwork.com"
+        },
+        {
+          "domain": "upwork.com",
+          "reason": "Job Platform - Login Required",
+          "url": "https://upwork.com"
+        },
+        {
+          "domain": "upwork.com",
+          "reason": "Job Platform - Login Required",
+          "url": "https://Upwork.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "919843",
+      "task_snippet": "'You are a professional job finder.\n\t\t\t\tGo to https://upwork.com then: \n\n\t\t\t\t'find Python Django jobs on Upwork.com and save them to a file'\n\t\t\t\tImportant:\n\t\t\t\t- Wait for each element to load before i"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm"
+        },
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm"
+        },
+        {
+          "domain": "sec.gov",
+          "reason": "Government - Some EDGAR filings may need registration",
+          "url": "https://sec.gov"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "2125188",
+      "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm and follow the prompt: Extract the financial statements from this S-1/A filing. Look for tables with "
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "idx.co.id",
+          "reason": "Stock Exchange - Login for detailed data",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404/e8896172d8_1ec8334461.pdf"
+        },
+        {
+          "domain": "idx.co.id",
+          "reason": "Stock Exchange - Login for detailed data",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404/e8896172d8_1ec8334461.pdf"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "2179094",
+      "task_snippet": "Read webpage https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404/e8896172d8_1ec8334461.pdf and follow the prompt: Go to the Kalbe Farma Annual Report 2023. Find the"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "daraz.pk",
+          "reason": "E-commerce - Account for some features",
+          "url": "https://www.daraz.pk/"
+        },
+        {
+          "domain": "daraz.pk",
+          "reason": "E-commerce - Account for some features",
+          "url": "https://www.daraz.pk/"
+        },
+        {
+          "domain": "daraz.pk",
+          "reason": "E-commerce - Account for some features",
+          "url": "https://daraz.pk"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1485252",
+      "task_snippet": "\n    0. Go to https://www.daraz.pk/, handle any captcha/security if shown.\n    1. Search for 'wireless headphones'.\n    2. Browse and extract product information from the first two pages.\n    3. For e"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "redfin.com",
+          "reason": "Real Estate - Some Features Need Login",
+          "url": "https://redfin.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1360102",
+      "task_snippet": "Go to redfin.com, handle any security checks, search for properties in San Diego, CA. Apply the following filters: Max Price set to $500,000, Bedrooms set to 3+. Since there isn't a direct 'nice view'"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://www.instagram.com/teo__idt/"
+        },
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://www.instagram.com/teo__idt/"
+        },
+        {
+          "domain": "instagram.com",
+          "reason": "Social Media - Login Required",
+          "url": "https://instagram.com"
+        }
+      ],
+      "keywords": [
+        "account"
+      ],
+      "confidence": "HIGH",
+      "task_id": "2147069",
+      "task_snippet": "Read webpage https://www.instagram.com/teo__idt/ and follow the prompt: Analyze this Instagram account thoroughly. I need to understand:\n1. What type of content does this account post? (photos, videos"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "apna.co",
+          "reason": "Job Platform - Login Required",
+          "url": "https://apna.co/candidate/jobs."
+        },
+        {
+          "domain": "apna.co",
+          "reason": "Job Platform - Login Required",
+          "url": "https://apna.co"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1310325",
+      "task_snippet": "\n        Goto the link https://apna.co/candidate/jobs. This is a job search portal.  \n\n        You have to select 2 filters.\n        \n        1. Under Filters, for Department, if there is a link sayin"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "breaking-bet.com",
+          "reason": "Betting Platform - Login Required",
+          "url": "https://breaking-bet.com/en/arbs/prematch"
+        },
+        {
+          "domain": "breaking-bet.com",
+          "reason": "Betting Platform - Login Required",
+          "url": "https://breaking-bet.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1123218",
+      "task_snippet": "\n        Visit https://breaking-bet.com/en/arbs/prematch\n\n        1. Look for the gear/settings icon in the TOP RIGHT corner of the page (it's a circular icon with a gear symbol).\n           This is t"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "bseindia.com",
+          "reason": "Stock Exchange - Login for detailed data",
+          "url": "https://www.bseindia.com/corporates/ann.html."
+        },
+        {
+          "domain": "bseindia.com",
+          "reason": "Stock Exchange - Login for detailed data",
+          "url": "https://www.bseindia.com/corporates/ann.html."
+        },
+        {
+          "domain": "bseindia.com",
+          "reason": "Stock Exchange - Login for detailed data",
+          "url": "https://bseindia.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1568496",
+      "task_snippet": "\nGo to https://www.bseindia.com/corporates/ann.html.\nClick the button with selector \"#btnSubmit\".\nWait until the table of announcements appears.\n\nOnly on this page, for each annoucement in the table d"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "philgeps.gov.ph",
+          "reason": "Government Procurement - Registration Required",
+          "url": "https://www.philgeps.gov.ph"
+        },
+        {
+          "domain": "philgeps.gov.ph",
+          "reason": "Government Procurement - Registration Required",
+          "url": "https://www.philgeps.gov.ph"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1012772",
+      "task_snippet": "\nPhase 3: Data Collection Workflow\n\nYour task is to act as an AI agent that discovers leads for a Raw Materials Importer in the Philippines.\nFollow these steps:\n\n1. Scrape Philippine Government Portal"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "acquistinretepa.it",
+          "reason": "Tender Platform - May Need Registration",
+          "url": "https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=51e7896e855eabe7"
+        },
+        {
+          "domain": "acquistinretepa.it",
+          "reason": "Tender Platform - May Need Registration",
+          "url": "https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=51e7896e855eabe7"
+        },
+        {
+          "domain": "acquistinretepa.it",
+          "reason": "Tender Platform - May Need Registration",
+          "url": "https://acquistinretepa.it"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1504989",
+      "task_snippet": "visit this website 'https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=51e7896e855eabe7', extract the tender information on the website and compare it with this tender {ten"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "redfin.ca",
+          "reason": "Real Estate - Some Features Need Login",
+          "url": "https://www.redfin.ca/"
+        },
+        {
+          "domain": "redfin.ca",
+          "reason": "Real Estate - Some Features Need Login",
+          "url": "https://www.redfin.ca/"
+        },
+        {
+          "domain": "redfin.ca",
+          "reason": "Real Estate - Some Features Need Login",
+          "url": "https://redfin.ca"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "1067771",
+      "task_snippet": "\n    Go to https://www.redfin.ca/ and enter the vancouver in the input box and then press the search button. After the page loads select price\n    and enter the 750000 underneath maximum. After that s"
+    },
+    {
+      "auth_required": "YES",
+      "reason": "Known authentication-required platform",
+      "platforms": [
+        {
+          "domain": "taobao.com",
+          "reason": "E-commerce - Account often required",
+          "url": "https://taobao.com."
+        },
+        {
+          "domain": "taobao.com",
+          "reason": "E-commerce - Account often required",
+          "url": "https://taobao.com"
+        }
+      ],
+      "keywords": [],
+      "confidence": "HIGH",
+      "task_id": "885584",
+      "task_snippet": "\n        Get 100 item images from https://taobao.com. \n        You act like a human being, go straight to items, that are with an image, a title and a price.\n        You only get the title and the pri"
+    }
+  ],
+  "auth_required_likely": [
+    {
+      "auth_required": "LIKELY",
+      "reason": "Multiple authentication-related keywords found",
+      "keywords": [
+        "credentials",
+        "auth",
+        "authorize"
+      ],
+      "confidence": "MEDIUM",
+      "task_id": "202609",
+      "task_snippet": "\n\n    1) Objective\n    - Extract MITRE tags from the source: https://attack.mitre.org/matrices/enterprise/cloud/\n    - Based on the input json data.\n    2) Required Tags\n    - tactics\n    - techniques"
+    },
+    {
+      "auth_required": "LIKELY",
+      "reason": "Multiple authentication-related keywords found",
+      "keywords": [
+        "authentication",
+        "auth"
+      ],
+      "confidence": "MEDIUM",
+      "task_id": "1327246",
+      "task_snippet": "Goal: Analyze authentication implementation and the main server entry point\nBackground motivation: Need to understand how authentication is implemented and how the server is initialized\nExpected outpu"
+    },
+    {
+      "auth_required": "LIKELY",
+      "reason": "Multiple authentication-related keywords found",
+      "keywords": [
+        "authentication",
+        "auth"
+      ],
+      "confidence": "MEDIUM",
+      "task_id": "2061640",
+      "task_snippet": "Read webpage https://videogpt.io/ and follow the prompt: I need to create a 10-15 second 3D Pixar-style animated video for \"SNAKE ATTACK\" game splash screen. Please help me use this video generator to"
+    },
+    {
+      "auth_required": "LIKELY",
+      "reason": "Multiple authentication-related keywords found",
+      "keywords": [
+        "authentication",
+        "auth"
+      ],
+      "confidence": "MEDIUM",
+      "task_id": "1297694",
+      "task_snippet": "Goal: Find detailed information about the SRP authentication flow and cryptographic operations in the alexrudd/cognito-srp library\nBackground motivation: Need to understand the specific implementation"
+    },
+    {
+      "auth_required": "LIKELY",
+      "reason": "Multiple authentication-related keywords found",
+      "keywords": [
+        "authentication",
+        "auth"
+      ],
+      "confidence": "MEDIUM",
+      "task_id": "1195938",
+      "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nExpected output: Full details for each CVE including exact vulnerability description, affected compone"
+    }
+  ],
+  "auth_required_possible": [
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "login"
+      ],
+      "confidence": "LOW",
+      "task_id": "270711",
+      "task_snippet": "Visit https://lectuepub3.com/ and analyze whether the website contains phishing or malicious content. Identify any suspicious links, fake login portals, or other indicators of phishing. Return a verdi"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "subscription"
+      ],
+      "confidence": "LOW",
+      "task_id": "1842739",
+      "task_snippet": "Read webpage https://hailuoai.video/ and follow the prompt: Navigate to the MiniMax Hailuo AI website and find comprehensive pricing information. Look for:\n1. Subscription/pricing plans page\n2. API pr"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "auth"
+      ],
+      "confidence": "LOW",
+      "task_id": "1092722",
+      "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorization IPv6 hostname validation\n\nCandidate URLs: \n- https://nvd.nist.gov/vuln/detail/CVE-2021-22881\n- htt"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "member"
+      ],
+      "confidence": "LOW",
+      "task_id": "1065230",
+      "task_snippet": "\n\nYou are a specialized web analysis agent with expertise in financial categorization systems, particularly Merchant Category Codes (MCCs). Your task is to analyze https://idfy.com and determine the m"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "auth"
+      ],
+      "confidence": "LOW",
+      "task_id": "1093228",
+      "task_snippet": "Goal: Find details about the most recent critical Next.js vulnerability (Authorization Bypass in Next.js Middleware)\n\nCandidate URLs: \n- https://github.com/vercel/next.js/security/advisories/GHSA-9vp7"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "auth"
+      ],
+      "confidence": "LOW",
+      "task_id": "2357186",
+      "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real issue on the website or not.\n    You will be given an issue and a website url.\n    You will need to"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "auth"
+      ],
+      "confidence": "LOW",
+      "task_id": "1748573",
+      "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to assist with state intelligence work\nBackground motivation: Need to understand specific legal requiremen"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "auth"
+      ],
+      "confidence": "LOW",
+      "task_id": "2143378",
+      "task_snippet": "On the current Amazon Best Sellers in Books page, identify all book listings. Each book listing is typically marked with a rank (e.g., #1, #2). For each book listing, extract the following information"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "cookie"
+      ],
+      "confidence": "LOW",
+      "task_id": "1122929",
+      "task_snippet": "\n    Go to https://szigetfestival.com/en/tickets and scrape the webpage to extract all available ticket pricing information. For each ticket type, collect the ticket name, price, ticket category (e.g."
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "cookie"
+      ],
+      "confidence": "LOW",
+      "task_id": "1024420",
+      "task_snippet": "go to www.autotrader.co.uk\naccept all cookies\nuse the \"find your perfect car\" form\nenter a postcode of BT817YJ\nselect volkswagen from the list of makes\npause for a few seconds to allow the model list "
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "member"
+      ],
+      "confidence": "LOW",
+      "task_id": "1873462",
+      "task_snippet": "Read webpage https://www.ptechpartners.com/ and follow the prompt: Navigate to this website and find the About Us, Team, Leadership, or Staff pages. Extract all named contacts with their job titles an"
+    },
+    {
+      "auth_required": "POSSIBLE",
+      "reason": "Some authentication-related keywords found",
+      "keywords": [
+        "auth"
+      ],
+      "confidence": "LOW",
+      "task_id": "1289271",
+      "task_snippet": "Goal: Find detailed information about CVE-2024-34459\nExpected output: Detailed information about CVE-2024-34459 from authoritative sources, including technical details and mitigations\n\nCandidate URLs:"
+    }
+  ],
+  "auth_explicitly_no": [
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"guest checkout\"",
+      "confidence": "HIGH",
+      "task_id": "757446",
+      "task_snippet": "Visit the website: https://www.omahasteaks.com/.\nYour goal is to navigate to the checkout page of this website. The checkout page is where payment details are to be entered to buy something sold on th"
+    },
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"do not try to login\"",
+      "confidence": "HIGH",
+      "task_id": "1237178",
+      "task_snippet": "\n            Find the website for Local Court Records (Henrico County).\n            Search for the company 'A Plus Roofing' with context: {\"location\": \"2907 Hungary Spring Rd, Henrico VA 23228\"} using"
+    },
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"do not try to login\"",
+      "confidence": "HIGH",
+      "task_id": "1220939",
+      "task_snippet": "\n        Find the website for Georgia Superior Court Clerks' Cooperative Authority (GSCCCA) UCC Filings and search for the company '1 OAK Roofing' using the method: Search the GSCCCA UCC index by debt"
+    },
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"do not try to login\"",
+      "confidence": "HIGH",
+      "task_id": "1291834",
+      "task_snippet": "\n            Find the website for Pennsylvania Department of State - Corporation Bureau or use Google to search for the Core Roofing on Pennsylvania Department of State - Corporation Bureau (this meth"
+    },
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"do not try to login\"",
+      "confidence": "HIGH",
+      "task_id": "1254332",
+      "task_snippet": "\n            Find the website for Tennessee Department of Commerce and Insurance or use Google to search for the Armor Roofing of Tennessee on Tennessee Department of Commerce and Insurance (this meth"
+    },
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"do not try to login\"",
+      "confidence": "HIGH",
+      "task_id": "1244960",
+      "task_snippet": "\n            Find the website for All Star Roofing LinkedIn Page or use Google to search for the All Star Roofing on All Star Roofing LinkedIn Page (this method works best with non goverment websites "
+    },
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"do not try to login\"",
+      "confidence": "HIGH",
+      "task_id": "1290796",
+      "task_snippet": "\n            Find the website for Otsego County Clerk's Office or use Google to search for the Clapper Construction LLC on Otsego County Clerk's Office (this method works best with non goverment websi"
+    },
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"do not try to login\"",
+      "confidence": "HIGH",
+      "task_id": "1244725",
+      "task_snippet": "\n            Find the website for Uniform Commercial Code (UCC) Filings - Ohio Secretary of State or use Google to search for the All Side Roofing and Restoration LLC on Uniform Commercial Code (UCC) "
+    },
+    {
+      "auth_required": "EXPLICITLY_NO",
+      "reason": "Task explicitly states: \"do not try to login\"",
+      "confidence": "HIGH",
+      "task_id": "1251782",
+      "task_snippet": "\n            Find the website for Kentucky Court of Justice or use Google to search for the Amigos Roofing & Construction on Kentucky Court of Justice (this method works best with non goverment websit"
+    }
+  ],
+  "no_auth_detected": [
+    {
+      "task_id": "446054",
+      "task_snippet": "\nStep 1: Open web browser and vist amazon.com\nStep 2: Search for plazzo in women category\nStep 3: Among the plazzo's select the one with highest rating\nStep 4: Open the highest rating plazzo and extra"
+    },
+    {
+      "task_id": "1219357",
+      "task_snippet": "scrape tender information from https://www.eib.org/en/projects/pipelines/index.htm and extract the following information for each tender: title, reference number, submission deadline, estimated budget"
+    },
+    {
+      "task_id": "342762",
+      "task_snippet": "On mergr.com, navigate to the transactions page and extract all transaction details from page 1. Return the data as a list of dictionaries with transaction details."
+    },
+    {
+      "task_id": "1081387",
+      "task_snippet": "Fetch the the name, company, phone, email, and website of lawyers at https://irela.org/Lawyer-Directory for the first 150 lawyers. "
+    },
+    {
+      "task_id": "1788829",
+      "task_snippet": "Read webpage https://www.dji.com/it and follow the prompt: Analizza la homepage di DJI Italia per confronto competitor. Semplicemente carica la pagina e analizza:\n\n1. TITOLO E META:\n   - Title tag del"
+    },
+    {
+      "task_id": "68754",
+      "task_snippet": "You are tasked with collecting property data from the Miami-Dade Property Appraiser's database. Please follow these steps carefully:\n\nSTEP 1: DATA COLLECTION For the subject property located at 791 NW"
+    },
+    {
+      "task_id": "1570984",
+      "task_snippet": "Navigate to the U-Haul website, input the origin zip code 01420 and destination zip code 20743, and extract the pricing, availability, and detailed specifications (capacity, dimensions, door opening, "
+    },
+    {
+      "task_id": "2228307",
+      "task_snippet": "Read webpage https://cloud.google.com/text-to-speech/pricing and follow the prompt: Go to the URL and extract the detailed pricing information for the Text-to-Speech API. I need the costs per million "
+    },
+    {
+      "task_id": "2225648",
+      "task_snippet": "Read webpage https://www.greeencode.com and follow the prompt: Analyze this software agency website to understand: 1) What services they offer, 2) Their target market and industries, 3) Their value pr"
+    },
+    {
+      "task_id": "121347",
+      "task_snippet": "Canada February 2025 economic calendar official releases and details"
+    },
+    {
+      "task_id": "93046",
+      "task_snippet": "Your task is to extract all relevant documentation from GitHub Copilot Documentation efficiently while ensuring structured and meaningful information gathering. The goal is to collect and organize all"
+    },
+    {
+      "task_id": "2329850",
+      "task_snippet": "Goal: Find detailed information about Google Cloud's data processing agreements, regional data handling, and specific policies for AI services like Vertex AI and Gemini\nBackground motivation: Need com"
+    },
+    {
+      "task_id": "185981",
+      "task_snippet": "Go to url: https://www.wanhai.com/views/Main.xhtml and search BL no. 027E664477\n        then click the B/L Data link, extract the B/L detail information\n        then repeat the process for each row in"
+    },
+    {
+      "task_id": "887205",
+      "task_snippet": "Open the webpage https://www.adb.org/work-with-us and retrieve a list of the first 3 currently open tenders with their details including title, reference number, submission deadline, estimated budget,"
+    },
+    {
+      "task_id": "2309290",
+      "task_snippet": "Read webpage https://www.wordstream.com/keywords and follow the prompt: Navigate to the WordStream free keyword tool (wordstream.com/keywords). I need to find the top 25 blanket-related search terms f"
+    },
+    {
+      "task_id": "2068140",
+      "task_snippet": "Read webpage https://www.biggerpockets.com/forums/899/topics/1083016-best-property-management-software and follow the prompt: Navigate directly to the forum thread at 'https://www.biggerpockets.com/fo"
+    },
+    {
+      "task_id": "2099475",
+      "task_snippet": "Read webpage https://www.immoweb.be/en/search/house-and-apartment/for-rent/gent/9000 and follow the prompt: Search for rental properties in Ghent 9000 area, focusing on townhouses and larger propertie"
+    },
+    {
+      "task_id": "910053",
+      "task_snippet": "Navigate to https://minnodillc.com and perform a comprehensive SEO analysis based on the homepage. Extract:\n1. Page title\n2. Meta description\n3. Number of H1, H2, and H3 tags\n4. Number of images with "
+    },
+    {
+      "task_id": "86041",
+      "task_snippet": "ASML 2023 annual report revenue breakdown by product line and region"
+    },
+    {
+      "task_id": "959157",
+      "task_snippet": "Navigate to Dice.com and follow these steps carefully:\n\n1. In the location textbox enter 'Tallahassee, FL'\n2. Click the Search Jobs button\n3. Once results load, apply these filters:\n   - Posted Date: "
+    },
+    {
+      "task_id": "705643",
+      "task_snippet": "Find clinical trials for KRAS G12D inhibitors from Amgen and Mirati on clinicaltrials.gov"
+    },
+    {
+      "task_id": "1391181",
+      "task_snippet": "Go to proxyserver.tech and perform a comprehensive SEO audit focusing on the keyword 'mobile proxies mexico'. Check the following: 1) If the site is optimized for this keyword (title, headers, content"
+    },
+    {
+      "task_id": "2275411",
+      "task_snippet": "Read webpage https://acem.org.au/ and follow the prompt: Go to the ACEM website (acem.org.au) and search for clinical guidelines or position statements on the evaluation of chest pain, acute coronary "
+    },
+    {
+      "task_id": "415465",
+      "task_snippet": "site:broward.deedauction.net assessed value for properties in the most recent auctions"
+    },
+    {
+      "task_id": "1833859",
+      "task_snippet": "Read webpage https://www.minimaxi.com/ and follow the prompt: Analyze the MiniMax website comprehensively. I need to understand:\n1. Overall layout and structure of the homepage\n2. Navigation menu and "
+    },
+    {
+      "task_id": "967725",
+      "task_snippet": "\n            Your task is to extract fashion product information from an e-commerce website.\n\n            1. Visit https://themanatomy.com/\n            2. Navigate to the shop or product listing page "
+    },
+    {
+      "task_id": "1434249",
+      "task_snippet": "Read webpage https://ppubs.uspto.gov/pubwebapp/static/pages/landing.html and follow the prompt: For each of the following USPTO patent queries:\n1. Navigate to the USPTO Patent Public Search Advanced S"
+    },
+    {
+      "task_id": "1486500",
+      "task_snippet": "ONLY go to https://drs.faa.gov/browse/ADFRAWD/doctypeDetails. Select Make as 'The Boeing Company'. Wait until Model options are loaded. Select Model as '777'. Wait until Series options are loaded. Sel"
+    },
+    {
+      "task_id": "1300023",
+      "task_snippet": "https://www.birdeye.so/, Search this address GYTd9XbZTfwicCV28LGkwiDF4DgpXTTAi2UeCajfpump , then go to holders section, and get a list of tokens hold by the second largest holder of the mentioned Addr"
+    },
+    {
+      "task_id": "2304432",
+      "task_snippet": "Read webpage https://emeralddrift.myshopify.com/ and follow the prompt: Crawl the website https://emeralddrift.myshopify.com/ and identify any potential technical SEO issues. Pay attention to the foll"
+    },
+    {
+      "task_id": "1625592",
+      "task_snippet": "scrape the webpage for tender information: https://www.renewableenergyworld.com/energy-business/energy-finance/ and extract all tenders with their details, including title, reference number, submissio"
+    },
+    {
+      "task_id": "885451",
+      "task_snippet": "\n                    URL to visit: https://sales.cabincloseoutstore.com/app/0/cruise/0/search_cruises_quick.html?clear=all&search[search_type]=cruise_only&search[sailing_date]=02%2F08%2F2026&search[du"
+    },
+    {
+      "task_id": "1889096",
+      "task_snippet": "\n        1. Navigate to https://key.com to find relevant documents.\n        2. Answer the question: Does the company provide a Gramm-Leach-Bliley Act (GLBA) privacy notice explaining how nonpublic per"
+    },
+    {
+      "task_id": "2121476",
+      "task_snippet": "Read webpage https://www.wordtracker.com/ and follow the prompt: Use the Wordtracker free keyword tool to research keywords for \"G-Code Viewer\", \"Poker Analyzer\", and \"Chess Notation Keyboard\". Extrac"
+    },
+    {
+      "task_id": "2274972",
+      "task_snippet": "Read webpage https://www.escardio.org/Guidelines and follow the prompt: Navigate to the European Society of Cardiology (ESC) website (escardio.org). Go to the 'Guidelines' section and search for guide"
+    },
+    {
+      "task_id": "927731",
+      "task_snippet": "\n            Context:\n            You are a compliance agent. Your task is to check if entities have been sanctioned by the US government.\n            You will be given a list of entities. For each en"
+    },
+    {
+      "task_id": "867913",
+      "task_snippet": "\nYou are an expert auditor for CRO checklists. \nThese were the instructions given to find if an item of a CRO checklist is good or not:\n```\n\n        You are an expert auditor for CRO checklists. \n    "
+    },
+    {
+      "task_id": "1792712",
+      "task_snippet": "Goal: Obtain specific details about the vulnerabilities including how they work, exploitation methods, and remediation steps\nBackground motivation: Need to gather comprehensive details about the vulne"
+    },
+    {
+      "task_id": "2253155",
+      "task_snippet": "Read webpage https://www.loopnet.com and follow the prompt: Search for vacant retail and warehouse spaces over 50,000 sq ft in Charlotte, North Carolina. Navigate to the search function, set location "
+    },
+    {
+      "task_id": "2174924",
+      "task_snippet": "Read webpage https://theethnicworld.com/buy-single-piece-wholesale-catalog-surat and follow the prompt: Extract all ethnic wear products from this page with complete details:\n\nFor each product, extrac"
+    },
+    {
+      "task_id": "1173252",
+      "task_snippet": "Read webpage https://pagespeed.web.dev/ and summarize content according to the following prompt: Analyze the performance of https://karpathy.ai using PageSpeed Insights. Focus on both mobile and deskt"
+    },
+    {
+      "task_id": "1609021",
+      "task_snippet": "Go to the website https://www.apartments.com/ and search for real estate\tGrok 3.5 (xAI): Search for real estate listings for homes/apartments for sale/rent in Burleson, TX. Scroll to the bottom of the"
+    },
+    {
+      "task_id": "1017678",
+      "task_snippet": "go to \"https://www.homedepot.com/b/Electrical/N-5yc1vZarcd?catStyle=ShowProducts\"\n\ncreate list with all products with quantity at stores in the sacramento area\nget price, quantity, price per unit, pri"
+    },
+    {
+      "task_id": "1356330",
+      "task_snippet": "\n**Objective:** Scrape contact details for companies in specific WCA networks located in Hong Kong, sorted by name, limited to the first 10 unique companies found.\n\n**Detailed Steps:**\n1.  Navigate to"
+    },
+    {
+      "task_id": "191902",
+      "task_snippet": "Go to https://celltrader.co.za/shop/ it is a woocommerce store, Extract as much information as possible from each product saving the data each time. Scroll down 1 page at a time until you reach the en"
+    },
+    {
+      "task_id": "2202304",
+      "task_snippet": "Read webpage https://artificialanalysis.ai and follow the prompt: Analyze this website comprehensively. Extract all information about API comparisons, pricing data, quality metrics, and performance be"
+    },
+    {
+      "task_id": "1766206",
+      "task_snippet": "Read webpage https://play.google.com/store/apps/details?id=com.greentech.quran and follow the prompt: Extract competitive information about Al Quran (Tafsir & by Word) app including: rating, reviews, "
+    },
+    {
+      "task_id": "944335",
+      "task_snippet": "\n        Go to https://www.machinerytrader.com/listings/search?Category=1055&sort=9\n\n        If a captcha is encountered, wait, I will solve it, then continue.\n\n        For each page of search results"
+    },
+    {
+      "task_id": "503786",
+      "task_snippet": "Develop a robust web scraping script to systematically extract detailed business information from the Better Business Bureau (BBB) website for companies categorized under \"Access Control Systems\" acro"
+    },
+    {
+      "task_id": "1704522",
+      "task_snippet": "Goal: Find technical details of the vulnerability from GitHub or the original pull request that fixed it\nBackground motivation: I need to find the specific technical details of the vulnerability from "
+    },
+    {
+      "task_id": "448768",
+      "task_snippet": "Search for the latest suggested phones on amazon.com and extract details including names, specifications, and prices.\n\nExpected Output: A list of latest suggested phones with names, specifications, an"
+    },
+    {
+      "task_id": "1380258",
+      "task_snippet": "You are a helpful assistant that visits web pages and extracts relevant information about enzyme transformations of n-Hexane, including enzyme names, EC numbers, genes/proteins, transformation reactio"
+    },
+    {
+      "task_id": "1019626",
+      "task_snippet": "site:pertanian.go.id ISPO certified companies list oil palm plantation coordinates polygons"
+    },
+    {
+      "task_id": "808075",
+      "task_snippet": "email address or contact form for restaurants listed on restaurantsofmanchester.com"
+    },
+    {
+      "task_id": "1063981",
+      "task_snippet": "\n            Task: Scrape property listings from a pre-filtered Yad2 search results page\n\n            Step 1: Go directly to this URL: https://www.yad2.co.il/realestate/rent?multiNeighborhood=855%2C15"
+    },
+    {
+      "task_id": "2252317",
+      "task_snippet": "Read webpage https://www.susannabeatrice.global and follow the prompt: Extract all website content including text, services offered, about/biography information, contact details, portfolio/work exampl"
+    },
+    {
+      "task_id": "372770",
+      "task_snippet": "go to amazon.com and search for puma shoes.\nafter scape the data of first 15 result of shoes. Get their images, title, description and price of each shoes.\nOutput data must be in tabular format."
+    },
+    {
+      "task_id": "225377",
+      "task_snippet": "Extract the following information from the provided product page:\nURL: https://www.adidas.jp/%E3%82%B3%E3%83%BC%E3%83%89%E3%82%AB%E3%82%AA%E3%82%B9-%E3%83%9C%E3%82%A2-25-codechaos-boa-25/IH5142.html?p"
+    },
+    {
+      "task_id": "1501614",
+      "task_snippet": "\nYou are a compliance analyst specialized in e-commerce due diligence.\nYou havr to gather key information to enable a compliance analyst to assess if a website is a dropshipping website.\nBrowse the fo"
+    },
+    {
+      "task_id": "227142",
+      "task_snippet": "1. Go to Google Maps Preview\n2. Search for \"BP Rotterdam Europoort\" click on the first recommendation below the searchbox and wait for the map to update\n3. Click on the \"Hotels\" button\n4. Search for \""
+    },
+    {
+      "task_id": "325376",
+      "task_snippet": "\nTask: Get 10 vendors with name, email, address, contact_no, rating, and vendor_distance.\nRetrieve complete details for the 10 bicycle tire repair vendors near Uppsala, 75332, prioritizing email extra"
+    },
+    {
+      "task_id": "1100384",
+      "task_snippet": "Extract job listings from the Upwork job search page. For each job, go to the job page, extract the title, description, budget, and number of applicants. Then move on to the next job and repeat the pr"
+    },
+    {
+      "task_id": "2118996",
+      "task_snippet": "Read webpage https://tris.vn/ and follow the prompt: Analyze this website comprehensively. Extract:\n1. Overall layout and structure\n2. Content sections and their hierarchy\n3. Current design elements ("
+    },
+    {
+      "task_id": "453534",
+      "task_snippet": "Visit the URL https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?id=B4BB65A2-3346-4988-BB10-124524B20148&re=PMO131216PM8&rr=XAXX010101000&tt=369900.000000&fe=HIl4RQ== solve the captcha, a"
+    },
+    {
+      "task_id": "976402",
+      "task_snippet": "\ngo to this url and give me the Complete balance sheet of this company : https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2023-24/ar/annual-report-2023-2024.pdf\n"
+    },
+    {
+      "task_id": "1612606",
+      "task_snippet": "\n\n### Step 1: Navigate to the website\n- Open [RBI Bulletin] (https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx)\n\n### Step 2: Open Bulletins for year - 2025 and month - 1\n- Click on 2025\n- click on 1"
+    },
+    {
+      "task_id": "1662847",
+      "task_snippet": "Revised Prompt:\n\nObjective:\n\nAutomate the process of searching the California Attorney General's Proposition 65 60-Day Notice Search website for active or past legal cases filed against a specific com"
+    },
+    {
+      "task_id": "769424",
+      "task_snippet": "Extract absolutlyall the information related mobiles offers of a telecom operator.\n    extract informations only from URLs (take the value off this URLS) :\"{\\\"names\\\": [\\\"Forfait Free 5G\\\", \\\"S\\u00e9r"
+    },
+    {
+      "task_id": "1202901",
+      "task_snippet": "Navigate to https://www.eib.org/en/projects/pipelines/all/20230590 and extract links to tender-specific documents such as project specifications, technical drawings, or contractual agreements. Ignore "
+    },
+    {
+      "task_id": "426639",
+      "task_snippet": "go to https://www.comparefirst.sg, click term insurance, click non-DPI, set date of birth as 01/01/1990, gender male, smoker no, select policy term 21 to 30,  sum assured 1,000,000, critical illness N"
+    },
+    {
+      "task_id": "2185648",
+      "task_snippet": "Read webpage https://www.allabolag.se/segmentering and follow the prompt: Try a different approach to find HVAC companies with high revenue:\n1. First, apply the HVAC industry filter (Ventilation, luft"
+    },
+    {
+      "task_id": "1099868",
+      "task_snippet": "Go to https://www.autotrader.ca/dealersearch/ and extract dealer information from multiple pages.\n\n1. For each dealer card on the current page, extract:\n   - Dealer name (e.g., \"613 Motorz\", \"613 Ride"
+    },
+    {
+      "task_id": "823668",
+      "task_snippet": "Go to https://webgate.ec.europa.eu/rasff-window/screen/search search for Morocco (origin), collect the notifications in the last year and generate a csv file of the output (even if you didn't collect "
+    },
+    {
+      "task_id": "795554",
+      "task_snippet": "Identify the latest cybersecurity best practices for cloud computing transformation on the NIST website by navigating directly to the Cloud Computing section and summarizing the key recommendations"
+    },
+    {
+      "task_id": "2357258",
+      "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real issue on the website or not.\n    You will be given an issue and a website url.\n    You will need to"
+    },
+    {
+      "task_id": "21962",
+      "task_snippet": "go to zillow and draft all rental listings listed by property owner in brentwood, ca put the results in a blank text document on a free notepad website"
+    },
+    {
+      "task_id": "2307496",
+      "task_snippet": "Read webpage https://www.icis.com/explore/commodities/chemicals/ and follow the prompt: Navigate to the website and find information about their data and API offerings. I'm looking for details on what"
+    },
+    {
+      "task_id": "2236188",
+      "task_snippet": "Read webpage https://SlimSista.com and follow the prompt: Analyze the brand and style guidelines of SlimSista.com including:\n1. Color scheme and branding colors\n2. Typography and font choices\n3. Overa"
+    },
+    {
+      "task_id": "122404",
+      "task_snippet": "go to amazon.com, search laptops, go to each laptop page and grab info of (Name,RAM,GPU,Processor,Display,Weight,Storage,Screen_Type,Refresh_Rate,Operating_System,Color,Price,Rating,URL), do it for 2 "
+    },
+    {
+      "task_id": "1797096",
+      "task_snippet": "Analyze MCC token smart contract code on BSC to identify functions, ownership, and potential risks with urls or queries: ['https://bscscan.com/token/0x700735317e1af4687c17f5c30e11a74778395922#code']\n\n"
+    },
+    {
+      "task_id": "229756",
+      "task_snippet": "go to B0DQY9DY79 and look for the product price and give it to me in the results along with product name and seller."
+    },
+    {
+      "task_id": "1624674",
+      "task_snippet": "Goal: Get specific details about freetype module's CMake configuration and how to include it in a container build\nBackground motivation: Need to provide exact information about the dependency status o"
+    },
+    {
+      "task_id": "1133145",
+      "task_snippet": "Scrape the first 20 tenders for UN-related IT projects from the UN Global Marketplace at https://www.ungm.org/Public/Notice"
+    },
+    {
+      "task_id": "1145398",
+      "task_snippet": "Scrape the tenders from https://www.act.nato.int/opportunities/contracting/. For each tender, extract the title, reference number, submission deadline, estimated budget, description, eligibility crite"
+    },
+    {
+      "task_id": "1406205",
+      "task_snippet": "go to https://marketingsummit.siliconslopes.com/agenda/list/?tribe-bar-date=2025-05-05 and open each \n        talk and extract name of the talk, description of the talk, presenter's information includ"
+    },
+    {
+      "task_id": "1563973",
+      "task_snippet": "You are a legal research assistant focused on California Proposition 65 cases. \n\nYour task is to search for active legal cases related to a company on the California Prop 65 case tracking website.\n\n1."
+    },
+    {
+      "task_id": "917119",
+      "task_snippet": "Go to https://www.google.com/maps/place/UCI+Cinemas+Showville+Bari/@41.0907971,16.8850177,17z/data=!4m8!3m7!1s0x1347e9b7eab37763:0x407625fc0e2e259a!8m2!3d41.0907931!4d16.8875926!9m1!1b1!16s%2Fg%2F11b6"
+    },
+    {
+      "task_id": "2310254",
+      "task_snippet": "Go to https://www.docebo.com/customers/ and apply filters for manufacturing industry. Look through the customer stories to find Fortune 500 manufacturing companies with C-level executive quotes and RO"
+    },
+    {
+      "task_id": "1625845",
+      "task_snippet": "Extract all product data (name, price, url, image) from all pages of the search results on https://www.bstn.com/us_en/catalogsearch/result/?q=all&categories=Men. Navigate through the pagination until "
+    },
+    {
+      "task_id": "1528795",
+      "task_snippet": "Extract detailed information about the ZOTAC Gaming GeForce RTX 5080 from Amazon, including specifications, features, and customer reviews."
+    },
+    {
+      "task_id": "2092706",
+      "task_snippet": "Read webpage https://en.youlive.ca/vancouver-building/10526-cambie-garden and follow the prompt: Extract the detailed building information from this page in the exact format the user specified:\n- Buil"
+    },
+    {
+      "task_id": "1136410",
+      "task_snippet": "Go to ycombinator.com and find all enterprises under the Winter 2025 (W25) B2B tag. Collect information such as name, description, founder(s), location, and website URL for each enterprise."
+    },
+    {
+      "task_id": "1672827",
+      "task_snippet": "Read webpage https://www.amazon.com/s?k=rtx+3060+ti+gaming+pc+intel+i7 and follow the prompt: Extract a list of computer models with RTX 3060 Ti and Intel Core i7. For each model, extract: exact proce"
+    },
+    {
+      "task_id": "2277898",
+      "task_snippet": "Read webpage https://dtfprinterusa.com/ and follow the prompt: Navigate to the website and perform a technical analysis. Check for site speed, mobile optimization, crawlability (robots.txt, sitemap.xm"
+    },
+    {
+      "task_id": "839951",
+      "task_snippet": "Visit https://mailchimp.com/pricing/marketing/compare-plans/?currency=EUR and analyze the pricing information.\n                \n                1. Extract all pricing plans/tiers\n                2. Fo"
+    },
+    {
+      "task_id": "1656949",
+      "task_snippet": "\n    Go to https://www.dextools.io/app/en/ether/pool-explorer.\n    Observe the list of newly listed token pairs.\n    Focus on pairs listed within the last 15 minutes.\n    For each such token pair that"
+    },
+    {
+      "task_id": "1125412",
+      "task_snippet": "Look for the most current quantum computing research papers sent to ArXiv over the past two days."
+    },
+    {
+      "task_id": "1026443",
+      "task_snippet": "Go to https://www.similarweb.com/website/\nAnalyze traffic for the website https://revapets.com\nClick the analyze traffic button and wait for the load of the data\nGive me the below info on the website\n"
+    },
+    {
+      "task_id": "1225015",
+      "task_snippet": "tell me all the details about renile startup from crunchbase and its investors, and how much funding they have raised"
+    },
+    {
+      "task_id": "966617",
+      "task_snippet": "PROMPT - Generate a script to extract all countries and their most recent year and value for electricity access from this url, such that it adheres to the given output schema. It should be robust and "
+    },
+    {
+      "task_id": "1757675",
+      "task_snippet": "Read webpage https://www.vals.ai/benchmarks and follow the prompt: \\u68c0\\u67e5\\u6240\\u6709\\u7684\\u57fa\\u51c6\\u6d4b\\u8bd5\\u9875\\u9762\\uff0c\\u83b7\\u53d6\\u5404\\u4e2a\\u6a21\\u578b\\u5728\\u4e0d\\u540c\\u57fa\\"
+    },
+    {
+      "task_id": "2094857",
+      "task_snippet": "Read webpage https://www.beauhurst.com/ and follow the prompt: Extract detailed information about Beauhurst database capabilities including what UK company data fields are available, revenue and fundi"
+    },
+    {
+      "task_id": "2140824",
+      "task_snippet": "Read webpage https://www.spitexcare.ch/ and follow the prompt: Analyze the website spitexcare.ch to understand their local SEO strategy. Look for location-specific landing pages, local keyword usage, "
+    },
+    {
+      "task_id": "382924",
+      "task_snippet": "\n        **Task: Scrape Amazon Electronics (Output must be valid Python dict or list of dicts)**\n\n        **Steps:**\n        1. Open Amazon.com in the browser\n        2. Search for \"Electronics\"\n     "
+    },
+    {
+      "task_id": "2216354",
+      "task_snippet": "Read webpage https://derma-solution.com/ and follow the prompt: Analyze this second competitor's website homepage for complete SEO competitive analysis. Extract and document:\n\n1. Page Structure & Cont"
+    },
+    {
+      "task_id": "1785321",
+      "task_snippet": "Read webpage https://medium.com/@nambos3rd/tesla-full-year-2024-analysis-a-review-of-actual-performance-my-financial-forecast-41ee70091b5a and follow the prompt: Extract comprehensive Tesla 2024 full "
+    },
+    {
+      "task_id": "1377055",
+      "task_snippet": "Infer using tool [infer_from_page_markdown_with_navigational_links]- extract articles (with corresponding navigational URL) that mentions opening of international luxury retail brands in Singapore. \n "
+    },
+    {
+      "task_id": "1612534",
+      "task_snippet": "Read webpage https://www.mordorintelligence.com/zh-CN/industry-reports/smart-sound-and-gateway-market and follow the prompt: \\u63d0\\u53d6\\u6587\\u7ae0\\u4e2d\\u5173\\u4e8e\\u667a\\u80fd\\u58f0\\u97f3\\u4ea7\\u5"
+    },
+    {
+      "task_id": "1716501",
+      "task_snippet": "Read webpage https://www.europages.co.uk/companies/distributor/import-export%20-%20medical%20and%20surgical%20equipment.html and follow the prompt: Extract information about medical and surgical equip"
+    },
+    {
+      "task_id": "191779",
+      "task_snippet": "\n                    Visit https://saytool.com/product/%EC%97%90%EC%9D%B4%EC%95%A4%EB%94%94-%EC%A0%84%EC%9E%90%EC%A0%80%EC%9A%B8%EC%A4%91%EB%9F%89%EB%B9%84%EA%B5%90-hc-30kw-hc-30kw-30kg5g/59643/\n     "
+    },
+    {
+      "task_id": "1062848",
+      "task_snippet": "\n        You are an e-commerce site analyzer. Visit https://www.closed.com/en/women/jeans and carefully analyze the page structure.\n        \n        1. FIRST, detect and handle any popups or consent n"
+    },
+    {
+      "task_id": "702654",
+      "task_snippet": "Navigate to vividseats.com and search for Toronto FC vs Inter Miami CF tickets for September 27, 2025. Extract all available ticket sections with their prices, quantities if shown, and any fees. List "
+    },
+    {
+      "task_id": "1017491",
+      "task_snippet": "Extract key points from the article at https://finance.yahoo.com/quote/AAPL/news/ focusing on Apple's market position, stock performance, future predictions, and any significant events or analyses."
+    },
+    {
+      "task_id": "959652",
+      "task_snippet": "Go to nasdaq.com and search for the stock symbol 'Garrett Advancing Motion'. Navigate to its historical data section and download the full-year data for 2024, if available."
+    },
+    {
+      "task_id": "2282208",
+      "task_snippet": "Read webpage https://embracetransitioncoaching.com/about-paula/ and follow the prompt: Extract all content from this page including headings, text about Paula, her background, experience, coaching app"
+    },
+    {
+      "task_id": "1822100",
+      "task_snippet": "Read webpage https://www.padmapper.com/apartments/san-francisco-ca and follow the prompt: Analyze the technical structure of PadMapper for San Francisco apartments. Identify: 1) How data is loaded (se"
+    },
+    {
+      "task_id": "795094",
+      "task_snippet": "site:agrieuro.co.uk \"charcoal grill\" 20-300 EUR reviews specifications Edilmark OR Classe OR Mastercook OR Royal Food OR Famur OR Ferraboli OR Seven Italy OR Palazzetti OR Cruccolini"
+    },
+    {
+      "task_id": "1421359",
+      "task_snippet": "Read webpage https://aiindex.stanford.edu/report/ and follow the prompt: Extract key findings from the latest Stanford AI Index report regarding China's position in AI talent, investment, research pub"
+    },
+    {
+      "task_id": "1246927",
+      "task_snippet": "\n        Browse a retailer's website of https://www.thiscorner.co/ and get all products the retailer carries.\n\n        For each product, capture the following details:\n        - Product name: EXACT pr"
+    },
+    {
+      "task_id": "759493",
+      "task_snippet": "Go to https://wro.westchesterclerk.com/landsearch.aspx, Look for land records for the Name Seven Springs LLC. For each of the resulting records, collect all details. Return a valid JSON of all records"
+    },
+    {
+      "task_id": "251101",
+      "task_snippet": "{\"instructions\":{\"data_to_collect\":{\"property_info\":[\"property_name\",\"management_email\",\"phone_number\"],\"reviews\":{\"count\":2,\"details\":[\"comment_text\",\"rating\",\"date\"]},\"unit_details\":[\"available_unit"
+    },
+    {
+      "task_id": "2214895",
+      "task_snippet": "Read webpage https://bstock.com/amazon/ and follow the prompt: Navigate to the B-Stock website and find the Amazon Liquidation Auctions. I am interested in auctions for 'Toys & Games' and 'Health & Be"
+    },
+    {
+      "task_id": "1624560",
+      "task_snippet": "Goal: Find detailed information about libfreetype6 version in Ubuntu 22.04 and comprehensive details about CVE-2025-27363\nBackground motivation: Need more specific details about when the vulnerability"
+    },
+    {
+      "task_id": "1783199",
+      "task_snippet": "Read webpage https://www.poweradspy.com/ and follow the prompt: Extract exact pricing plans, features, platform coverage (Meta, Google, TikTok), performance metrics available (ROI, CTR, CPC), integrat"
+    },
+    {
+      "task_id": "265277",
+      "task_snippet": "Search for Metformin on goodrx.com:\n        1. First scroll down and enter location: 172 S Sunnyvale Avenue, Sunnyvale, CA 94086\n        2. Search for Metformin\n        3. Collect the following inform"
+    },
+    {
+      "task_id": "246025",
+      "task_snippet": "Go to https://www.zolo.ca/ and select Price and write 1600000. Then find homes with 4 bedrooms then search for homes near scott road 80 ave. Then create a json file of their addresses, price, bedrooms"
+    },
+    {
+      "task_id": "1015772",
+      "task_snippet": "visit: https://www.uniquemallorca.com/ and search for all properites in all areas"
+    },
+    {
+      "task_id": "1618713",
+      "task_snippet": "go to https://www.narpm.org/find/property-managers/ and for each of the property manager cards, click VIEW PROFILE then give me the phone number on that popup. then close that popup. go to the next on"
+    },
+    {
+      "task_id": "1762101",
+      "task_snippet": "\n    Explore the McGrath real estate website (https://www.mcgrath.com.au) and gather the following information:\n    1. Find the search input field for postcodes and its CSS selector\n    2. Find the se"
+    },
+    {
+      "task_id": "1130803",
+      "task_snippet": "go to www.canon.de and get all product information for system cameras. add these to a table \n\n"
+    },
+    {
+      "task_id": "1007520",
+      "task_snippet": "wisconsinsurplus.com visit the site and extract the auction item details including prices, current bids, next minimum bid amounts, and images"
+    },
+    {
+      "task_id": "1821571",
+      "task_snippet": "Browser agent: Extract district heatmap of rental yields from Bayut MarketWatch at https://www.bayut.com/mybayut/dubai-property-market-report/, return in markdown format"
+    },
+    {
+      "task_id": "1999011",
+      "task_snippet": "First, navigate to https://www.imf.org/en/Publications/WEO/weo-database/2024/October. Then, extract. Return relevant information about steps taken and content extracted."
+    },
+    {
+      "task_id": "1476683",
+      "task_snippet": "Navigate to the SEC EDGAR database and search for Tesla (TSLA) filings. Identify the most recent significant filings such as 10-K, 10-Q, or 8-K."
+    },
+    {
+      "task_id": "2003613",
+      "task_snippet": "Read webpage https://app.uniswap.org/explore/pools and follow the prompt: Navega por la p\\u00e1gina de pools de Uniswap y busca espec\\u00edficamente el pool ETH/USDC o USDC/WETH. Extrae todos los dato"
+    },
+    {
+      "task_id": "1681243",
+      "task_snippet": "Read webpage https://karpathy.ai/ and follow the prompt: Analyze the page for keyword usage and content optimization. Identify:\n1. Primary keywords used on the page\n2. Keyword density and placement (i"
+    },
+    {
+      "task_id": "1077220",
+      "task_snippet": "Goal: Find non-UAF Chrome vulnerabilities in 2024-2025 specifically related to WebGPU, WebAssembly, File System Access API, Web Storage, Web Workers, CSS Module, Web Transport\n\nCandidate URLs: \n- http"
+    },
+    {
+      "task_id": "221599",
+      "task_snippet": "Extract the following information as JSON from this product page:\nURL: https://www.uniqlo.com/kr/ko/products/E461011-000/00?colorDisplayCode=08&sizeDisplayCode=004\n\nRequired fields:\n- `name`: Product "
+    },
+    {
+      "task_id": "124347",
+      "task_snippet": "crawl and scrape all product data, including handling pagination, from https://skymint.com/white-cloud/category/flower, https://skymint.com/white-cloud/category/pre-rolls/, https://skymint.com/white-c"
+    },
+    {
+      "task_id": "352644",
+      "task_snippet": "Navigate to: https://www.withroam.com/zipcode/91101?bedrooms=2&down_payment=400000&mode=viewport&order=ir_low&property_types=single_family&viewport=-118.47145%3A33.55095%3A-117.35938%3A34.24766\n      "
+    },
+    {
+      "task_id": "1706786",
+      "task_snippet": "Read webpage https://www.car.org/marketdata/data and follow the prompt: Access the California Association of Realtors (C.A.R.) market data page (https://www.car.org/marketdata/data). Look for recent r"
+    },
+    {
+      "task_id": "2271368",
+      "task_snippet": "Read webpage https://warmembracegifts.com/ and follow the prompt: Navigate through this website to find and document all individual products with their specific details including:\n- Exact product name"
+    },
+    {
+      "task_id": "500831",
+      "task_snippet": "go to https://msrc.microsoft.com/update-guide/vulnerability, sort the list by release date, only consider those from february, that have the word the \"remote\" the \"cve title\", give me their CVE number"
+    },
+    {
+      "task_id": "649583",
+      "task_snippet": "Visit major consulting firms' methodology pages and extract structured data:1. McKinsey Insights: Extract frameworks like 7S, MECE, Issue Trees with detailed explanations2. BCG Insights: Get Growth-Sh"
+    },
+    {
+      "task_id": "1771670",
+      "task_snippet": "Read webpage https://www.iea.org/reports/electricity-grids-and-secure-energy-transitions/executive-summary and follow the prompt: Extract comprehensive information about global electricity grid modern"
+    },
+    {
+      "task_id": "205360",
+      "task_snippet": "\n    Task: Collect comprehensive information from Visa's latest earnings for analyst report.\n    \n    Steps:\n    1. Go to https://www.google.com\n    2. Search for \"Visa Q4 2024 earnings results invest"
+    },
+    {
+      "task_id": "2136340",
+      "task_snippet": "Read webpage https://www.semrush.com/website/ and follow the prompt: Go to the Semrush website traffic analysis tool. Enter the domain 'thedefiant.io' and extract the estimated monthly traffic, top or"
+    }
+  ]
+}

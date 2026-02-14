@@ -1,0 +1,143 @@
+Authentication-Required Tasks - Completion Analysis
+================================================================================
+
+
+YES
+--------------------------------------------------------------------------------
+Total tasks: 28
+Matched in eval results: 8
+Not found in eval results: 20
+
+Self-reported completed: 8/8 (100.0%)
+Has judge evaluation: 8/8 (100.0%)
+Judge: PASS: 4, FAIL: 3, UNCLEAR: 1
+
+Detailed Results:
+
+1. Task ID: 37757 (Match: 0.86)
+   Self-reported: True
+   Judge result: FAIL
+   Platforms: zillow.com
+   Judge: [Used 3 step inspection(s)] The user asked to search Zillow and use Google Maps for 1–2 BR Berkeley rentals with no stairs, within 2 blocks of transit and 4 blocks of Berkeley Bowl or Monterey Market. The agent instead searched Craigslist and did not use Zillow or Google Maps. Inspecting the actual ...
+   Task: search zillow.com for 1 or 2 bedroom rental apartments in Berkeley, California that that have no stairs, within 2 blocks of public transportation, wit...
+
+2. Task ID: 259349 (Match: 1.00)
+   Self-reported: True
+   Judge result: FAIL
+   Platforms: eprocure.gov.in
+   Judge: [Used 2 step inspection(s)] I inspected the agent’s extractions. Step 505 shows a table with headers: Financial Year, Name Of Work, Name Of Contractor, Est. Cost Put To Tender (in Crore) and 10 NBCC rows. This is only a subset from data.gov.in, not from eprocure.gov.in, and not "all past tenders awa...
+   Task: Go to https://eprocure.gov.in/eprocure/app, search for all the past tenders award winners and make a excel...
+
+3. Task ID: 2226746 (Match: 0.76)
+   Self-reported: True
+   Judge result: PASS
+   Platforms: instagram.com, instagram.com, instagram.com
+   Judge: The agent used the Inflact Instagram Downloader on the specified profile and extracted post URL, media URL, caption, and hashtags. It compiled 36 posts and saved them to 'inflact_results.json', which appears in the created files list. No errors or blockers were indicated....
+   Task: Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Instagram Downloader and use it to download all posts ...
+
+4. Task ID: 1465541 (Match: 0.78)
+   Self-reported: True
+   Judge result: UNCLEAR
+   Platforms: contractsfinder.service.gov.uk, contractsfinder.service.gov.uk
+   Judge: The agent navigated to the Contracts Finder search results page, extracted the first 20 tenders from the results, and visited individual tender pages to gather required fields. The created file tenders_final.json contains 20 entries with title, reference number, submission deadline, estimated budget...
+   Task: Access the URL https://www.contractsfinder.service.gov.uk/Search/Results and extract the first 20 tenders with their details: title, reference number,...
+
+5. Task ID: 451705 (Match: 0.99)
+   Self-reported: True
+   Judge result: FAIL
+   Platforms: redfin.com, redfin.com, redfin.com
+   Judge: [Used 3 step inspection(s)] inspect_step confirms the agent primarily used Trulia and Google, not Redfin, to gather listings. Step 170 shows a Trulia page with no days-on-market filter. The produced results file (homes_70125.md) does not include Redfin URLs or verified Redfin days-on-market data; it...
+   Task: search https://www.redfin.com for homes in 70125 and find homes that have been on the market for 180 days are longer and that are multifamily also pro...
+
+6. Task ID: 1513697 (Match: 0.95)
+   Self-reported: True
+   Judge result: PASS
+   Platforms: tenderned.nl, tenderned.nl, tenderned.nl
+   Judge: [Used 1 step inspection(s)] The user asked to open each posting in the search results list and extract title, description, and contract value. The agent only extracted 5 items. Using inspect_step on step 26 confirms the final table contains exactly 5 tenders, while the search produced many more (the...
+   Task: Go to "https://www.tenderned.nl/aankondigingen/overzicht", search for "Digitale Transformatie". For each posting in the list open the page and extract...
+
+7. Task ID: 265470 (Match: 0.76)
+   Self-reported: True
+   Judge result: PASS
+   Platforms: nseindia.com, nseindia.com, nseindia.com
+   Judge: The agent navigated to the specified NSE page, entered and selected 'Tata Consultancy Services Limited', executed the search, and extracted the populated financial results table. Screenshots and browser_state show the table loaded. Python extraction steps confirm headers, 60 rows found, and structur...
+   Task: 1. Go to url https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision
+			2. type Tata Consultancy Services Limited i...
+
+8. Task ID: 2125188 (Match: 0.76)
+   Self-reported: True
+   Judge result: PASS
+   Platforms: sec.gov, sec.gov, sec.gov
+   Judge: The agent navigated to the specified S-1/A filing on sec.gov and extracted the requested financial statements. It produced three CSV files in the sandbox: consolidated_balance_sheets.csv, consolidated_statements_of_operations.csv, and consolidated_statements_of_cash_flows.csv. The file contents incl...
+   Task: Read webpage https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm and follow the prompt: Extract the financial statem...
+
+LIKELY
+--------------------------------------------------------------------------------
+Total tasks: 5
+Matched in eval results: 0
+Not found in eval results: 5
+
+
+POSSIBLE
+--------------------------------------------------------------------------------
+Total tasks: 12
+Matched in eval results: 5
+Not found in eval results: 7
+
+Self-reported completed: 5/5 (100.0%)
+Has judge evaluation: 5/5 (100.0%)
+Judge: PASS: 3, FAIL: 1, UNCLEAR: 1
+
+Detailed Results:
+
+1. Task ID: 270711 (Match: 0.84)
+   Self-reported: True
+   Judge result: PASS
+   Judge: The agent visited the target (which redirected to lectuepublibre4.com) and examined the page contents. It extracted download links and detected a Base64-encoded inline JavaScript that intercepts clicks and redirects through domains including ey43.com. The agent also corroborated ey43.com’s reputatio...
+   Task: Visit https://lectuepub3.com/ and analyze whether the website contains phishing or malicious content. Identify any suspicious links, fake login portal...
+
+2. Task ID: 1092722 (Match: 0.70)
+   Self-reported: True
+   Judge result: FAIL
+   Judge: [Used 5 step inspection(s)] Using inspect_step on key steps confirms the agent did not find or extract the requested specifics. Step 149 shows Google results linking to the NVD page for CVE-2024-41801, but the agent never navigated to it. Step 151 (GitHub advisory) and Step 156 both show 'Page not f...
+   Task: Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorization IPv6 hostname validation
+
+Candidate URLs: 
+- htt...
+
+3. Task ID: 1093228 (Match: 0.98)
+   Self-reported: True
+   Judge result: PASS
+   Judge: The agent delivered a concise, accurate summary of the most recent critical Next.js vulnerability (Authorization Bypass in Next.js Middleware). Using inspect_step on step 19 confirms the GitHub Security Advisory page shows: title 'Authorization Bypass in Next.js Middleware', GHSA ID GHSA-f82v-jwr5-m...
+   Task: Goal: Find details about the most recent critical Next.js vulnerability (Authorization Bypass in Next.js Middleware)
+
+Candidate URLs: 
+- https://githu...
+
+4. Task ID: 1873462 (Match: 0.78)
+   Self-reported: True
+   Judge result: UNCLEAR
+   Judge: [Used 1 step inspection(s)] The agent navigated to the site’s About/Team section and extracted named contacts with their job titles. Using inspect_step on the About page confirms leadership names and titles (Nick Shah, Eric Treida, George Wang, Jay Johnson, Swadheen Sehgal) as the agent reported. Th...
+   Task: Read webpage https://www.ptechpartners.com/ and follow the prompt: Navigate to this website and find the About Us, Team, Leadership, or Staff pages. E...
+
+5. Task ID: 1289271 (Match: 0.78)
+   Self-reported: True
+   Judge result: PASS
+   Judge: The agent provided a clear, detailed summary of CVE-2024-34459 with technical details (affected function, trigger condition, impact), affected versions, severity/CVSS, mitigation guidance, and links to authoritative sources (NVD and CVE.org). The screenshots indicate the same core description on NVD...
+   Task: Goal: Find detailed information about CVE-2024-34459
+Expected output: Detailed information about CVE-2024-34459 from authoritative sources, including ...
+
+================================================================================
+
+OVERALL SUMMARY
+--------------------------------------------------------------------------------
+Total auth-required tasks (HIGH + MEDIUM + LOW): 45
+Found in eval results: 13/45 (28.9%)
+
+Self-reported completion rate: 13/13 (100.0%)
+Judge evaluation coverage: 13/13 (100.0%)
+
+Judge Results:
+  PASS:      7 (53.8% of judged)
+  FAIL:      4 (30.8% of judged)
+  UNCLEAR:   2 (15.4% of judged)

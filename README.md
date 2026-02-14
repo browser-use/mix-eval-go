@@ -69,12 +69,100 @@ Optional:
 # Load environment variables
 source .env
 
-# Run evaluation
+# Run evaluation (all tasks)
 ./bin/mix-eval-go \
   --test-case "your_test_case_name" \
   --run-id "unique_run_id" \
   --parallel 3
+
+# Run specific task range (e.g., tasks 0-9)
+./bin/mix-eval-go \
+  --test-case "your_test_case_name" \
+  --run-id "unique_run_id" \
+  --start-index 0 \
+  --end-index 9 \
+  --parallel 3
+
+# Run with browser provider
+./bin/mix-eval-go \
+  --test-case "your_test_case_name" \
+  --run-id "unique_run_id" \
+  --browser-provider browserbase \
+  --parallel 3
 ```
+
+### GitHub Actions Integration
+
+Mix-Eval-Go includes a GitHub Actions workflow that integrates with the evaluation-platform for automated, distributed evaluations.
+
+**How it works:**
+
+1. **Evaluation-platform** triggers evaluation via GitHub API dispatch
+2. **GitHub Actions** spawns runner jobs with parameters
+3. **mix-eval-go** executes tasks and posts results back to Convex
+4. **Platform UI** displays real-time results
+
+**Setup:**
+
+1. Add repository secrets in GitHub Settings → Secrets:
+   ```
+   CONVEX_URL
+   CONVEX_SECRET_KEY
+   ANTHROPIC_API_KEY
+   BROWSERBASE_API_KEY
+   BROWSERBASE_PROJECT_ID
+   # ... other API keys
+   ```
+
+2. The evaluation-platform will automatically dispatch workflows when you start a run
+
+3. Monitor progress in:
+   - GitHub Actions: `https://github.com/your-org/mix-eval-go/actions`
+   - Evaluation Platform UI: Real-time task results
+
+**Manual trigger (for testing):**
+
+```bash
+gh api repos/your-org/mix-eval-go/dispatches \
+  -X POST \
+  -F event_type=run-eval \
+  -F client_payload='{"ref":"main","script_args":{"test_case":"WEBBENCH_READ_V5","run_id":"test-123","start_index":0,"end_index":9}}'
+```
+
+## Authentication System
+
+The evaluation platform handles authenticated tasks (social media, paywalls) using a centralized credential pool stored in Convex. Tasks reference credentials via `auth_keys` or include pre-populated `loginCookie` strings. Runners fetch credentials from `/api/getAuthDistribution`, inject them as browser cookies, and the browser starts already authenticated.
+
+**Credential Pool** (`authDistribution` table):
+- Shared credentials across all runners (Google, GitHub, LinkedIn, NYT, etc.)
+- Lifecycle management: `isCycledOut`, `isOnHold` flags for rotation
+- Access tracking: `accessCount`, `lastAccessedAt` for monitoring
+
+**Authentication Flow:**
+
+```
+Task Definition → Runner Fetches Credentials → Inject Cookies → Authenticated Browser
+     ↓                      ↓                         ↓                    ↓
+auth_keys:          GET /api/getAuth          storage_state.json    Site sees logged-in
+["nytimes"]         Distribution               with session          user, no paywall
+                    Returns loginInfo          cookies loaded
+```
+
+**Sample Task Definition (Convex):**
+
+```json
+{
+  "task_id": "1284368",
+  "confirmed_task": "Find DataRobot pricing on their enterprise page",
+  "website": "datarobot.com",
+  "auth_keys": ["datarobot"],
+  "login_cookie": "session=abc123; auth_token=xyz789",
+  "category": "pricing_research",
+  "outputSchema": {"price": "string", "tier": "string"}
+}
+```
+
+**Note**: mix-eval-go currently defines the `LoginCookie` field but delegates authentication to Mix Agent. Future versions may implement direct credential injection.
 
 ## Development
 

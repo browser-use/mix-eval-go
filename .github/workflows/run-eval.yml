@@ -1,0 +1,159 @@
+name: Run Mix-Eval-Go Evaluation
+
+on:
+  repository_dispatch:
+    types: [run-eval]
+
+jobs:
+  run_evaluation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      # LLM API Keys
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+
+      # Convex Backend
+      CONVEX_URL: ${{ secrets.CONVEX_URL }}
+      CONVEX_SECRET_KEY: ${{ secrets.CONVEX_SECRET_KEY }}
+
+      # Browser Providers
+      ANCHOR_BROWSER_API_KEY: ${{ secrets.ANCHOR_BROWSER_API_KEY }}
+      BRIGHTDATA_CDP_URL: ${{ secrets.BRIGHTDATA_CDP_URL }}
+      BRIGHTDATA_USER: ${{ secrets.BRIGHTDATA_USER }}
+      BRIGHTDATA_PASSWORD: ${{ secrets.BRIGHTDATA_PASSWORD }}
+      HYPERBROWSER_API_KEY: ${{ secrets.HYPERBROWSER_API_KEY }}
+      BROWSERBASE_API_KEY: ${{ secrets.BROWSERBASE_API_KEY }}
+      BROWSERBASE_PROJECT_ID: ${{ secrets.BROWSERBASE_PROJECT_ID }}
+
+      # Mix Agent
+      MIX_AGENT_URL: ${{ secrets.MIX_AGENT_URL }}
+
+      # Observability (Optional)
+      LMNR_PROJECT_API_KEY: ${{ secrets.LMNR_PROJECT_API_KEY }}
+      LMNR_LOGGING_LEVEL: ${{ github.event.client_payload.script_args.laminar_logging_level || 'info' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.client_payload.ref || 'main' }}
+
+      - name: Capture git metadata
+        run: |
+          echo "GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)" >> $GITHUB_ENV
+          echo "GIT_COMMIT=$(git rev-parse HEAD)" >> $GITHUB_ENV
+          echo "GIT_COMMIT_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+          echo "GIT_TIMESTAMP=$(git log -1 --format=%ct)" >> $GITHUB_ENV
+          echo "Captured git info: branch=$(git rev-parse --abbrev-ref HEAD) commit=$(git rev-parse --short HEAD)"
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+          cache: true
+
+      - name: Install dependencies
+        run: go mod download
+
+      - name: Build binary
+        run: |
+          echo "Building mix-eval-go..."
+          go build -o bin/mix-eval-go ./cmd
+          chmod +x bin/mix-eval-go
+          echo "Build complete!"
+          ls -lh bin/
+
+      - name: Extract evaluation parameters
+        id: eval_params
+        run: |
+          # Required parameters
+          TEST_CASE="${{ github.event.client_payload.script_args.test_case }}"
+          echo "TEST_CASE=${TEST_CASE:-WEBBENCH_READ_V5}" >> $GITHUB_OUTPUT
+
+          RUN_ID="${{ github.event.client_payload.script_args.run_id }}"
+          echo "RUN_ID=$RUN_ID" >> $GITHUB_OUTPUT
+
+          START_INDEX="${{ github.event.client_payload.script_args.start_index }}"
+          echo "START_INDEX=${START_INDEX:-0}" >> $GITHUB_OUTPUT
+
+          END_INDEX="${{ github.event.client_payload.script_args.end_index }}"
+          echo "END_INDEX=${END_INDEX:-1}" >> $GITHUB_OUTPUT
+
+          # Optional parameters
+          MODEL="${{ github.event.client_payload.script_args.model }}"
+          echo "MODEL=${MODEL:-claude-sonnet-4-20250514}" >> $GITHUB_OUTPUT
+
+          MAX_STEPS="${{ github.event.client_payload.script_args.max_steps }}"
+          echo "MAX_STEPS=${MAX_STEPS:-50}" >> $GITHUB_OUTPUT
+
+          BROWSER="${{ github.event.client_payload.script_args.browser }}"
+          echo "BROWSER=$BROWSER" >> $GITHUB_OUTPUT
+
+          PARALLEL="${{ github.event.client_payload.script_args.parallel_runs }}"
+          echo "PARALLEL=${PARALLEL:-1}" >> $GITHUB_OUTPUT
+
+          DEVELOPER_ID="${{ github.event.client_payload.script_args.developer_id }}"
+          echo "DEVELOPER_ID=$DEVELOPER_ID" >> $GITHUB_OUTPUT
+
+          USER_MESSAGE="${{ github.event.client_payload.script_args.user_message }}"
+          echo "USER_MESSAGE=$USER_MESSAGE" >> $GITHUB_OUTPUT
+
+          CONVEX_URL_OVERRIDE="${{ github.event.client_payload.script_args.convex_url }}"
+          echo "CONVEX_URL_OVERRIDE=$CONVEX_URL_OVERRIDE" >> $GITHUB_OUTPUT
+
+          GITHUB_WORKFLOW_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo "GITHUB_WORKFLOW_URL=$GITHUB_WORKFLOW_URL" >> $GITHUB_OUTPUT
+
+          echo "=== Evaluation Parameters ==="
+          echo "Test Case: $TEST_CASE"
+          echo "Run ID: $RUN_ID"
+          echo "Task Range: $START_INDEX-$END_INDEX"
+          echo "Model: $MODEL"
+          echo "Browser: $BROWSER"
+          echo "Parallel: $PARALLEL"
+
+      - name: Run evaluation
+        run: |
+          # Override Convex URL if provided in dispatch
+          CONVEX_URL_OVERRIDE="${{ steps.eval_params.outputs.CONVEX_URL_OVERRIDE }}"
+          if [ -n "$CONVEX_URL_OVERRIDE" ]; then
+            export CONVEX_URL="$CONVEX_URL_OVERRIDE"
+            echo "Using Convex URL override: $CONVEX_URL_OVERRIDE"
+          fi
+
+          # Build command arguments
+          ARGS=(
+            --test-case "${{ steps.eval_params.outputs.TEST_CASE }}"
+            --run-id "${{ steps.eval_params.outputs.RUN_ID }}"
+            --start-index "${{ steps.eval_params.outputs.START_INDEX }}"
+            --end-index "${{ steps.eval_params.outputs.END_INDEX }}"
+            --parallel "${{ steps.eval_params.outputs.PARALLEL }}"
+          )
+
+          # Add optional parameters if set
+          BROWSER="${{ steps.eval_params.outputs.BROWSER }}"
+          [ -n "$BROWSER" ] && ARGS+=(--browser-provider "$BROWSER")
+
+          MODEL="${{ steps.eval_params.outputs.MODEL }}"
+          [ -n "$MODEL" ] && ARGS+=(--model "$MODEL")
+
+          MAX_STEPS="${{ steps.eval_params.outputs.MAX_STEPS }}"
+          [ -n "$MAX_STEPS" ] && ARGS+=(--max-steps "$MAX_STEPS")
+
+          echo "Executing: ./bin/mix-eval-go ${ARGS[*]}"
+          ./bin/mix-eval-go "${ARGS[@]}"
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-logs-${{ github.run_id }}
+          path: |
+            *.log
+            dev.log
+          retention-days: 7

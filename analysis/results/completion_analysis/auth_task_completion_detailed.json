@@ -1,0 +1,432 @@
+{
+  "summary": {
+    "total_auth_tasks": 45,
+    "total_matched": 13,
+    "total_self_reported": 13,
+    "total_judged": 13,
+    "total_passed": 7,
+    "total_failed": 4,
+    "total_unclear": 2
+  },
+  "by_confidence_level": {
+    "auth_required_yes": {
+      "total": 28,
+      "matched": 8,
+      "unmatched": 20,
+      "matched_tasks": [
+        {
+          "task_id": "37757",
+          "task_snippet": "search zillow.com for 1 or 2 bedroom rental apartments in Berkeley, California that that have no stairs, within 2 blocks of public transportation, wit",
+          "match_ratio": 0.8565310492505354,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "FAIL",
+          "judgement": "[Used 3 step inspection(s)] The user asked to search Zillow and use Google Maps for 1\u20132 BR Berkeley rentals with no stairs, within 2 blocks of transit and 4 blocks of Berkeley Bowl or Monterey Market. The agent instead searched Craigslist and did not use Zillow or Google Maps. Inspecting the actual ",
+          "platforms": [
+            {
+              "domain": "zillow.com",
+              "reason": "Real Estate - Premium Features Need Login",
+              "url": "https://zillow.com"
+            }
+          ]
+        },
+        {
+          "task_id": "259349",
+          "task_snippet": "Go to https://eprocure.gov.in/eprocure/app, search for all the past tenders award winners and make a excel",
+          "match_ratio": 1.0,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "FAIL",
+          "judgement": "[Used 2 step inspection(s)] I inspected the agent\u2019s extractions. Step 505 shows a table with headers: Financial Year, Name Of Work, Name Of Contractor, Est. Cost Put To Tender (in Crore) and 10 NBCC rows. This is only a subset from data.gov.in, not from eprocure.gov.in, and not \"all past tenders awa",
+          "platforms": [
+            {
+              "domain": "eprocure.gov.in",
+              "reason": "Government Procurement - Registration Required",
+              "url": "https://eprocure.gov.in/eprocure/app"
+            }
+          ]
+        },
+        {
+          "task_id": "2226746",
+          "task_snippet": "Read webpage https://inflact.com/instagram-downloader/ and follow the prompt: Go to the Inflact Instagram Downloader and use it to download all posts ",
+          "match_ratio": 0.7604562737642585,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "PASS",
+          "judgement": "The agent used the Inflact Instagram Downloader on the specified profile and extracted post URL, media URL, caption, and hashtags. It compiled 36 posts and saved them to 'inflact_results.json', which appears in the created files list. No errors or blockers were indicated.",
+          "platforms": [
+            {
+              "domain": "instagram.com",
+              "reason": "Social Media - Login Required",
+              "url": "https://www.instagram.com/supersnake/?hl=en"
+            },
+            {
+              "domain": "instagram.com",
+              "reason": "Social Media - Login Required",
+              "url": "https://www.instagram.com/supersnake/?hl=en"
+            },
+            {
+              "domain": "instagram.com",
+              "reason": "Social Media - Login Required",
+              "url": "https://instagram.com"
+            }
+          ]
+        },
+        {
+          "task_id": "1465541",
+          "task_snippet": "Access the URL https://www.contractsfinder.service.gov.uk/Search/Results and extract the first 20 tenders with their details: title, reference number,",
+          "match_ratio": 0.7843137254901961,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "UNCLEAR",
+          "judgement": "The agent navigated to the Contracts Finder search results page, extracted the first 20 tenders from the results, and visited individual tender pages to gather required fields. The created file tenders_final.json contains 20 entries with title, reference number, submission deadline, estimated budget",
+          "platforms": [
+            {
+              "domain": "contractsfinder.service.gov.uk",
+              "reason": "Government - Registration May Be Required",
+              "url": "https://www.contractsfinder.service.gov.uk/Search/Results"
+            },
+            {
+              "domain": "contractsfinder.service.gov.uk",
+              "reason": "Government - Registration May Be Required",
+              "url": "https://www.contractsfinder.service.gov.uk/Search/Results"
+            }
+          ]
+        },
+        {
+          "task_id": "451705",
+          "task_snippet": "search https://www.redfin.com for homes in 70125 and find homes that have been on the market for 180 days are longer and that are multifamily also pro",
+          "match_ratio": 0.9876543209876543,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "FAIL",
+          "judgement": "[Used 3 step inspection(s)] inspect_step confirms the agent primarily used Trulia and Google, not Redfin, to gather listings. Step 170 shows a Trulia page with no days-on-market filter. The produced results file (homes_70125.md) does not include Redfin URLs or verified Redfin days-on-market data; it",
+          "platforms": [
+            {
+              "domain": "redfin.com",
+              "reason": "Real Estate - Some Features Need Login",
+              "url": "https://www.redfin.com"
+            },
+            {
+              "domain": "redfin.com",
+              "reason": "Real Estate - Some Features Need Login",
+              "url": "https://www.redfin.com"
+            },
+            {
+              "domain": "redfin.com",
+              "reason": "Real Estate - Some Features Need Login",
+              "url": "https://redfin.com"
+            }
+          ]
+        },
+        {
+          "task_id": "1513697",
+          "task_snippet": "Go to \"https://www.tenderned.nl/aankondigingen/overzicht\", search for \"Digitale Transformatie\". For each posting in the list open the page and extract",
+          "match_ratio": 0.9456264775413712,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "PASS",
+          "judgement": "[Used 1 step inspection(s)] The user asked to open each posting in the search results list and extract title, description, and contract value. The agent only extracted 5 items. Using inspect_step on step 26 confirms the final table contains exactly 5 tenders, while the search produced many more (the",
+          "platforms": [
+            {
+              "domain": "tenderned.nl",
+              "reason": "Tender Platform - May Need Registration",
+              "url": "https://www.tenderned.nl/aankondigingen/overzicht"
+            },
+            {
+              "domain": "tenderned.nl",
+              "reason": "Tender Platform - May Need Registration",
+              "url": "https://www.tenderned.nl/aankondigingen/overzicht"
+            },
+            {
+              "domain": "tenderned.nl",
+              "reason": "Tender Platform - May Need Registration",
+              "url": "https://tenderned.nl"
+            }
+          ]
+        },
+        {
+          "task_id": "265470",
+          "task_snippet": "1. Go to url https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision\n\t\t\t2. type Tata Consultancy Services Limited i",
+          "match_ratio": 0.7648183556405354,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "PASS",
+          "judgement": "The agent navigated to the specified NSE page, entered and selected 'Tata Consultancy Services Limited', executed the search, and extracted the populated financial results table. Screenshots and browser_state show the table loaded. Python extraction steps confirm headers, 60 rows found, and structur",
+          "platforms": [
+            {
+              "domain": "nseindia.com",
+              "reason": "Stock Exchange - Login for detailed data",
+              "url": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision"
+            },
+            {
+              "domain": "nseindia.com",
+              "reason": "Stock Exchange - Login for detailed data",
+              "url": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results-comparision"
+            },
+            {
+              "domain": "nseindia.com",
+              "reason": "Stock Exchange - Login for detailed data",
+              "url": "https://nseindia.com"
+            }
+          ]
+        },
+        {
+          "task_id": "2125188",
+          "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm and follow the prompt: Extract the financial statem",
+          "match_ratio": 0.7575757575757576,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "PASS",
+          "judgement": "The agent navigated to the specified S-1/A filing on sec.gov and extracted the requested financial statements. It produced three CSV files in the sandbox: consolidated_balance_sheets.csv, consolidated_statements_of_operations.csv, and consolidated_statements_of_cash_flows.csv. The file contents incl",
+          "platforms": [
+            {
+              "domain": "sec.gov",
+              "reason": "Government - Some EDGAR filings may need registration",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm"
+            },
+            {
+              "domain": "sec.gov",
+              "reason": "Government - Some EDGAR filings may need registration",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001876042/000119312525132755/d737521ds1a.htm"
+            },
+            {
+              "domain": "sec.gov",
+              "reason": "Government - Some EDGAR filings may need registration",
+              "url": "https://sec.gov"
+            }
+          ]
+        }
+      ],
+      "unmatched_tasks": [
+        {
+          "task_id": "2118230",
+          "task_snippet": "Read webpage https://www.instagram.com/douglasjaveda/ and follow the prompt: Analyze the Instagram profile for 'Douglas J Aveda Institute'. Extract in",
+          "best_ratio": 0.6666666666666666
+        },
+        {
+          "task_id": "2275751",
+          "task_snippet": "Read webpage https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=posture%20corrector&sort_data[direction]=desc&sort_data[",
+          "best_ratio": 0.6896551724137931
+        },
+        {
+          "task_id": "872717",
+          "task_snippet": "\nGo to:\nhttps://stake.com/sports/valorant/all\n\n1. Wait until the page is fully loaded and all Valorant leagues are visible, memorize the leagues.\n2. C",
+          "best_ratio": 0.3172043010752688
+        },
+        {
+          "task_id": "1664550",
+          "task_snippet": "Read webpage https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/0001628280-25-003063-index.htm and follow the prompt: Navigate to the ",
+          "best_ratio": 0.47904191616766467
+        },
+        {
+          "task_id": "2110707",
+          "task_snippet": "Read webpage https://www.flipkart.com and follow the prompt: Continue collecting products from Flipkart in the following categories. I need approximat",
+          "best_ratio": 0.45454545454545453
+        },
+        {
+          "task_id": "1348833",
+          "task_snippet": "go to this link 'https://www.airbnb.ca/rooms/715766776231493780/reviews' EXTRACT ALL THE REVIEWS of this property, you have to scroll down till the en",
+          "best_ratio": 0.37037037037037035
+        },
+        {
+          "task_id": "1960499",
+          "task_snippet": "Read webpage https://remote.team/en/ and follow the prompt: Analyze this website comprehensively. I need to understand:\n1. Overall structure and navig",
+          "best_ratio": 0.6182380216383307
+        },
+        {
+          "task_id": "930386",
+          "task_snippet": "\n    **Job Search Instructions**\n    1. Google Search:\n       - Search: 'site:linkedin.com OR site:glassdoor.com AI Engineer jobs in Pakistan'\n       ",
+          "best_ratio": 0.33070866141732286
+        },
+        {
+          "task_id": "919843",
+          "task_snippet": "'You are a professional job finder.\n\t\t\t\tGo to https://upwork.com then: \n\n\t\t\t\t'find Python Django jobs on Upwork.com and save them to a file'\n\t\t\t\tImpor",
+          "best_ratio": 0.6622516556291391
+        },
+        {
+          "task_id": "2179094",
+          "task_snippet": "Read webpage https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202404/e8896172d8_1ec8334461.pdf and follow the prompt: ",
+          "best_ratio": 0.6259780907668232
+        },
+        {
+          "task_id": "1485252",
+          "task_snippet": "\n    0. Go to https://www.daraz.pk/, handle any captcha/security if shown.\n    1. Search for 'wireless headphones'.\n    2. Browse and extract product ",
+          "best_ratio": 0.6279434850863422
+        },
+        {
+          "task_id": "1360102",
+          "task_snippet": "Go to redfin.com, handle any security checks, search for properties in San Diego, CA. Apply the following filters: Max Price set to $500,000, Bedrooms",
+          "best_ratio": 0.6069802731411229
+        },
+        {
+          "task_id": "2147069",
+          "task_snippet": "Read webpage https://www.instagram.com/teo__idt/ and follow the prompt: Analyze this Instagram account thoroughly. I need to understand:\n1. What type ",
+          "best_ratio": 0.4694835680751174
+        },
+        {
+          "task_id": "1310325",
+          "task_snippet": "\n        Goto the link https://apna.co/candidate/jobs. This is a job search portal.  \n\n        You have to select 2 filters.\n        \n        1. Under",
+          "best_ratio": 0.37433155080213903
+        },
+        {
+          "task_id": "1123218",
+          "task_snippet": "\n        Visit https://breaking-bet.com/en/arbs/prematch\n\n        1. Look for the gear/settings icon in the TOP RIGHT corner of the page (it's a circu",
+          "best_ratio": 0.37433155080213903
+        },
+        {
+          "task_id": "1568496",
+          "task_snippet": "\nGo to https://www.bseindia.com/corporates/ann.html.\nClick the button with selector \"#btnSubmit\".\nWait until the table of announcements appears.\n\nOnly",
+          "best_ratio": 0.40106951871657753
+        },
+        {
+          "task_id": "1012772",
+          "task_snippet": "\nPhase 3: Data Collection Workflow\n\nYour task is to act as an AI agent that discovers leads for a Raw Materials Importer in the Philippines.\nFollow th",
+          "best_ratio": 0.3395585738539898
+        },
+        {
+          "task_id": "1504989",
+          "task_snippet": "visit this website 'https://www.acquistinretepa.it/opencms/opencms/scheda_altri_bandi.html?idBando=51e7896e855eabe7', extract the tender information o",
+          "best_ratio": 0.44493882091212456
+        },
+        {
+          "task_id": "1067771",
+          "task_snippet": "\n    Go to https://www.redfin.ca/ and enter the vancouver in the input box and then press the search button. After the page loads select price\n    and",
+          "best_ratio": 0.5524861878453039
+        },
+        {
+          "task_id": "885584",
+          "task_snippet": "\n        Get 100 item images from https://taobao.com. \n        You act like a human being, go straight to items, that are with an image, a title and a",
+          "best_ratio": 0.6379585326953748
+        }
+      ]
+    },
+    "auth_required_likely": {
+      "total": 5,
+      "matched": 0,
+      "unmatched": 5,
+      "matched_tasks": [],
+      "unmatched_tasks": [
+        {
+          "task_id": "202609",
+          "task_snippet": "\n\n    1) Objective\n    - Extract MITRE tags from the source: https://attack.mitre.org/matrices/enterprise/cloud/\n    - Based on the input json data.\n ",
+          "best_ratio": 0.34946236559139787
+        },
+        {
+          "task_id": "1327246",
+          "task_snippet": "Goal: Analyze authentication implementation and the main server entry point\nBackground motivation: Need to understand how authentication is implemente",
+          "best_ratio": 0.5148005148005148
+        },
+        {
+          "task_id": "2061640",
+          "task_snippet": "Read webpage https://videogpt.io/ and follow the prompt: I need to create a 10-15 second 3D Pixar-style animated video for \"SNAKE ATTACK\" game splash ",
+          "best_ratio": 0.38095238095238093
+        },
+        {
+          "task_id": "1297694",
+          "task_snippet": "Goal: Find detailed information about the SRP authentication flow and cryptographic operations in the alexrudd/cognito-srp library\nBackground motivati",
+          "best_ratio": 0.4819277108433735
+        },
+        {
+          "task_id": "1195938",
+          "task_snippet": "Goal: Gather detailed information about the identified Rails and GraphQL Ruby authentication CVEs\nExpected output: Full details for each CVE including",
+          "best_ratio": 0.48661800486618007
+        }
+      ]
+    },
+    "auth_required_possible": {
+      "total": 12,
+      "matched": 5,
+      "unmatched": 7,
+      "matched_tasks": [
+        {
+          "task_id": "270711",
+          "task_snippet": "Visit https://lectuepub3.com/ and analyze whether the website contains phishing or malicious content. Identify any suspicious links, fake login portal",
+          "match_ratio": 0.8403361344537815,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "PASS",
+          "judgement": "The agent visited the target (which redirected to lectuepublibre4.com) and examined the page contents. It extracted download links and detected a Base64-encoded inline JavaScript that intercepts clicks and redirects through domains including ey43.com. The agent also corroborated ey43.com\u2019s reputatio",
+          "platforms": []
+        },
+        {
+          "task_id": "1092722",
+          "task_snippet": "Goal: Get specific details about CVE-2021-22881 and CVE-2024-41801 related to Rails HostAuthorization IPv6 hostname validation\n\nCandidate URLs: \n- htt",
+          "match_ratio": 0.70298769771529,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "FAIL",
+          "judgement": "[Used 5 step inspection(s)] Using inspect_step on key steps confirms the agent did not find or extract the requested specifics. Step 149 shows Google results linking to the NVD page for CVE-2024-41801, but the agent never navigated to it. Step 151 (GitHub advisory) and Step 156 both show 'Page not f",
+          "platforms": []
+        },
+        {
+          "task_id": "1093228",
+          "task_snippet": "Goal: Find details about the most recent critical Next.js vulnerability (Authorization Bypass in Next.js Middleware)\n\nCandidate URLs: \n- https://githu",
+          "match_ratio": 0.975609756097561,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "PASS",
+          "judgement": "The agent delivered a concise, accurate summary of the most recent critical Next.js vulnerability (Authorization Bypass in Next.js Middleware). Using inspect_step on step 19 confirms the GitHub Security Advisory page shows: title 'Authorization Bypass in Next.js Middleware', GHSA ID GHSA-f82v-jwr5-m",
+          "platforms": []
+        },
+        {
+          "task_id": "1873462",
+          "task_snippet": "Read webpage https://www.ptechpartners.com/ and follow the prompt: Navigate to this website and find the About Us, Team, Leadership, or Staff pages. E",
+          "match_ratio": 0.7782101167315175,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "UNCLEAR",
+          "judgement": "[Used 1 step inspection(s)] The agent navigated to the site\u2019s About/Team section and extracted named contacts with their job titles. Using inspect_step on the About page confirms leadership names and titles (Nick Shah, Eric Treida, George Wang, Jay Johnson, Swadheen Sehgal) as the agent reported. Th",
+          "platforms": []
+        },
+        {
+          "task_id": "1289271",
+          "task_snippet": "Goal: Find detailed information about CVE-2024-34459\nExpected output: Detailed information about CVE-2024-34459 from authoritative sources, including ",
+          "match_ratio": 0.7766990291262136,
+          "selfReportCompleted": true,
+          "has_judgement": true,
+          "judgement_result": "PASS",
+          "judgement": "The agent provided a clear, detailed summary of CVE-2024-34459 with technical details (affected function, trigger condition, impact), affected versions, severity/CVSS, mitigation guidance, and links to authoritative sources (NVD and CVE.org). The screenshots indicate the same core description on NVD",
+          "platforms": []
+        }
+      ],
+      "unmatched_tasks": [
+        {
+          "task_id": "1842739",
+          "task_snippet": "Read webpage https://hailuoai.video/ and follow the prompt: Navigate to the MiniMax Hailuo AI website and find comprehensive pricing information. Look",
+          "best_ratio": 0.5312084993359893
+        },
+        {
+          "task_id": "1065230",
+          "task_snippet": "\n\nYou are a specialized web analysis agent with expertise in financial categorization systems, particularly Merchant Category Codes (MCCs). Your task ",
+          "best_ratio": 0.32041343669250644
+        },
+        {
+          "task_id": "2357186",
+          "task_snippet": "\n    You are a helpful assistant that validates if an issue detected by an upstream system is a real issue on the website or not.\n    You will be give",
+          "best_ratio": 0.3190883190883191
+        },
+        {
+          "task_id": "1748573",
+          "task_snippet": "Goal: Find information about China's National Intelligence Law and requirements for companies to assist with state intelligence work\nBackground motiva",
+          "best_ratio": 0.4179728317659352
+        },
+        {
+          "task_id": "2143378",
+          "task_snippet": "On the current Amazon Best Sellers in Books page, identify all book listings. Each book listing is typically marked with a rank (e.g., #1, #2). For ea",
+          "best_ratio": 0.46029919447640966
+        },
+        {
+          "task_id": "1122929",
+          "task_snippet": "\n    Go to https://szigetfestival.com/en/tickets and scrape the webpage to extract all available ticket pricing information. For each ticket type, col",
+          "best_ratio": 0.4013605442176871
+        },
+        {
+          "task_id": "1024420",
+          "task_snippet": "go to www.autotrader.co.uk\naccept all cookies\nuse the \"find your perfect car\" form\nenter a postcode of BT817YJ\nselect volkswagen from the list of make",
+          "best_ratio": 0.6269592476489029
+        }
+      ]
+    }
+  }
+}
