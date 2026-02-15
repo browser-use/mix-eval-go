@@ -84,6 +84,20 @@ task fmt                 # Format code
 task --list-all          # Show all available tasks
 ```
 
+### Development Workflow
+
+During development, use the auto-built local binary instead of reinstalling globally:
+
+```bash
+# task dev auto-rebuilds bin/mix-eval-go on file changes
+./bin/mix-eval-go --dataset foo --task-id 123
+
+# Optional: Create alias for convenience
+alias mix-eval-go="./bin/mix-eval-go"
+```
+
+Only use `task install-cli` when deploying or using the CLI outside this project. The dev server (`task dev`) hot-reloads changes automatically to `bin/mix-eval-go`.
+
 ### Project Structure
 
 ```

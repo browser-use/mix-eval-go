@@ -231,40 +231,143 @@ func (o *Orchestrator) streamEvents(ctx context.Context, sessionID string, ch ch
 	}
 }
 
+// toolCallInfo tracks tool call details during streaming
+type toolCallInfo struct {
+	ID          string
+	Name        string
+	Description string
+	Parameters  map[string]interface{}
+}
+
 // collectEvents processes SSE events
 func (o *Orchestrator) collectEvents(eventsChan chan map[string]interface{}) ([]convex.ToolCall, [][]byte) {
 	var toolCalls []convex.ToolCall
 	var screenshots [][]byte
+	toolCallsMap := make(map[string]*toolCallInfo)
+	var thinkingActive bool
 
 	for event := range eventsChan {
 		eventType, _ := event["type"].(string)
 
 		switch eventType {
+		case "tool_use_start":
+			// Capture initial tool call metadata (data is directly in event, not nested)
+			toolID, _ := event["id"].(string)
+			toolName, _ := event["name"].(string)
+			if toolID == "" {
+				toolID = fmt.Sprintf("%s-%d", toolName, len(toolCallsMap))
+			}
+			toolCallsMap[toolID] = &toolCallInfo{
+				ID:          toolID,
+				Name:        toolName,
+				Description: toolName,
+				Parameters:  make(map[string]interface{}),
+			}
+
+		case "tool_use_parameter_streaming_complete":
+			// Capture full parameters (data is directly in event)
+			toolID, _ := event["id"].(string)
+			input := event["input"]
+
+			if toolInfo, exists := toolCallsMap[toolID]; exists {
+				// Parse input as JSON if it's a string
+				if inputStr, ok := input.(string); ok {
+					var params map[string]interface{}
+					if err := json.Unmarshal([]byte(inputStr), &params); err == nil {
+						toolInfo.Parameters = params
+					} else {
+						toolInfo.Parameters = map[string]interface{}{"input": inputStr}
+					}
+				} else if params, ok := input.(map[string]interface{}); ok {
+					toolInfo.Parameters = params
+				}
+			}
+
+		case "tool_execution_start":
+			// Display tool call with full details (data is directly in event)
+			toolID, _ := event["toolCallId"].(string)
+			progress, _ := event["progress"].(string)
+
+			if toolInfo, exists := toolCallsMap[toolID]; exists {
+				fmt.Printf("\n🔧 %s\n", toolInfo.Name)
+				if progress != "" && progress != toolInfo.Name {
+					fmt.Printf("   %s\n", progress)
+				}
+				if len(toolInfo.Parameters) > 0 {
+					paramsJSON, _ := json.MarshalIndent(toolInfo.Parameters, "   ", "  ")
+					fmt.Printf("   Parameters: %s\n", string(paramsJSON))
+				}
+			} else {
+				// Fallback if tool not in map
+				fmt.Printf("\n🔧 Tool\n")
+				if progress != "" {
+					fmt.Printf("   %s\n", progress)
+				}
+			}
+
 		case "tool_execution_complete":
-			if toolName, ok := event["toolName"].(string); ok {
-				success, _ := event["success"].(bool)
-				progress, _ := event["progress"].(string)
+			// Handle tool completion (data is directly in event)
+			toolID, _ := event["toolCallId"].(string)
+			success, _ := event["success"].(bool)
+			progress, _ := event["progress"].(string)
+
+			var toolName string
+			if toolInfo, exists := toolCallsMap[toolID]; exists {
+				toolName = toolInfo.Name
+			}
+
+			if toolName != "" {
 				toolCalls = append(toolCalls, convex.ToolCall{
 					ToolName: toolName,
 					Result:   progress,
 					IsError:  !success,
 				})
+
+				// Display completion status
+				if success {
+					fmt.Printf("   ✓ Completed\n")
+				} else {
+					fmt.Printf("   ✗ Failed: %s\n", progress)
+				}
 			}
-		case "tool_execution_start":
-			if toolName, ok := event["toolName"].(string); ok {
-				fmt.Printf("🔧 Tool: %s\n", toolName)
-			}
+
 		case "thinking":
-			fmt.Println("💭 Agent thinking...")
-		case "content":
-			if content, ok := event["content"].(string); ok {
-				fmt.Printf("💬 %s\n", content)
+			// Thinking content is directly in event["content"]
+			content, _ := event["content"].(string)
+			if content != "" {
+				if !thinkingActive {
+					fmt.Print("\n\033[90m") // Start gray text
+					thinkingActive = true
+				}
+				fmt.Print(content)
 			}
+
+		case "content":
+			// Content is directly in event["content"]
+			content, _ := event["content"].(string)
+			if content != "" {
+				if thinkingActive {
+					fmt.Print("\033[0m\n") // End gray text
+					thinkingActive = false
+				}
+				fmt.Print(content)
+			}
+
 		case "error":
-			if errMsg, ok := event["error"].(string); ok {
-				fmt.Printf("❌ Error: %s\n", errMsg)
+			if thinkingActive {
+				fmt.Print("\033[0m\n") // End gray text
+				thinkingActive = false
+			}
+			errMsg, _ := event["error"].(string)
+			if errMsg != "" {
+				fmt.Printf("\n❌ Error: %s\n", errMsg)
 			}
 		}
+	}
+
+	// Clean up any dangling gray text
+	if thinkingActive {
+		fmt.Print("\033[0m\n")
 	}
 
 	return toolCalls, screenshots
