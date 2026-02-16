@@ -13,6 +13,7 @@ import (
 
 	"github.com/anthropics/anthropic-sdk-go"
 	"github.com/recreate-run/mix-go-sdk"
+	"github.com/recreate-run/mix-go-sdk/models/components"
 	"github.com/recreate-run/mix-go-sdk/models/operations"
 
 	"mix-eval-go/pkg/convex"
@@ -37,6 +38,68 @@ type Config struct {
 	BrightdataPass  string
 	AnthropicAPIKey string
 	AnthropicModel  anthropic.Model
+}
+
+// ANSI color codes
+const (
+	ANSIColorGray  = "\033[90m"
+	ANSIColorReset = "\033[0m"
+)
+
+// SSEEvent represents a base SSE event structure
+type SSEEvent struct {
+	Type               string `json:"type"`
+	AssistantMessageID string `json:"assistantMessageId,omitempty"`
+}
+
+// ToolUseStartEvent represents tool_use_start event
+type ToolUseStartEvent struct {
+	SSEEvent
+	ID   string `json:"id"`
+	Name string `json:"name"`
+}
+
+// ToolUseParameterStreamingCompleteEvent represents tool parameter completion
+type ToolUseParameterStreamingCompleteEvent struct {
+	SSEEvent
+	ID    string      `json:"id"`
+	Name  string      `json:"name"`
+	Input interface{} `json:"input"`
+}
+
+// ToolExecutionStartEvent represents tool execution start
+type ToolExecutionStartEvent struct {
+	SSEEvent
+	ToolCallID string `json:"toolCallId"`
+	ToolName   string `json:"toolName"`
+	Progress   string `json:"progress"`
+}
+
+// ToolExecutionCompleteEvent represents tool execution completion
+type ToolExecutionCompleteEvent struct {
+	SSEEvent
+	ToolCallID string `json:"toolCallId"`
+	ToolName   string `json:"toolName"`
+	Success    bool   `json:"success"`
+	Progress   string `json:"progress"`
+}
+
+// ThinkingEvent represents thinking event
+type ThinkingEvent struct {
+	SSEEvent
+	Content string `json:"content"`
+}
+
+// ContentEvent represents content event
+type ContentEvent struct {
+	SSEEvent
+	Content string `json:"content"`
+}
+
+// ErrorEvent represents error event
+type ErrorEvent struct {
+	SSEEvent
+	Error string `json:"error"`
 }
 
 // New creates a new orchestrator instance
@@ -220,7 +283,7 @@ func (o *Orchestrator) streamEvents(ctx context.Context, sessionID string, ch ch
 			ch <- event
 
 			// Check for completion event
-			if eventType, ok := event["type"].(string); ok && eventType == "complete" {
+			if eventType, ok := event["type"].(string); ok && eventType == string(components.SSEEventStreamTypeComplete) {
 				return
 			}
 		}
@@ -231,143 +294,192 @@ func (o *Orchestrator) streamEvents(ctx context.Context, sessionID string, ch ch
 	}
 }
 
-// toolCallInfo tracks tool call details during streaming
-type toolCallInfo struct {
+// ToolCallInfo tracks tool call details during streaming
+type ToolCallInfo struct {
 	ID          string
 	Name        string
 	Description string
-	Parameters  map[string]interface{}
+	Parameters  string // JSON string representation
+}
+
+// parseEvent parses raw event map into typed event
+func parseEvent(eventData []byte, eventType string) interface{} {
+	switch eventType {
+	case string(components.SSEEventStreamTypeToolUseStart):
+		var evt ToolUseStartEvent
+		if err := json.Unmarshal(eventData, &evt); err == nil {
+			return &evt
+		}
+	case string(components.SSEEventStreamTypeToolUseParameterStreamingComplete):
+		var evt ToolUseParameterStreamingCompleteEvent
+		if err := json.Unmarshal(eventData, &evt); err == nil {
+			return &evt
+		}
+	case string(components.SSEEventStreamTypeToolExecutionStart):
+		var evt ToolExecutionStartEvent
+		if err := json.Unmarshal(eventData, &evt); err == nil {
+			return &evt
+		}
+	case string(components.SSEEventStreamTypeToolExecutionComplete):
+		var evt ToolExecutionCompleteEvent
+		if err := json.Unmarshal(eventData, &evt); err == nil {
+			return &evt
+		}
+	case string(components.SSEEventStreamTypeThinking):
+		var evt ThinkingEvent
+		if err := json.Unmarshal(eventData, &evt); err == nil {
+			return &evt
+		}
+	case string(components.SSEEventStreamTypeContent):
+		var evt ContentEvent
+		if err := json.Unmarshal(eventData, &evt); err == nil {
+			return &evt
+		}
+	case string(components.SSEEventStreamTypeError):
+		var evt ErrorEvent
+		if err := json.Unmarshal(eventData, &evt); err == nil {
+			return &evt
+		}
+	}
+	return nil
 }
 
 // collectEvents processes SSE events
 func (o *Orchestrator) collectEvents(eventsChan chan map[string]interface{}) ([]convex.ToolCall, [][]byte) {
 	var toolCalls []convex.ToolCall
 	var screenshots [][]byte
-	toolCallsMap := make(map[string]*toolCallInfo)
+	toolCallsMap := make(map[string]*ToolCallInfo)
 	var thinkingActive bool
 
-	for event := range eventsChan {
-		eventType, _ := event["type"].(string)
+	for rawEvent := range eventsChan {
+		eventType, _ := rawEvent["type"].(string)
+
+		// Re-marshal and parse into typed struct
+		eventData, err := json.Marshal(rawEvent)
+		if err != nil {
+			continue
+		}
+		typedEvent := parseEvent(eventData, eventType)
+		if typedEvent == nil {
+			continue
+		}
 
 		switch eventType {
-		case "tool_use_start":
-			// Capture initial tool call metadata (data is directly in event, not nested)
-			toolID, _ := event["id"].(string)
-			toolName, _ := event["name"].(string)
+		case string(components.SSEEventStreamTypeToolUseStart):
+			evt := typedEvent.(*ToolUseStartEvent)
+			toolID := evt.ID
 			if toolID == "" {
-				toolID = fmt.Sprintf("%s-%d", toolName, len(toolCallsMap))
+				toolID = fmt.Sprintf("%s-%d", evt.Name, len(toolCallsMap))
 			}
-			toolCallsMap[toolID] = &toolCallInfo{
+			toolCallsMap[toolID] = &ToolCallInfo{
 				ID:          toolID,
-				Name:        toolName,
-				Description: toolName,
-				Parameters:  make(map[string]interface{}),
+				Name:        evt.Name,
+				Description: evt.Name,
+				Parameters:  "",
 			}
 
-		case "tool_use_parameter_streaming_complete":
-			// Capture full parameters (data is directly in event)
-			toolID, _ := event["id"].(string)
-			input := event["input"]
-
-			if toolInfo, exists := toolCallsMap[toolID]; exists {
-				// Parse input as JSON if it's a string
-				if inputStr, ok := input.(string); ok {
-					var params map[string]interface{}
-					if err := json.Unmarshal([]byte(inputStr), &params); err == nil {
-						toolInfo.Parameters = params
+		case string(components.SSEEventStreamTypeToolUseParameterStreamingComplete):
+			evt := typedEvent.(*ToolUseParameterStreamingCompleteEvent)
+			if toolInfo, exists := toolCallsMap[evt.ID]; exists {
+				// Convert input to JSON string
+				if evt.Input != nil {
+					if inputStr, ok := evt.Input.(string); ok {
+						// If already string, validate it's valid JSON
+						var test interface{}
+						if err := json.Unmarshal([]byte(inputStr), &test); err == nil {
+							toolInfo.Parameters = inputStr
+						} else {
+							// Wrap in JSON object if not valid JSON
+							wrapped, _ := json.Marshal(map[string]string{"input": inputStr})
+							toolInfo.Parameters = string(wrapped)
+						}
 					} else {
-						toolInfo.Parameters = map[string]interface{}{"input": inputStr}
+						// Marshal to JSON string
+						paramsJSON, _ := json.Marshal(evt.Input)
+						toolInfo.Parameters = string(paramsJSON)
 					}
-				} else if params, ok := input.(map[string]interface{}); ok {
-					toolInfo.Parameters = params
 				}
 			}
 
-		case "tool_execution_start":
-			// Display tool call with full details (data is directly in event)
-			toolID, _ := event["toolCallId"].(string)
-			progress, _ := event["progress"].(string)
-
-			if toolInfo, exists := toolCallsMap[toolID]; exists {
+		case string(components.SSEEventStreamTypeToolExecutionStart):
+			evt := typedEvent.(*ToolExecutionStartEvent)
+			if toolInfo, exists := toolCallsMap[evt.ToolCallID]; exists {
 				fmt.Printf("\n🔧 %s\n", toolInfo.Name)
-				if progress != "" && progress != toolInfo.Name {
-					fmt.Printf("   %s\n", progress)
+				if evt.Progress != "" && evt.Progress != toolInfo.Name {
+					fmt.Printf("   %s\n", evt.Progress)
 				}
-				if len(toolInfo.Parameters) > 0 {
-					paramsJSON, _ := json.MarshalIndent(toolInfo.Parameters, "   ", "  ")
-					fmt.Printf("   Parameters: %s\n", string(paramsJSON))
+				if toolInfo.Parameters != "" {
+					var params map[string]interface{}
+					if err := json.Unmarshal([]byte(toolInfo.Parameters), &params); err == nil {
+						paramsJSON, _ := json.MarshalIndent(params, "   ", "  ")
+						fmt.Printf("   Parameters: %s\n", string(paramsJSON))
+					}
 				}
 			} else {
 				// Fallback if tool not in map
 				fmt.Printf("\n🔧 Tool\n")
-				if progress != "" {
-					fmt.Printf("   %s\n", progress)
+				if evt.Progress != "" {
+					fmt.Printf("   %s\n", evt.Progress)
 				}
 			}
 
-		case "tool_execution_complete":
-			// Handle tool completion (data is directly in event)
-			toolID, _ := event["toolCallId"].(string)
-			success, _ := event["success"].(bool)
-			progress, _ := event["progress"].(string)
-
+		case string(components.SSEEventStreamTypeToolExecutionComplete):
+			evt := typedEvent.(*ToolExecutionCompleteEvent)
 			var toolName string
-			if toolInfo, exists := toolCallsMap[toolID]; exists {
+			if toolInfo, exists := toolCallsMap[evt.ToolCallID]; exists {
 				toolName = toolInfo.Name
 			}
 
 			if toolName != "" {
 				toolCalls = append(toolCalls, convex.ToolCall{
 					ToolName: toolName,
-					Result:   progress,
-					IsError:  !success,
+					Result:   evt.Progress,
+					IsError:  !evt.Success,
 				})
 
 				// Display completion status
-				if success {
+				if evt.Success {
 					fmt.Printf("   ✓ Completed\n")
 				} else {
-					fmt.Printf("   ✗ Failed: %s\n", progress)
+					fmt.Printf("   ✗ Failed: %s\n", evt.Progress)
 				}
 			}
 
-		case "thinking":
-			// Thinking content is directly in event["content"]
-			content, _ := event["content"].(string)
-			if content != "" {
+		case string(components.SSEEventStreamTypeThinking):
+			evt := typedEvent.(*ThinkingEvent)
+			if evt.Content != "" {
 				if !thinkingActive {
-					fmt.Print("\n\033[90m") // Start gray text
+					fmt.Print("\n" + ANSIColorGray)
 					thinkingActive = true
 				}
-				fmt.Print(content)
+				fmt.Print(evt.Content)
 			}
 
-		case "content":
-			// Content is directly in event["content"]
-			content, _ := event["content"].(string)
-			if content != "" {
+		case string(components.SSEEventStreamTypeContent):
+			evt := typedEvent.(*ContentEvent)
+			if evt.Content != "" {
 				if thinkingActive {
-					fmt.Print("\033[0m\n") // End gray text
+					fmt.Print(ANSIColorReset + "\n")
 					thinkingActive = false
 				}
-				fmt.Print(content)
+				fmt.Print(evt.Content)
 			}
 
-		case "error":
+		case string(components.SSEEventStreamTypeError):
+			evt := typedEvent.(*ErrorEvent)
 			if thinkingActive {
-				fmt.Print("\033[0m\n") // End gray text
+				fmt.Print(ANSIColorReset + "\n")
 				thinkingActive = false
 			}
-			errMsg, _ := event["error"].(string)
-			if errMsg != "" {
-				fmt.Printf("\n❌ Error: %s\n", errMsg)
+			if evt.Error != "" {
+				fmt.Printf("\n❌ Error: %s\n", evt.Error)
 			}
 		}
 	}
 
 	// Clean up any dangling gray text
 	if thinkingActive {
-		fmt.Print("\033[0m\n")
+		fmt.Print(ANSIColorReset + "\n")
 	}
 
 	return toolCalls, screenshots
