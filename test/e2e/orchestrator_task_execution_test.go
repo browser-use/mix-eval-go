@@ -9,7 +9,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/anthropics/anthropic-sdk-go"
 	"mix-eval-go/pkg/convex"
 	"mix-eval-go/pkg/orchestrator"
 )
@@ -21,9 +20,9 @@ func TestOrchestratorTaskExecution(t *testing.T) {
 		t.Skip("Skipping e2e test in short mode")
 	}
 
-	apiKey := os.Getenv("ANTHROPIC_API_KEY")
+	apiKey := os.Getenv("GEMINI_API_KEY")
 	if apiKey == "" {
-		t.Skip("ANTHROPIC_API_KEY not set, skipping orchestrator e2e test")
+		t.Skip("GEMINI_API_KEY not set, skipping orchestrator e2e test")
 	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), 120*time.Second)
@@ -34,8 +33,7 @@ func TestOrchestratorTaskExecution(t *testing.T) {
 		MixURL:          "http://localhost:8088",
 		ConvexURL:       "http://dummy-convex-url.com",
 		ConvexSecretKey: "dummy-key",
-		AnthropicAPIKey: apiKey,
-		AnthropicModel:  anthropic.ModelClaudeSonnet4_5_20250929,
+		GeminiAPIKey:    apiKey,
 	}
 	orch := orchestrator.New(config)
 
