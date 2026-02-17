@@ -4,20 +4,17 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-
-	"github.com/anthropics/anthropic-sdk-go"
 )
 
-// inspectStep is a sub-judge that inspects a specific step with full, untruncated content
-// Returns a summary relevant to the main judge's query
+// inspectStep is a sub-judge that inspects a specific step with full, untruncated content.
+// Returns a summary relevant to the main judge's query.
 func inspectStep(
 	ctx context.Context,
 	stepIndex int,
 	query string,
 	toolCalls []ToolCall,
 	task string,
-	client anthropic.Client,
-	model anthropic.Model,
+	llm JudgeLLM,
 ) (string, error) {
 	if stepIndex < 0 || stepIndex >= len(toolCalls) {
 		return fmt.Sprintf("Error: Step index %d is out of range (0-%d)", stepIndex, len(toolCalls)-1), nil
@@ -66,26 +63,14 @@ Provide a concise but complete summary that answers the main judge's query.`,
 		tc.Result,
 	)
 
-	// Call Claude
-	message, err := client.Messages.New(ctx, anthropic.MessageNewParams{
-		Model:     model,
-		MaxTokens: 2000,
-		Messages: []anthropic.MessageParam{
-			anthropic.NewUserMessage(anthropic.NewTextBlock(subJudgePrompt)),
-		},
+	response, err := llm.Send(ctx, []JudgeMessage{
+		{Role: "user", Content: subJudgePrompt},
 	})
-
 	if err != nil {
 		return fmt.Sprintf("Error inspecting step: %v", err), nil
 	}
-
-	// Extract text content from response
-	if len(message.Content) > 0 {
-		switch block := message.Content[0].AsAny().(type) {
-		case anthropic.TextBlock:
-			return block.Text, nil
-		}
+	if response == "" {
+		return "No response from sub-judge", nil
 	}
-
-	return "No response from sub-judge", nil
+	return response, nil
 }

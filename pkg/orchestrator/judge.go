@@ -7,7 +7,6 @@ import (
 	"strings"
 
 	"github.com/anthropics/anthropic-sdk-go"
-	"github.com/anthropics/anthropic-sdk-go/option"
 
 	"mix-eval-go/pkg/convex"
 )
@@ -21,22 +20,40 @@ const (
 	maxJSONRetries  = 3
 )
 
-// JudgeAnthropic evaluates task completion using Anthropic Claude API
-type JudgeAnthropic struct {
-	client anthropic.Client
-	model  anthropic.Model
+// Judge evaluates task completion using any JudgeLLM provider.
+type Judge struct {
+	llm JudgeLLM
 }
 
-// NewJudgeAnthropic creates a new judge using Anthropic SDK
-func NewJudgeAnthropic(apiKey string, model anthropic.Model) *JudgeAnthropic {
-	return &JudgeAnthropic{
-		client: anthropic.NewClient(option.WithAPIKey(apiKey)),
-		model:  model,
+// NewJudge creates a judge backed by the given JudgeLLM implementation.
+func NewJudge(llm JudgeLLM) *Judge {
+	return &Judge{llm: llm}
+}
+
+// NewJudgeAnthropic is a convenience constructor for the Anthropic-backed judge.
+func NewJudgeAnthropic(apiKey string, model anthropic.Model) *Judge {
+	return NewJudge(NewAnthropicJudgeLLM(apiKey, model))
+}
+
+// mustJudge panics if err is non-nil; used for judge construction at startup.
+func mustJudge(j *Judge, err error) *Judge {
+	if err != nil {
+		panic("judge creation failed: " + err.Error())
 	}
+	return j
 }
 
-// Evaluate evaluates task completion with multi-turn conversation and inspect_step tool
-func (j *JudgeAnthropic) Evaluate(
+// NewJudgeGemini is a convenience constructor for the Gemini-backed judge.
+func NewJudgeGemini(apiKey, model string) (*Judge, error) {
+	llm, err := NewGeminiJudgeLLM(apiKey, model)
+	if err != nil {
+		return nil, err
+	}
+	return NewJudge(llm), nil
+}
+
+// Evaluate evaluates task completion with multi-turn conversation and inspect_step tool.
+func (j *Judge) Evaluate(
 	ctx context.Context,
 	task convex.Task,
 	toolCalls []ToolCall,
@@ -112,68 +129,43 @@ func (j *JudgeAnthropic) Evaluate(
 		imageURLs = imageURLs[len(imageURLs)-maxImages:]
 	}
 
-	// Build initial message content with text + images
-	contentBlocks := []anthropic.ContentBlockParamUnion{
-		anthropic.NewTextBlock(prompt),
-	}
-
-	if len(imageURLs) > 0 {
-		// Add note about screenshots
-		contentBlocks = append(contentBlocks,
-			anthropic.NewTextBlock(fmt.Sprintf(
-				"\n\n[%d screenshot(s) from agent execution attached below - NOTE: These may be incomplete or partial views; the agent may have seen more information than what is visible in these screenshots]",
-				len(imageURLs),
-			)),
-		)
-
-		// Add image blocks
-		for _, url := range imageURLs {
-			// Extract base64 data from data URL
-			if strings.HasPrefix(url, "data:image/jpeg;base64,") {
-				b64Data := strings.TrimPrefix(url, "data:image/jpeg;base64,")
-				contentBlocks = append(contentBlocks, anthropic.NewImageBlockBase64(
-					"image/jpeg",
-					b64Data,
-				))
-			} else if strings.HasPrefix(url, "data:image/png;base64,") {
-				b64Data := strings.TrimPrefix(url, "data:image/png;base64,")
-				contentBlocks = append(contentBlocks, anthropic.NewImageBlockBase64(
-					"image/png",
-					b64Data,
-				))
-			} else if strings.HasPrefix(url, "http://") || strings.HasPrefix(url, "https://") {
-				// Remote URL (not commonly supported but try)
-				contentBlocks = append(contentBlocks, anthropic.NewTextBlock(fmt.Sprintf("[Image URL: %s]", url)))
-			}
+	// Extract images from data URLs
+	var images []JudgeImage
+	for _, url := range imageURLs {
+		switch {
+		case strings.HasPrefix(url, "data:image/jpeg;base64,"):
+			images = append(images, JudgeImage{
+				MIMEType: "image/jpeg",
+				B64Data:  strings.TrimPrefix(url, "data:image/jpeg;base64,"),
+			})
+		case strings.HasPrefix(url, "data:image/png;base64,"):
+			images = append(images, JudgeImage{
+				MIMEType: "image/png",
+				B64Data:  strings.TrimPrefix(url, "data:image/png;base64,"),
+			})
 		}
 	}
 
-	// Conversation loop
-	messages := []anthropic.MessageParam{
-		anthropic.NewUserMessage(contentBlocks...),
+	// Build initial user message content
+	content := prompt
+	if len(images) > 0 {
+		content += fmt.Sprintf(
+			"\n\n[%d screenshot(s) from agent execution attached below - NOTE: These may be incomplete or partial views; the agent may have seen more information than what is visible in these screenshots]",
+			len(images),
+		)
+	}
+
+	messages := []JudgeMessage{
+		{Role: "user", Content: content, Images: images},
 	}
 
 	inspectCount := 0
 	jsonRetryCount := 0
 
 	for {
-		// Call the judge
-		message, err := j.client.Messages.New(ctx, anthropic.MessageNewParams{
-			Model:     j.model,
-			MaxTokens: 4096,
-			Messages:  messages,
-		})
+		responseText, err := j.llm.Send(ctx, messages)
 		if err != nil {
 			return nil, fmt.Errorf("judge API call failed: %w", err)
-		}
-
-		// Extract text content from response
-		var responseText string
-		for _, block := range message.Content {
-			switch content := block.AsAny().(type) {
-			case anthropic.TextBlock:
-				responseText += content.Text
-			}
 		}
 
 		// Parse JSON from response
@@ -195,10 +187,8 @@ func (j *JudgeAnthropic) Evaluate(
 			}
 
 			log.Printf("No JSON in judge response (retry %d/%d), retrying", jsonRetryCount, maxJSONRetries)
-			messages = append(messages, message.ToParam())
-			messages = append(messages, anthropic.NewUserMessage(
-				anthropic.NewTextBlock("Please respond with a single valid JSON object only. Either an inspect_step call or your final verdict."),
-			))
+			messages = append(messages, JudgeMessage{Role: "assistant", Content: responseText})
+			messages = append(messages, JudgeMessage{Role: "user", Content: "Please respond with a single valid JSON object only. Either an inspect_step call or your final verdict."})
 			continue
 		}
 
@@ -242,8 +232,7 @@ func (j *JudgeAnthropic) Evaluate(
 				query,
 				toolCalls,
 				task.Text,
-				j.client,
-				j.model,
+				j.llm,
 			)
 			if err != nil {
 				return nil, fmt.Errorf("inspect_step failed: %w", err)
@@ -253,23 +242,19 @@ func (j *JudgeAnthropic) Evaluate(
 			remaining := maxInspectCalls - inspectCount
 
 			// Add exchange to messages and continue
-			messages = append(messages, message.ToParam())
-			messages = append(messages, anthropic.NewUserMessage(
-				anthropic.NewTextBlock(fmt.Sprintf(`## inspect_step Result for Step %d
+			messages = append(messages, JudgeMessage{Role: "assistant", Content: responseText})
+			messages = append(messages, JudgeMessage{Role: "user", Content: fmt.Sprintf(`## inspect_step Result for Step %d
 
 %s
 
 ---
-You have %d inspect_step calls remaining. You can inspect more steps or provide your final verdict.`, int(stepIdx), inspectResult, remaining)),
-			))
+You have %d inspect_step calls remaining. You can inspect more steps or provide your final verdict.`, int(stepIdx), inspectResult, remaining)})
 			continue
 
 		} else if tool, ok := result["tool"].(string); ok && tool == "inspect_step" && inspectCount >= maxInspectCalls {
 			// Max inspections reached
-			messages = append(messages, message.ToParam())
-			messages = append(messages, anthropic.NewUserMessage(
-				anthropic.NewTextBlock(fmt.Sprintf("You have used all %d inspect_step calls. Please provide your final verdict now.", maxInspectCalls)),
-			))
+			messages = append(messages, JudgeMessage{Role: "assistant", Content: responseText})
+			messages = append(messages, JudgeMessage{Role: "user", Content: fmt.Sprintf("You have used all %d inspect_step calls. Please provide your final verdict now.", maxInspectCalls)})
 			continue
 
 		} else if _, hasVerdict := result["verdict"]; hasVerdict {
@@ -282,9 +267,8 @@ You have %d inspect_step calls remaining. You can inspect more steps or provide 
 			// Enforcement: verdict=false requires inspect_step
 			if !verdict && inspectCount == 0 {
 				log.Println("Judge attempted verdict=false without using inspect_step - forcing verification")
-				messages = append(messages, message.ToParam())
-				messages = append(messages, anthropic.NewUserMessage(
-					anthropic.NewTextBlock(fmt.Sprintf(`**REJECTED: You cannot return verdict=false without first using inspect_step.**
+				messages = append(messages, JudgeMessage{Role: "assistant", Content: responseText})
+				messages = append(messages, JudgeMessage{Role: "user", Content: fmt.Sprintf(`**REJECTED: You cannot return verdict=false without first using inspect_step.**
 
 You are about to fail this task, but you have not verified your concerns by inspecting the actual tool call results.
 
@@ -298,8 +282,7 @@ Please use inspect_step now to verify your concerns. Look at the steps where the
 
 Example: If the agent claims to have found 4 recipe titles, use inspect_step on the browser_state call where the search results appeared to see if those titles are in the DOM.
 
-You have %d inspect_step calls remaining.`, maxInspectCalls-inspectCount)),
-				))
+You have %d inspect_step calls remaining.`, maxInspectCalls-inspectCount)})
 				continue
 			}
 
@@ -328,21 +311,19 @@ You have %d inspect_step calls remaining.`, maxInspectCalls-inspectCount)),
 				ImpossibleTask: impossibleTask,
 				ReachedCaptcha: reachedCaptcha,
 				ComprehensiveEval: map[string]interface{}{
-					"task_summary":    fmt.Sprintf("Task %s", map[bool]string{true: "completed successfully", false: "not completed"}[verdict]),
-					"reasoning":       reasoning,
-					"passed":          verdict,
-					"final_score":     int(score * 100),
-					"error_categories": errors,
-					"improvement_tips": map[bool][]string{true: {}, false: {reasoning}}[verdict],
+					"task_summary":      fmt.Sprintf("Task %s", map[bool]string{true: "completed successfully", false: "not completed"}[verdict]),
+					"reasoning":         reasoning,
+					"passed":            verdict,
+					"final_score":       int(score * 100),
+					"error_categories":  errors,
+					"improvement_tips":  map[bool][]string{true: {}, false: {reasoning}}[verdict],
 				},
 			}, nil
 
 		} else {
 			// Unknown response format
-			messages = append(messages, message.ToParam())
-			messages = append(messages, anthropic.NewUserMessage(
-				anthropic.NewTextBlock("Please respond with either an inspect_step tool call or your final verdict in valid JSON format."),
-			))
+			messages = append(messages, JudgeMessage{Role: "assistant", Content: responseText})
+			messages = append(messages, JudgeMessage{Role: "user", Content: "Please respond with either an inspect_step tool call or your final verdict in valid JSON format."})
 			continue
 		}
 	}

@@ -12,7 +12,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/anthropics/anthropic-sdk-go"
 	"github.com/recreate-run/mix-go-sdk"
 	"github.com/recreate-run/mix-go-sdk/models/components"
 	"github.com/recreate-run/mix-go-sdk/models/operations"
@@ -25,7 +24,7 @@ import (
 type Orchestrator struct {
 	mixClient    *mix.Mix
 	convexClient *convex.Client
-	judge        *JudgeAnthropic
+	judge        *Judge
 	config       Config
 }
 
@@ -37,8 +36,7 @@ type Config struct {
 	BrowserbaseKey  string
 	BrightdataUser  string
 	BrightdataPass  string
-	AnthropicAPIKey string
-	AnthropicModel  anthropic.Model
+	GeminiAPIKey string
 }
 
 // ANSI color codes
@@ -108,7 +106,7 @@ func New(config Config) *Orchestrator {
 	return &Orchestrator{
 		mixClient:    mix.New(config.MixURL, mix.WithTimeout(30*time.Second)),
 		convexClient: convex.NewClient(config.ConvexURL, config.ConvexSecretKey),
-		judge:        NewJudgeAnthropic(config.AnthropicAPIKey, config.AnthropicModel),
+		judge:        mustJudge(NewJudgeGemini(config.GeminiAPIKey, ModelGemini3Flash)),
 		config:       config,
 	}
 }

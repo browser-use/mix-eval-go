@@ -8,7 +8,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/anthropics/anthropic-sdk-go"
 	"github.com/joho/godotenv"
 
 	"mix-eval-go/pkg/orchestrator"
@@ -42,16 +41,15 @@ func main() {
 		BrowserbaseKey:  getEnv("BROWSERBASE_API_KEY", ""),
 		BrightdataUser:  getEnv("BRIGHTDATA_USER", ""),
 		BrightdataPass:  getEnv("BRIGHTDATA_PASS", ""),
-		AnthropicAPIKey: getEnv("ANTHROPIC_API_KEY", ""),
-		AnthropicModel:  anthropic.ModelClaudeSonnet4_5_20250929,
+		GeminiAPIKey: getEnv("GEMINI_API_KEY", ""),
 	}
 
 	// Validate required config
 	if config.ConvexURL == "" || config.ConvexSecretKey == "" {
 		log.Fatal("CONVEX_URL and CONVEX_SECRET_KEY are required")
 	}
-	if config.AnthropicAPIKey == "" {
-		log.Fatal("ANTHROPIC_API_KEY is required for judge evaluation")
+	if config.GeminiAPIKey == "" {
+		log.Fatal("GEMINI_API_KEY is required for judge evaluation")
 	}
 
 	// Create orchestrator
