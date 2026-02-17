@@ -105,7 +105,9 @@ func (j *JudgeAnthropic) Evaluate(
 
 	// Collect and limit screenshots
 	imageURLs := collectImageURLs(screenshotPaths, screenshotsB64)
-	if len(imageURLs) > maxImages {
+	if len(imageURLs) == 0 {
+		log.Printf("Warning: no screenshots available for judge evaluation - verdict will rely solely on tool call history and final response")
+	} else if len(imageURLs) > maxImages {
 		log.Printf("Limiting screenshots from %d to %d", len(imageURLs), maxImages)
 		imageURLs = imageURLs[len(imageURLs)-maxImages:]
 	}

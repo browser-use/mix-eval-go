@@ -26,7 +26,7 @@ func TestOrchestratorTaskExecution(t *testing.T) {
 		t.Skip("ANTHROPIC_API_KEY not set, skipping orchestrator e2e test")
 	}
 
-	ctx, cancel := context.WithTimeout(context.Background(), 60*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 120*time.Second)
 	defer cancel()
 
 	// Create orchestrator
@@ -41,13 +41,13 @@ func TestOrchestratorTaskExecution(t *testing.T) {
 
 	// Create simple task directly (no Convex fetch needed)
 	task := convex.Task{
-		ID:     "test-orchestrator-execution-001",
-		RunID:  "", // Leave empty to test auto-generation
-		Text:   "Create a text file with the word cat",
+		ID:       "test-orchestrator-execution-001",
+		RunID:    "", // Leave empty to test auto-generation
+		Text:     "go to the wikipedia page on cats and take a screenshot",
 		Category: "test",
 	}
 
-	t.Log("Starting task: Create a text file with the word cat")
+	t.Log("Starting task: go to the wikipedia page on cats and take a screenshot")
 
 	// Run the task
 	result, err := orch.RunTask(ctx, task)
@@ -90,5 +90,5 @@ func TestOrchestratorTaskExecution(t *testing.T) {
 	// But we can verify the session was preserved by checking the logs
 	// The session ID should be printed with "preserved for file access"
 
-	t.Log("✓ Test completed - orchestrator session preserved, runID auto-generated")
+	t.Log("✓ Test completed - orchestrator session preserved, runID auto-generated, screenshots extracted")
 }

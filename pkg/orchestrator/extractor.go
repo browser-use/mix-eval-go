@@ -6,11 +6,12 @@ import (
 
 // ExecutionHistory represents agent execution trace
 type ExecutionHistory struct {
-	ToolCalls     []ToolCallDetail
-	FinalResponse string
-	Reasoning     string
-	TokensUsed    int64
-	Cost          float64
+	ToolCalls      []ToolCallDetail
+	ScreenshotURLs []string
+	FinalResponse  string
+	Reasoning      string
+	TokensUsed     int64
+	Cost           float64
 }
 
 // ToolCallDetail represents detailed tool execution
@@ -46,6 +47,7 @@ func extractHistory(messages []components.BackendMessage) ExecutionHistory {
 			}
 
 			history.ToolCalls = append(history.ToolCalls, detail)
+			history.ScreenshotURLs = append(history.ScreenshotURLs, tc.ScreenshotUrls...)
 		}
 
 		// Extract final response

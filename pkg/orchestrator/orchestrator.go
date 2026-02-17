@@ -6,6 +6,7 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
 	"strings"
 	"sync"
@@ -186,10 +187,10 @@ func (o *Orchestrator) RunTask(ctx context.Context, task convex.Task) (*convex.T
 	}
 
 	// 5. Collect events until completion
-	toolCalls, screenshots := o.collectEvents(eventsChan)
+	toolCalls, _ := o.collectEvents(eventsChan)
 	streamWg.Wait()
 
-	fmt.Printf("Collected %d tool calls, %d screenshots\n", len(toolCalls), len(screenshots))
+	fmt.Printf("Collected %d tool calls\n", len(toolCalls))
 
 	// 6. Get complete message history
 	messagesResp, err := o.mixClient.Messages.GetSessionMessages(ctx, sessionID)
@@ -197,12 +198,14 @@ func (o *Orchestrator) RunTask(ctx context.Context, task convex.Task) (*convex.T
 		return nil, fmt.Errorf("get messages failed: %w", err)
 	}
 
-	// 7. Extract and format history
+	// 7. Extract and format history (includes screenshot URLs from tc.ScreenshotUrls)
 	history := extractHistory(messagesResp.BackendMessages)
 
-	// 8. Convert data for new judge format
+	// 8. Fetch screenshots from message history and convert for judge
 	judgeToolCalls := convertToJudgeToolCalls(history.ToolCalls)
-	screenshotsB64 := convertScreenshotsToBase64(screenshots)
+	fetchedScreenshots := fetchScreenshots(ctx, o.config.MixURL, history.ScreenshotURLs)
+	screenshotsB64 := convertScreenshotsToBase64(fetchedScreenshots)
+	fmt.Printf("Fetched %d/%d screenshots from message history\n", len(fetchedScreenshots), len(history.ScreenshotURLs))
 	var intermediateReasoning []string
 	if history.Reasoning != "" {
 		intermediateReasoning = []string{history.Reasoning}
@@ -226,7 +229,7 @@ func (o *Orchestrator) RunTask(ctx context.Context, task convex.Task) (*convex.T
 	fmt.Printf("Evaluation: Score=%.2f, Passed=%v\n", evaluation.Score, evaluation.Passed)
 
 	// 10. Upload screenshots
-	storageIDs, _ := o.convexClient.UploadScreenshots(ctx, screenshots)
+	storageIDs, _ := o.convexClient.UploadScreenshots(ctx, fetchedScreenshots)
 
 	// 11. Build result
 	result := &convex.TaskResult{
@@ -555,6 +558,36 @@ func convertToJudgeToolCalls(details []ToolCallDetail) []ToolCall {
 		}
 	}
 	return toolCalls
+}
+
+// fetchScreenshots fetches screenshots from Mix over HTTP and returns raw bytes.
+// Relative URLs are resolved against mixBaseURL.
+func fetchScreenshots(ctx context.Context, mixBaseURL string, urls []string) [][]byte {
+	var results [][]byte
+	for _, rawURL := range urls {
+		fullURL := rawURL
+		if !strings.HasPrefix(rawURL, "http://") && !strings.HasPrefix(rawURL, "https://") {
+			fullURL = mixBaseURL + rawURL
+		}
+		req, err := http.NewRequestWithContext(ctx, http.MethodGet, fullURL, nil)
+		if err != nil {
+			fmt.Printf("Warning: could not build screenshot request for %s: %v\n", fullURL, err)
+			continue
+		}
+		resp, err := http.DefaultClient.Do(req)
+		if err != nil {
+			fmt.Printf("Warning: failed to fetch screenshot %s: %v\n", fullURL, err)
+			continue
+		}
+		data, err := io.ReadAll(resp.Body)
+		resp.Body.Close()
+		if err != nil {
+			fmt.Printf("Warning: failed to read screenshot body %s: %v\n", fullURL, err)
+			continue
+		}
+		results = append(results, data)
+	}
+	return results
 }
 
 // convertScreenshotsToBase64 converts screenshot bytes to base64 strings
