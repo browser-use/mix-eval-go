@@ -5,18 +5,25 @@ package e2e
 
 import (
 	"context"
+	"os"
 	"testing"
 	"time"
 
+	"github.com/anthropics/anthropic-sdk-go"
 	"mix-eval-go/pkg/convex"
 	"mix-eval-go/pkg/orchestrator"
 )
 
-// TestSimpleFileCreation tests session preservation and runID generation
-// Task: Create a text file with the word cat
-func TestSimpleFileCreation(t *testing.T) {
+// TestOrchestratorTaskExecution tests the orchestrator layer: session preservation,
+// runID auto-generation, tool call capture, and judge evaluation via RunTask.
+func TestOrchestratorTaskExecution(t *testing.T) {
 	if testing.Short() {
 		t.Skip("Skipping e2e test in short mode")
+	}
+
+	apiKey := os.Getenv("ANTHROPIC_API_KEY")
+	if apiKey == "" {
+		t.Skip("ANTHROPIC_API_KEY not set, skipping orchestrator e2e test")
 	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), 60*time.Second)
@@ -27,12 +34,14 @@ func TestSimpleFileCreation(t *testing.T) {
 		MixURL:          "http://localhost:8088",
 		ConvexURL:       "http://dummy-convex-url.com",
 		ConvexSecretKey: "dummy-key",
+		AnthropicAPIKey: apiKey,
+		AnthropicModel:  anthropic.ModelClaudeSonnet4_5_20250929,
 	}
 	orch := orchestrator.New(config)
 
 	// Create simple task directly (no Convex fetch needed)
 	task := convex.Task{
-		ID:     "test-file-creation-001",
+		ID:     "test-orchestrator-execution-001",
 		RunID:  "", // Leave empty to test auto-generation
 		Text:   "Create a text file with the word cat",
 		Category: "test",
@@ -81,5 +90,5 @@ func TestSimpleFileCreation(t *testing.T) {
 	// But we can verify the session was preserved by checking the logs
 	// The session ID should be printed with "preserved for file access"
 
-	t.Log("✓ Test completed - session preserved, runID auto-generated")
+	t.Log("✓ Test completed - orchestrator session preserved, runID auto-generated")
 }
